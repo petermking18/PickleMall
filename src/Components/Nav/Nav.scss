@@ -1,7 +1,7 @@
 @import "../../Global.scss";
 
 .navbar {
-    position: fixed;
+    // position: fixed;
     width: 100vw;
     height: $nav-height;
 
@@ -9,4 +9,6 @@
         position: relative;
         left: -1rem;
     }
+
+    overflow: hidden;
 }
