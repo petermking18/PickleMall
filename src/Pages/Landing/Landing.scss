@@ -1,0 +1,10 @@
+@import "../../Global.scss";
+
+.page {
+    height: 100vh !important;
+
+    .content {
+        padding-top: $nav-height;
+        height: 100%;
+    }
+}

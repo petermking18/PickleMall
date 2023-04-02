@@ -5,10 +5,10 @@ import './Nav.scss'
 export default function Nav() {
 
     return <>
-        <nav className='navbar bg-volley-blue d-flex align-items-center'>
-            <div className='container'>
-                <a className='navbar-brand' href='/'>
-                    <img className='logo pt-2 navbar-brand' src={logo} />
+        <nav className='navbar bg-volley-blue'>
+            <div className='container d-flex justify-content-start align-items-center'>
+                <a href='/' className='logo d-inline-block py-3'>
+                    <img className='mx-3' src={logo} />
                 </a>
             </div>
         </nav>

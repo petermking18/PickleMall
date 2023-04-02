@@ -11,7 +11,8 @@ $custom-colors: (
     "taupe": #e2dfd5,
     "deep-blue": #002e43,
     "bright-white": #ffffff,
-    "off-white": #f7f7f7
+    "off-white": #f7f7f7,
+    "off-white-2": #f2f2f2
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

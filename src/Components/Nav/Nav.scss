@@ -1,4 +1,12 @@
+@import "../../Global.scss";
+
 .navbar {
+    position: fixed;
     width: 100vw;
-    height: 60px;
+    height: $nav-height;
+
+    a.logo {
+        position: relative;
+        left: -1rem;
+    }
 }
