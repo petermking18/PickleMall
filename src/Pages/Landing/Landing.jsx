@@ -100,23 +100,23 @@ export default function Landing() {
                                 <small className='text-muted mt-0'>*Indicates required fields</small>
                                 <form name='contactForm' className='mt-4'>
                                     <Grid container spacing={2}>
-                                        <Grid sm={6}>
+                                        <Grid xs={12} md={6}>
                                             <TextField id='inputFirstName' label='First Name' variant='outlined' color='pickleGreen' className='w-100'
                                                 onChange={e => setFirstName(e.target.value)} disabled={vs === ViewStates.Submitting} />
                                         </Grid>
-                                        <Grid sm={6}>
+                                        <Grid xs={12} md={6}>
                                             <TextField id='inputLastname' label='Last Name' variant='outlined' color='pickleGreen' className='w-100'
                                                 onChange={e => setLastName(e.target.value)} disabled={vs === ViewStates.Submitting} />
                                         </Grid>
-                                        <Grid sm={12}>
+                                        <Grid xs={12} md={12}>
                                             <TextField id='inputEmail' label='Email' variant='outlined' color='pickleGreen' className='w-100'
                                                 error={emailValid === false} onChange={e => validateEmail(e)} disabled={vs === ViewStates.Submitting} />
                                         </Grid>
-                                        <Grid sm={6}>
+                                        <Grid xs={12} md={6}>
                                             <TextField id='inputCity' label='City' variant='outlined' color='pickleGreen' className='w-100'
                                                 onChange={e => setCity(e.target.value)} disabled={vs === ViewStates.Submitting} />
                                         </Grid>
-                                        <Grid sm={6}>
+                                        <Grid xs={12} md={6}>
                                             <FormControl fullWidth>
                                                 <InputLabel id='labelState' color='pickleGreen'>State</InputLabel>
                                                 <Select labelId='labelState' id='inputState' label='State' value={state}

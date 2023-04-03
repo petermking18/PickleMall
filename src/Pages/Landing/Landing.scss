@@ -1,5 +1,10 @@
 @import "../../Global.scss";
 
+html {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 .page {
     height: 100vh !important;
 
@@ -32,7 +37,11 @@
                 align-items: center;
 
                 .card {
-                    margin-bottom: 10rem;
+                    @include media-breakpoint-up(sm) {
+                        @media screen and (min-height: 620px) {
+                            margin-bottom: 10rem;
+                        }
+                    }
 
                     max-width: 600px;
 

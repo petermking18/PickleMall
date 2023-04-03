@@ -7,7 +7,10 @@
 
     a.logo {
         position: relative;
-        left: -1rem;
+
+        @include media-breakpoint-up(md) {
+            left: -1;
+        }
     }
 
     overflow: hidden;
