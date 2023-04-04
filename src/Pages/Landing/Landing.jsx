@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Nav from '../../Components/Nav/Nav'
 import Card from '../../Components/Card/Card'
+import Footer from "../../Components/Footer/Footer"
 import { ErrorOutline, CheckCircleOutline } from '@mui/icons-material'
 import { Button, CircularProgress, TextField, Select, FormControl, InputLabel, MenuItem } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
@@ -10,7 +11,6 @@ import validator from 'validator'
 import States from '../../Helpers/US-States'
 
 import './Landing.scss'
-import background from './background.svg'
 
 import { collection, addDoc, Timestamp } from 'firebase/firestore'
 import { db } from '../../Firebase'
@@ -62,14 +62,10 @@ export default function Landing() {
         }
     }
 
-    return <div className='page'>
+    return <div className='page bg-off-white-2'>
         <Nav />
-        <div className='below-nav bg-off-white-2'>
-            <div className='background'>
-                <img src={background} />
-            </div>
             <div className='content'>
-                <div className='main-card-wrapper'>
+                <div className='main-card-wrapper my-auto'>
                     <Card className="card">
                         {vs === ViewStates.Landing &&
                             <div className='p-3 p-md-5'>
@@ -169,7 +165,6 @@ export default function Landing() {
                     </Card>
                 </div>
             </div>
-        </div>
-
+        <Footer/>
     </div>
 }
