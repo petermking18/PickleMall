@@ -35,10 +35,7 @@ export default function Na2() {
                 <Link to='/' className='logo d-inline-block py-2'>
                     <img className='mx-3' src={logo} alt={'Pickle Mall'} />
                 </Link>
-                <Stack direction='row' spacing={8} className='nav-items d-none d-lg-flex'>
-                    {navLinks}
-                </Stack>
-                <Stack direction='row' spacing={4} className='nav-items d-none d-md-flex d-lg-none'>
+                <Stack direction='row' spacing={{md: 4, lg: 8}} className='nav-items d-none d-md-flex'>
                     {navLinks}
                 </Stack>
             </div>
