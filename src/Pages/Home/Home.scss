@@ -1,1 +1,27 @@
 @import "../../Global.scss";
+
+.home {
+    .section-1 {
+        background: url('./Rackets.png');
+        background-size: cover;
+
+        position: relative;
+
+        .content {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 1.56%, rgba(0, 0, 0, 0.7) 100%);
+
+            .welcome {
+                @extend .font-barlow-condensed;
+                color: var(--bs-bright-white);
+                font-weight: 600;
+                font-size: 80px;
+                line-height: 88.5px;
+            }
+
+            .book-button {
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}
