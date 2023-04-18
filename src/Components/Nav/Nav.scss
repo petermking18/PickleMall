@@ -1,17 +1,19 @@
 @import "../../Global.scss";
 
-.navbar {
-    // position: fixed;
-    width: 100vw;
-    height: $nav-height;
+.nav {
+    .navbar {
+        // position: fixed;
+        width: 100vw;
+        height: $nav-height;
 
-    a.logo {
-        position: relative;
+        a.logo {
+            position: relative;
 
-        @include media-breakpoint-up(md) {
-            left: -1;
+            @include media-breakpoint-up(md) {
+                left: -1;
+            }
         }
-    }
 
-    overflow: hidden !important;
+        overflow: hidden !important;
+    }
 }

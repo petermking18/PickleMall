@@ -1,0 +1,31 @@
+@import "../../Global.scss";
+
+.nav2 {
+    .navbar {
+        width: 100vw;
+        // height: $nav-height;
+
+        a.logo {
+            position: relative;
+
+            @include media-breakpoint-up(md) {
+                left: -1;
+            }
+        }
+
+        // overflow: hidden !important;
+
+        .nav-items {
+            .nav-item {
+                text-decoration: none;
+                color: var(--bs-bright-white);
+                text-transform: uppercase;
+                @extend .font-barlow-condensed;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;
+                padding: 1rem;
+            }
+        }
+    }
+}

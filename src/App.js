@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Landing from './Pages/Landing/Landing'
 
+import Home from './Pages/Home/Home'
+
 import "./custom-bootstrap.scss"
 import "./App.scss"
 
@@ -16,6 +18,7 @@ const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path={'/'} element={<Landing />} />
+        <Route path={'/home'} element={<Home />} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
