@@ -26,6 +26,13 @@ const theme = createTheme({
             textTransform: "unset",
           },
         },
+        {
+          props: {variant: "text"},
+          style: {
+            textTransform: 'unset',
+            borderRadius: 100
+          }
+        }
       ],
     },
   }
