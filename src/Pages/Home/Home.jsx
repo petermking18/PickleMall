@@ -117,22 +117,36 @@ export default function Home() {
         arrows: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 3.55,
-        slidesToScroll: 3,
+        slidesToShow: 4.35,
+        slidesToScroll: 4,
         beforeChange: (current, next) => setLocationsIndex(next),
         mobileFirst: true,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1200,
               settings: {
-                  slidesToShow: 2.55,
-                  slidesToScroll: 2
+                  slidesToShow: 3.55,
+                  slidesToScroll: 3
               }
             },
             {
-                breakpoint: 800,
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2.55,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1.55,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1.25,
                     slidesToScroll: 1
                 }
             }
@@ -221,26 +235,20 @@ export default function Home() {
                                     <div className={'info'}>
                                         {l.isOpen ?
                                             <div>
-                                                <Grid container spacing={3}>
-                                                    <Grid xs={1}>
-                                                        <span className={'material-symbols-outlined text-pickle-green info-icon'}>location_on</span>
-                                                    </Grid>
-                                                    <Grid xs={11} className={'text-deep-blue info-text'}>
-                                                        {l.address}
-                                                    </Grid>
-                                                </Grid>
-                                                <Grid container spacing={3}>
-                                                    <Grid xs={1}>
-                                                        <span className={'material-symbols-outlined text-pickle-green info-icon'}>schedule</span>
-                                                    </Grid>
-                                                    <Grid xs={11} className={'text-deep-blue info-text'}>
+                                                <Stack direction={'row'} spacing={2}>
+                                                    <span className={'material-symbols-outlined text-pickle-green info-icon'}>location_on</span>
+                                                    <div className={'text-deep-blue info-text'}>{l.address}</div>
+                                                </Stack>
+                                                <Stack direction={'row'} spacing={2}>
+                                                    <span className={'material-symbols-outlined text-pickle-green info-icon'}>schedule</span>
+                                                    <div className={'text-deep-blue info-text'}>
                                                         {l.hours.map((h, idx) =>
                                                             <div key={idx}>
                                                                 {h}
                                                             </div>
                                                         )}
-                                                    </Grid>
-                                                </Grid>
+                                                    </div>
+                                                </Stack>
                                             </div>
                                             :
                                             <div className={'text-kitchen-green not-open-message'}>
