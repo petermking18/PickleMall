@@ -154,6 +154,29 @@
                     }
                 }
             }
+
+            .locations-page-control {
+                .back-button {
+                    border-top-left-radius: 100px;
+                    border-bottom-left-radius: 100px;
+                }
+                .forward-button {
+                    border-top-right-radius: 100px;
+                    border-bottom-right-radius: 100px;
+                }
+
+                Button {
+                    border-color: var(--bs-kitchen-green);
+
+                    &:not(:hover) {
+                        background-color: var(--bs-bright-white);
+                    }
+                    &:hover {
+                        background-color: #BCE7C3;
+                    }
+                }
+            }
+
         }
     }
 

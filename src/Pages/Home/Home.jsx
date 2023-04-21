@@ -4,7 +4,7 @@ import Nav2 from '../../Components/Nav2/Nav2'
 import Card from '../../Components/Card/Card'
 import Footer from "../../Components/Footer/Footer"
 import {ArrowRightAlt, LocationOnOutlined} from '@mui/icons-material'
-import {Button, Stack, CircularProgress, TextField, Select, FormControl, InputLabel, MenuItem} from '@mui/material'
+import {Button, Stack, ButtonGroup} from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 
 import Slider from 'react-slick'
@@ -235,7 +235,7 @@ export default function Home() {
                                     <div className={'info'}>
                                         {l.isOpen ?
                                             <div>
-                                                <Stack direction={'row'} spacing={2}>
+                                                <Stack direction={'row'} spacing={2} className={'mb-2'}>
                                                     <span className={'material-symbols-outlined text-pickle-green info-icon'}>location_on</span>
                                                     <div className={'text-deep-blue info-text'}>{l.address}</div>
                                                 </Stack>
@@ -257,13 +257,13 @@ export default function Home() {
                                         }
                                     </div>
 
-                                    <div className={'buttons-row mt-auto'}>
+                                    <div className={'buttons-row mt-auto pt-2'}>
                                         {l.isOpen ?
                                             <Stack direction={'row'} spacing={2}>
-                                                <Button variant={'contained'} color={'volleyBlue'} disableElevation>
+                                                <Button variant={'contained'} color={'volleyBlue'} className={'text-nowrap'} disableElevation>
                                                     Book a Court
                                                 </Button>
-                                                <Button variant={'text'} className={'text-volley-blue'}>
+                                                <Button variant={'text'} className={'text-volley-blue text-nowrap'}>
                                                     Learn more&nbsp;<span className={'material-symbols-outlined'}>arrow_forward</span>
                                                 </Button>
                                             </Stack>
@@ -280,6 +280,17 @@ export default function Home() {
                         </div>)
                     }
                 </Slider>
+                <div className={'d-flex justify-content-center '}>
+                    <ButtonGroup variant={'outlined'} aria-label={'Locations page control'} className={'locations-page-control'} color={'kitchenGreen'}>
+                        <Button className={'back-button'} disabled={locationsIndex === 0}
+                        onClick={() => locationsSlider.slickPrev()}>
+                            <span className={'material-symbols-outlined text-dark'}>arrow_back</span>
+                        </Button>
+                        <Button className={'forward-button'} onClick={() => locationsSlider.slickNext()}>
+                            <span className={'material-symbols-outlined text-dark'}>arrow_forward</span>
+                        </Button>
+                    </ButtonGroup>
+                </div>
             </div>
         </div>
         <div className='section-4'>
