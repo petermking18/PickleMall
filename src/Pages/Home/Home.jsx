@@ -10,6 +10,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "./Home.scss";
 
+import locations from "../../Helpers/Locations";
+
 import racketsPhoto from "./Rackets.png";
 import courtsPhoto from "./Courts.png";
 import pickleCircle from "./pickle-circle.svg";
@@ -36,69 +38,6 @@ export default function Home() {
       </Link>
     </div>
   ));
-
-  const locations = [
-    {
-      location: "Tempe, AZ",
-      address: "Address",
-      hours: ["Mon-Fri: 6am-8pm", "Sat: 6am-midnight", "Sun: 6am-11pm"],
-      isOpen: true,
-      notOpenMessage: "",
-      numCourts: 24,
-    },
-    {
-      location: "Texas",
-      address: "Address",
-      hours: [],
-      isOpen: false,
-      notOpenMessage: "Opening late summer 2023",
-    },
-    {
-      location: "Minnesota",
-      address: "Address",
-      hours: [],
-      isOpen: false,
-      notOpenMessage: "Opening late summer 2023",
-    },
-    {
-      location: "Maryland",
-      address: "Address",
-      hours: [],
-      isOpen: false,
-      notOpenMessage: "Opening late summer 2023",
-    },
-    {
-      location: "Washington, DC",
-      address: "Address",
-      hours: [],
-      isOpen: true,
-      notOpenMessage: "",
-      numCourts: 5,
-    },
-    {
-      location: "Florida",
-      address: "Address",
-      hours: [],
-      isOpen: false,
-      notOpenMessage: "Opening late summer 2023",
-    },
-    {
-      location: "Tempe, AZ",
-      address: "Address",
-      hours: [],
-      isOpen: true,
-      notOpenMessage: "",
-      numCourts: 6,
-    },
-    {
-      location: "Tempe, AZ",
-      address: "Address",
-      hours: [],
-      isOpen: true,
-      notOpenMessage: "",
-      numCourts: 35,
-    },
-  ];
 
   const [locationsIndex, setLocationsIndex] = useState(0);
 

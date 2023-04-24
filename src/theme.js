@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material/styles"
+import { createTheme } from "@mui/material/styles";
 
-const { palette } = createTheme()
+const { palette } = createTheme();
 const theme = createTheme({
   palette: {
     rallyBlue: palette.augmentColor({ color: { main: "#bbf1ff" } }),
@@ -11,6 +11,7 @@ const theme = createTheme({
     taupe: palette.augmentColor({ color: { main: "#e2dfd5" } }),
     deepBlue: palette.augmentColor({ color: { main: "#002e43" } }),
     brightWhite: palette.augmentColor({ color: { main: "#ffffff" } }),
+    lightGray: palette.augmentColor({ color: { main: "#f2f2f2" } }),
   },
   components: {
     MuiButton: {
@@ -27,15 +28,15 @@ const theme = createTheme({
           },
         },
         {
-          props: {variant: "text"},
+          props: { variant: "text" },
           style: {
-            textTransform: 'unset',
-            borderRadius: 100
-          }
-        }
+            textTransform: "unset",
+            borderRadius: 100,
+          },
+        },
       ],
     },
-  }
-})
+  },
+});
 
-export default theme
+export default theme;
