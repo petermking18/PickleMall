@@ -74,8 +74,7 @@ export default function Locations() {
         <h1 className="about-header font-barlow-condensed text-deep-blue">
           LOCATIONS<span className="text-pickle-green">.</span>
         </h1>
-        {/* <MapComponent /> */}
-        <img src="https://placehold.jp/1300x620.png" alt="map-placeholder" />
+        <MapComponent className="map-container" />
         <ButtonGroup>
           <Button
             color={selectedState == "" ? "kitchenGreen" : "lightGray"}
@@ -113,7 +112,7 @@ export default function Locations() {
                                      */}
                       <img
                         className={"card-top-photo"}
-                        src="https://placehold.jp/400x150.png"
+                        src="https://placehold.jp/400x175.png"
                         alt={"Courts"}
                       />
                       {/* <img
