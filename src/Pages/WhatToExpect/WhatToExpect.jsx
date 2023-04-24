@@ -1,5 +1,9 @@
 import React from "react";
 
+import { Button } from "@mui/material";
+
+import "./WhatToExpect.scss";
+
 export default function WhatToExpect() {
   const steps = [
     {
@@ -10,6 +14,16 @@ export default function WhatToExpect() {
     {
       title: "FIND A BOOKING",
       text: "Once you've selected your preferred location, you can book a court hour on the app or sign up for one of our leagues or clinics. Our app is easy to use and allows you to quickly book a court at a time that works best for you.",
+      image: "https://placehold.jp/550x250.png",
+    },
+    {
+      title: "CHECK IN AT THE FRONT DESK",
+      text: "When you arrive at the Picklemall location, simply check in at the front desk. Our friendly staff will guide you through the check-in process and point you in the direction of your court. If you don’t have a paddle, you can rent one of our Joola x Picklemall paddles!",
+      image: "https://placehold.jp/550x250.png",
+    },
+    {
+      title: "PLAY & HAVE FUN!",
+      text: " Once you've checked in, it's time to hit the court and have some fun! Our facilities are designed to provide an optimal pickleball experience with high-quality courts, equipment, and lighting.",
       image: "https://placehold.jp/550x250.png",
     },
   ];
@@ -49,7 +63,16 @@ export default function WhatToExpect() {
           ))}
         </div>
       </div>
-      <div className="section-2"></div>
+      <div className="mx-auto w-50 my-5">
+        <Button className="evaluation-button bg-lightGray text-deep-blue shadow w-100">
+          <div className="d-flex justify-content-between align-items-center">
+            Don’t know your skill? Take a look at this evaluation
+            <span className={"material-symbols-outlined text-dark"}>
+              arrow_forward
+            </span>
+          </div>
+        </Button>
+      </div>
     </div>
   );
 }
