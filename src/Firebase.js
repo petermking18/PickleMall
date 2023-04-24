@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "picklemall.appspot.com",
   messagingSenderId: "159498687784",
   appId: "1:159498687784:web:0750f2390a21586fdaec1d",
-  measurementId: "G-4X06GHMWS0"
+  measurementId: "G-4X06GHMWS0",
 };
 
 // Initialize Firebase

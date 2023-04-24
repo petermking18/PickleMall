@@ -3,7 +3,7 @@ import theme from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Landing from "./Pages/Landing/Landing";
 
