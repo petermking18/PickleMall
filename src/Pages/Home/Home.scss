@@ -1,192 +1,207 @@
 @import "../../Global.scss";
 
 .home {
-    h1 {
-        font-size: 40px;
+  h1 {
+    font-size: 40px;
+  }
+
+  .section-1 {
+    background: url("./Rackets.png");
+    background-size: cover;
+
+    position: relative;
+
+    .content {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 1.56%,
+        rgba(0, 0, 0, 0.7) 100%
+      );
+
+      .welcome {
+        @extend .font-barlow-condensed;
+        color: var(--bs-bright-white);
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 88.5px;
+      }
+
+      .book-button {
+        font-size: 25px;
+        font-weight: 500;
+      }
     }
+  }
 
-    .section-1 {
-        background: url('./Rackets.png');
-        background-size: cover;
+  .section-2 {
+    .card {
+      img {
+        width: 100%;
+        height: auto;
+      }
 
-        position: relative;
+      box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
+      border-radius: 8px;
 
-        .content {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 1.56%, rgba(0, 0, 0, 0.7) 100%);
+      .quick-link {
+        color: inherit;
+        text-decoration: none;
+        // font-weight: 600;
+      }
+    }
+  }
 
-            .welcome {
-                @extend .font-barlow-condensed;
-                color: var(--bs-bright-white);
-                font-weight: 600;
-                font-size: 80px;
-                line-height: 88.5px;
-            }
+  .section-3 {
+    background-color: rgba(#c0e7f6, 0.3);
 
-            .book-button {
-                font-size: 25px;
-                font-weight: 500;
-            }
+    .locations {
+      .slick-track {
+        display: flex !important;
+      }
+      .slick-slide {
+        padding-right: 37px;
+        height: inherit !important;
+        > div {
+          height: 100%;
         }
-    }
+      }
+      .slick-slide:has(div.before-first-card) {
+        padding: 0 !important;
 
-    .section-2 {
+        @include media-breakpoint-only(xxl) {
+          width: calc(
+            ((100vw - 1320px) / 2) + (var(--bs-gutter-x) * 0.5)
+          ) !important;
+        }
+        @include media-breakpoint-only(xl) {
+          width: calc(
+            ((100vw - 1140px) / 2) + (var(--bs-gutter-x) * 0.5)
+          ) !important;
+        }
+        @include media-breakpoint-only(lg) {
+          width: calc(
+            ((100vw - 960px) / 2) + (var(--bs-gutter-x) * 0.5)
+          ) !important;
+        }
+        @include media-breakpoint-only(md) {
+          width: calc(
+            ((100vw - 720px) / 2) + (var(--bs-gutter-x) * 0.5)
+          ) !important;
+        }
+        @include media-breakpoint-only(sm) {
+          width: calc(
+            ((100vw - 540px) / 2) + (var(--bs-gutter-x) * 0.5)
+          ) !important;
+        }
+        @include media-breakpoint-only(xs) {
+          width: calc(var(--bs-gutter-x) * 0.5) !important;
+        }
+      }
+      .card-wrapper {
+        height: 100%;
+        padding-bottom: 2rem;
 
         .card {
-            img {
-                width: 100%;
-                height: auto;
+          height: 100%;
+          background-color: $white;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
+
+          .card-top-photo-wrapper {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            .card-top-photo {
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
             }
 
-            box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
-            border-radius: 8px;
-
-            .quick-link {
-                color: inherit;
-                text-decoration: none;
-                // font-weight: 600;
+            .pickle-circle {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              transform: translate(-30%, 50%);
             }
+          }
+
+          .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            .location {
+              font-size: 36px;
+              font-weight: 600;
+              max-width: 70%; /* to stay away from .pickle-circle */
+            }
+
+            .info {
+              .not-open-message {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+              }
+
+              .info-icon {
+                font-size: 1rem;
+              }
+
+              .info-text {
+                font-size: 12px;
+              }
+            }
+
+            .buttons-row {
+            }
+          }
         }
-    }
+      }
 
-    .section-3 {
-        background-color: rgba(#C0E7F6, 0.3);
-
-        .locations {
-            .slick-track {
-                display: flex !important;
-            }
-            .slick-slide {
-                padding-right: 37px;
-                height: inherit !important;
-                > div {
-                    height: 100%;
-                }
-            }
-            .slick-slide:has(div.before-first-card) {
-                padding: 0 !important;
-
-                @include media-breakpoint-only(xxl) {
-                    width: calc(((100vw - 1320px)/2) + (var(--bs-gutter-x) * 0.5)) !important;
-                }
-                @include media-breakpoint-only(xl) {
-                    width: calc(((100vw - 1140px)/2) + (var(--bs-gutter-x) * 0.5)) !important;
-                }
-                @include media-breakpoint-only(lg) {
-                    width: calc(((100vw - 960px)/2) + (var(--bs-gutter-x) * 0.5)) !important;
-                }
-                @include media-breakpoint-only(md) {
-                    width: calc(((100vw - 720px)/2) + (var(--bs-gutter-x) * 0.5)) !important;
-                }
-                @include media-breakpoint-only(sm) {
-                    width: calc(((100vw - 540px)/2) + (var(--bs-gutter-x) * 0.5)) !important;
-                }
-                @include media-breakpoint-only(xs) {
-                    width: calc(var(--bs-gutter-x) * 0.5) !important;
-                }
-            }
-            .card-wrapper {
-                height: 100%;
-                padding-bottom: 2rem;
-
-                .card {
-                    height: 100%;
-                    background-color: $white;
-                    border-radius: 8px;
-                    display: flex;
-                    flex-direction: column;
-                    flex-grow: 1;
-                    box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
-
-                    .card-top-photo-wrapper {
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                        width: 100%;
-                        height: auto;
-                        position: relative;
-
-                        .card-top-photo {
-                            border-top-left-radius: 8px;
-                            border-top-right-radius: 8px;
-                            width: 100%;
-                            height: auto;
-                            object-fit: cover;
-                        }
-
-                        .pickle-circle {
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                            transform: translate(-30%, 50%);
-                        }
-                    }
-
-                    .content {
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        flex-grow: 1;
-
-                        .location {
-                            font-size: 36px;
-                            font-weight: 600;
-                            max-width: 70%; /* to stay away from .pickle-circle */
-                        }
-
-                        .info {
-                            .not-open-message {
-                                font-size: 12px;
-                                font-weight: 500;
-                                line-height: 14px;
-                            }
-
-                            .info-icon {
-                                font-size: 1rem;
-                            }
-
-                            .info-text {
-                                font-size: 12px;
-                            }
-                        }
-
-                        .buttons-row {
-
-                        }
-                    }
-                }
-            }
-
-            .locations-page-control {
-                .back-button {
-                    border-top-left-radius: 100px;
-                    border-bottom-left-radius: 100px;
-                }
-                .forward-button {
-                    border-top-right-radius: 100px;
-                    border-bottom-right-radius: 100px;
-                }
-
-                Button {
-                    border-color: var(--bs-kitchen-green);
-
-                    &:not(:hover) {
-                        background-color: var(--bs-bright-white);
-                    }
-                    &:hover {
-                        background-color: #BCE7C3;
-                    }
-                }
-            }
-
+      .locations-page-control {
+        .back-button {
+          border-top-left-radius: 100px;
+          border-bottom-left-radius: 100px;
         }
-    }
+        .forward-button {
+          border-top-right-radius: 100px;
+          border-bottom-right-radius: 100px;
+        }
 
-    .section-4 {
-        background-color: rgba(#C0E7F6, 0.55);
-    }
+        Button {
+          border-color: var(--bs-kitchen-green);
 
-    hr.hr-pickle-green {
-        height: 1px;
-        background-color: var(--bs-pickle-green);
-        border: none;
+          &:not(:hover) {
+            background-color: var(--bs-bright-white);
+          }
+          &:hover {
+            background-color: #bce7c3;
+          }
+        }
+      }
     }
+  }
+
+  .section-4 {
+    background-color: rgba(#c0e7f6, 0.55);
+  }
+
+  hr.hr-pickle-green {
+    height: 1px;
+    background-color: var(--bs-pickle-green);
+    border: none;
+  }
+}
+
+.employee-photo {
+  border: 2px solid #49c13d;
 }

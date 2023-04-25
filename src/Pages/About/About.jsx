@@ -11,7 +11,7 @@ export default function About() {
         </h1>
         <div className="d-flex justify-content-between">
           <div>
-            <div>
+            <div className="mb-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Who we are<span className="text-pickle-green">.</span>
               </h1>

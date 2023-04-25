@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 
 import locations from "../../Helpers/Locations";
+import staff from "../../Helpers/Staff";
 
 import racketsPhoto from "./Rackets.png";
 import courtsPhoto from "./Courts.png";
@@ -301,7 +302,116 @@ export default function Home() {
         </div>
       </div>
       <div className="section-4">
-        <div className="container py-5"></div>
+        <div className="container py-5">
+          <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
+            It pays to show up<span className="text-pickle-green">.</span>
+          </h1>
+          <div className="d-flex shadow">
+            <img src="https://placehold.jp/545x185.png" />
+            <div className="bg-white px-5">
+              <h1 className="font-barlow-condensed text-deep-blue">
+                Come & Play
+              </h1>
+              <p>
+                Picklemall memberships are designed for maximum enjoyment. We
+                want to see you working on your game and playing several times
+                per week.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section-5">
+        <div className="container py-5">
+          <div className="d-flex">
+            <div className="bg-white px-5">
+              <h1 className="font-barlow-condensed text-deep-blue">
+                Find your people<span className="text-pickle-green">.</span>
+              </h1>
+              <p>
+                Community is core to pickleball, it is what allows us all to
+                laugh, sweat, and compete! Conveniently meet friends and find
+                teammates from all talent levels
+              </p>
+              <Button
+                className="book-button text-white mb-4"
+                color="volleyBlue"
+                variant="contained"
+                size="large"
+                disableElevation
+              >
+                Book a Court
+              </Button>
+            </div>
+            <img src="https://placehold.jp/815x415.png" />
+          </div>
+        </div>
+      </div>
+      <div className="section-6 bg-off-white-2">
+        <div className="container py-5">
+          <h1 className="font-barlow-condensed text-deep-blue">
+            Control your court time<span className="text-pickle-green">.</span>
+          </h1>
+          <p>
+            Immediately start playing with open play, memberships, or ad-hoc
+            reservations. Picklemall courts are a breeze to consistently show up
+            to.
+          </p>
+          <div className="d-flex">
+            <img src="https://placehold.jp/640x640.png" />
+            <img src="https://placehold.jp/640x640.png" />
+          </div>
+        </div>
+      </div>
+      <div className="section-7">
+        <div className="container py-5">
+          <div className="d-flex">
+            <div className="bg-white px-5">
+              <h1 className="font-barlow-condensed text-deep-blue">
+                Premier facilities<span className="text-pickle-green">.</span>
+              </h1>
+              <p>
+                Nothing should get in the way of your game. Modern LED lighting,
+                AC, Heat, and professional grade court surfaces allow time on
+                the court to be fun, safe, and stress-free.
+              </p>
+              <Button
+                className="book-button text-white mb-4"
+                color="volleyBlue"
+                variant="contained"
+                size="large"
+                disableElevation
+              >
+                Book a Court
+              </Button>
+            </div>
+            <img src="https://placehold.jp/815x415.png" />
+          </div>
+        </div>
+      </div>
+      <div className="section-8">
+        <div className="container py-5">
+          <h1 className="font-barlow-condensed text-deep-blue px-5">
+            Our Staff<span className="text-pickle-green">.</span>
+          </h1>
+          <div className="staff-cards d-flex justify-content-evenly">
+            {staff.map((employee) => (
+              <div
+                className="staff-card text-center shadow px-5 py-3 rounded"
+                key={employee.name}
+              >
+                <img
+                  src={employee.photo}
+                  className="employee-photo rounded-circle"
+                />
+                <h1 className="font-barlow-condensed text-deep-blue">
+                  {employee.name}
+                </h1>
+                <p className="text-kitchen-green">{employee.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
