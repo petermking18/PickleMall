@@ -4,7 +4,7 @@ import { Stack, Collapse, IconButton } from "@mui/material";
 import logo from "../../Assets/logo.svg";
 import "./Nav2.scss";
 
-export default function Na2() {
+export default function Nav2() {
   const navItems = [
     {
       route: "/WhatToExpect",

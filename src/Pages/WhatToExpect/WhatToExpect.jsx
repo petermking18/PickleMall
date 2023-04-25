@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+
+import SkillModal from "../../Components/SkillModal/SkillModal";
+
+import InfoIcon from "./InfoIcon.png";
 
 import { Button } from "@mui/material";
+import Modal from "react-modal";
 
 import "./WhatToExpect.scss";
 
 export default function WhatToExpect() {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
   const steps = [
     {
       title: "FIND A LOCATION",
@@ -59,14 +66,39 @@ export default function WhatToExpect() {
         </div>
       </div>
       <div className="mx-auto w-50 my-5">
-        <Button className="evaluation-button bg-lightGray text-deep-blue shadow w-100">
+        <Button
+          className="evaluation-button bg-lightGray text-deep-blue shadow w-100"
+          onClick={() => setIsOpen(!modalIsOpen)}
+        >
           <div className="d-flex justify-content-between align-items-center">
-            Don’t know your skill? Take a look at this evaluation
+            <img src={InfoIcon} alt="?" className="mx-1" />
+            <p className="mx-1">
+              Don’t know your skill? Take a look at this evaluation
+            </p>
             <span className={"material-symbols-outlined text-dark"}>
               arrow_forward
             </span>
           </div>
         </Button>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={() => setIsOpen(false)}
+          contentLabel="Skills Modal"
+          style={{
+            overlay: {
+              backgroundColor: "rgba(0, 0, 0, 0.65)",
+            },
+            content: {
+              backgroundColor: "#f2f2f2",
+            },
+          }}
+        >
+          <button
+            className="exit-modal-button"
+            onClick={() => setIsOpen(false)}
+          ></button>
+          <SkillModal />
+        </Modal>
       </div>
     </div>
   );
