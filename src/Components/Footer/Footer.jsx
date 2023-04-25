@@ -57,7 +57,7 @@ export default function Footer() {
           spacing={3}
           className={"mt-2 mb-1 text-nowrap align-items-center"}
         >
-          <Grid xs={4}>
+          <Grid xs={12} md={4}>
             <div>
               <a href={"/"} className={"logo d-inline-block py-2"}>
                 <img className={""} src={logo} alt={"Pickle Mall"} />
@@ -90,7 +90,7 @@ export default function Footer() {
             </div>
           </Grid>
           {/* col3 */}
-          <Grid xs={4}>
+          <Grid xs={6} md={4}>
             <div className="footer-right">
               <p>Convenient courts.</p>
               <p>Controlled climate.</p>

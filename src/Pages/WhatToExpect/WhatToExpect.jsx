@@ -46,18 +46,13 @@ export default function WhatToExpect() {
               <h1 className="font-barlow-condensed text-deep-blue">
                 STEP {index + 1}: {step.title}
               </h1>
-              <div className="d-flex align-items-center shadow">
-                {index % 2 === 0 ? (
-                  <>
-                    <img src={step.image} />
-                    <p className="px-5">{step.text}</p>
-                  </>
-                ) : (
-                  <>
-                    <p className="px-5">{step.text}</p>
-                    <img src={step.image} />
-                  </>
-                )}
+              <div
+                className={`d-flex align-items-center shadow ${
+                  index % 2 === 0 ? "item-odd" : "item-even"
+                }`}
+              >
+                <img src={step.image} alt="pickle-img" className="box-img" />
+                <p className="px-5">{step.text}</p>
               </div>
             </div>
           ))}
