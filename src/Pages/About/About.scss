@@ -10,8 +10,16 @@
   font-weight: 600;
   color: black;
 }
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide anything that goes outside the wrapper */
+}
 
 .racket-photo {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Make the image cover the entire parent div without stretching */
+  object-position: center; /* Center the image */
 }

@@ -15,7 +15,7 @@ export default function Nav2() {
       text: "Locations",
     },
     {
-      route: "/Events",
+      route: "/",
       text: "Events",
     },
     {
@@ -27,7 +27,7 @@ export default function Nav2() {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const navLinks = navItems.map((i, idx) => (
-    <Link key={idx} to={i.route} className="nav-item">
+    <Link key={i.text} to={i.route} className="nav-item">
       {i.text}
     </Link>
   ));

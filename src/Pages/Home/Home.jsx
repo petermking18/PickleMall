@@ -17,6 +17,13 @@ import racketsPhoto from "./Rackets.png";
 import courtsPhoto from "./Courts.png";
 import pickleCircle from "./pickle-circle.svg";
 
+import stock1 from "../../Assets/Stock1.jpg";
+import stock2 from "../../Assets/Stock2.jpg";
+import stock3 from "../../Assets/Stock3.jpg";
+import stock5 from "../../Assets/Stock5.jpg";
+import stock6 from "../../Assets/Stock6.jpg";
+import GreenRackets from "./GreenRackets.png";
+
 export default function Home() {
   const section1QuickLinks = [
     {
@@ -32,7 +39,7 @@ export default function Home() {
       text: "Upcoming Events",
     },
   ].map((l, idx) => (
-    <div key={idx}>
+    <div key={l.text}>
       <Link className="quick-link d-flex justify-content-between" to={l.route}>
         <span className="fw-semibold">{l.text}</span>
         <ArrowRightAlt className="text-kitchen-green" />
@@ -143,7 +150,7 @@ export default function Home() {
             </Grid>
             <Grid xs={12} md={4}>
               <div className="card">
-                <img src={racketsPhoto} alt="Pickleball photo" />
+                <img src={racketsPhoto} alt="Rackets" />
                 <div className="content p-4">
                   <h2 className="font-barlow-condensed my-0">Quick Links</h2>
                   <hr className="hr-pickle-green mb-4" />
@@ -154,6 +161,23 @@ export default function Home() {
           </Grid>
         </div>
       </div>
+      <div className="carousel">
+        <h1 className="carousel-text font-barlow-condensed text-white">
+          <span className="text-container py-5">
+            <span className="text-content">
+              CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
+              CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
+              CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
+            </span>
+            <span className="text-content">
+              CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
+              CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
+              CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
+            </span>
+          </span>
+        </h1>
+      </div>
+
       <div className="section-3">
         <div className="locations container-fluid px-0 py-5">
           <div className={"container"}>
@@ -167,8 +191,8 @@ export default function Home() {
             ref={(slider) => (locationsSlider = slider)}
           >
             <div className={"before-first-card"}></div>
-            {locations.map((l, idx) => (
-              <div key={idx} className={"card-wrapper"}>
+            {locations.map((l) => (
+              <div key={l.address} className={"card-wrapper"}>
                 <div className={"card"}>
                   <div className={"card-top-photo-wrapper"}>
                     {/* todo: number of courts badge,
@@ -177,7 +201,7 @@ export default function Home() {
                                      */}
                     <img
                       className={"card-top-photo"}
-                      src={courtsPhoto}
+                      src={l.locationImg ? l.locationImg : courtsPhoto}
                       alt={"Courts"}
                     />
                     <img
@@ -192,7 +216,7 @@ export default function Home() {
                         "location font-barlow-condensed text-deep-blue mb-1"
                       }
                     >
-                      {l.location}
+                      {l.isOpen ? l.location : l.region}
                     </h1>
                     <div className={"info"}>
                       {l.isOpen ? (
@@ -223,7 +247,7 @@ export default function Home() {
                             </span>
                             <div className={"text-deep-blue info-text"}>
                               {l.hours.map((h, idx) => (
-                                <div key={idx}>{h}</div>
+                                <div key={h}>{h}</div>
                               ))}
                             </div>
                           </Stack>
@@ -272,6 +296,39 @@ export default function Home() {
                 </div>
               </div>
             ))}
+            <div className={"card-wrapper"}>
+              <div className={"card where-to"}>
+                <div className={"card-top-photo-wrapper"}>
+                  {/* todo: number of courts badge,
+                                        .before-first-card make width match,
+                                        paging buttons
+                                     */}
+                  <img
+                    className={"card-top-photo"}
+                    src={GreenRackets}
+                    alt={"rackets"}
+                  />
+                </div>
+                <div className={"content px-4 pb-3"}>
+                  <h1
+                    className={
+                      "location font-barlow-condensed text-deep-blue mb-1"
+                    }
+                  >
+                    Where to next?
+                  </h1>
+                  <div>
+                    <Button
+                      variant={"contained"}
+                      color={"volleyBlue"}
+                      disableElevation
+                    >
+                      Stay in the Loop
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Slider>
           <div className={"d-flex justify-content-center "}>
             <ButtonGroup
@@ -307,7 +364,7 @@ export default function Home() {
             It pays to show up<span className="text-pickle-green">.</span>
           </h1>
           <div className="d-flex shadow">
-            <img src="https://placehold.jp/545x185.png" />
+            <img src={stock6} className="stock-6" alt="stock" />
             <div className="bg-white px-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Come & Play
@@ -343,7 +400,7 @@ export default function Home() {
                 Book a Court
               </Button>
             </div>
-            <img src="https://placehold.jp/815x415.png" />
+            <img src={stock1} className="stock-1" alt="stock" />
           </div>
         </div>
       </div>
@@ -358,8 +415,8 @@ export default function Home() {
             to.
           </p>
           <div className="d-flex">
-            <img src="https://placehold.jp/640x640.png" />
-            <img src="https://placehold.jp/640x640.png" />
+            <img src={stock5} className="stock-3and5" alt="stock" />
+            <img src={stock3} className="stock-3and5" alt="stock" />
           </div>
         </div>
       </div>
@@ -385,7 +442,7 @@ export default function Home() {
                 Book a Court
               </Button>
             </div>
-            <img src="https://placehold.jp/815x415.png" />
+            <img src={stock2} className="stock-2" alt="stock" />
           </div>
         </div>
       </div>
@@ -394,23 +451,23 @@ export default function Home() {
           <h1 className="font-barlow-condensed text-deep-blue px-5">
             Our Staff<span className="text-pickle-green">.</span>
           </h1>
-          <div className="staff-cards d-flex justify-content-evenly">
+          <Grid container spacing={8}>
             {staff.map((employee) => (
-              <div
-                className="staff-card text-center shadow px-5 py-3 rounded"
-                key={employee.name}
-              >
-                <img
-                  src={employee.photo}
-                  className="employee-photo rounded-circle"
-                />
-                <h1 className="font-barlow-condensed text-deep-blue">
-                  {employee.name}
-                </h1>
-                <p className="text-kitchen-green">{employee.role}</p>
-              </div>
+              <Grid item xs={12} md={3} key={employee.name}>
+                <div className="staff-card text-center shadow px-5 py-3 rounded">
+                  <img
+                    src={employee.photo}
+                    className="employee-photo rounded-circle"
+                    alt={employee.name}
+                  />
+                  <h1 className="font-barlow-condensed text-deep-blue">
+                    {employee.name}
+                  </h1>
+                  <p className="text-kitchen-green">{employee.role}</p>
+                </div>
+              </Grid>
             ))}
-          </div>
+          </Grid>
         </div>
       </div>
     </div>

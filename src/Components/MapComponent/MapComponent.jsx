@@ -3,15 +3,15 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 export default function MapComponent() {
   const { isLoaded } = useLoadScript({
-    // googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-    googleMapsApiKey: "AIzaSyB5LbzampH7HesfgFPaR9t4UPGGUYuOD9s",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    // googleMapsApiKey: "AIzaSyB5LbzampH7HesfgFPaR9t4UPGGUYuOD9s",
   });
 
   if (!isLoaded) return <div>Loading...</div>;
-  return <Map />;
+  return <GetGoogleMap />;
 }
 
-function Map() {
+function GetGoogleMap() {
   const center = useMemo(() => ({ lat: 39.8283, lng: -98.5795 }), []);
 
   return (

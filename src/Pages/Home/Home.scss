@@ -160,9 +160,6 @@
                 font-size: 12px;
               }
             }
-
-            .buttons-row {
-            }
           }
         }
       }
@@ -204,4 +201,76 @@
 
 .employee-photo {
   border: 2px solid #49c13d;
+}
+
+.lower-sections {
+  overflow: hidden;
+}
+.stock-6 {
+  width: 36.5rem;
+  // height: 11.5rem;
+  height: auto;
+}
+
+.stock-1 {
+  width: 50.9rem;
+}
+
+.stock-3and5 {
+  width: 40rem;
+}
+
+.stock-2 {
+  width: 50.9rem;
+}
+
+// Define the animation
+@keyframes carousel {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel {
+  background-image: url("../../Assets/Stock6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    margin: 0;
+  }
+}
+
+.carousel .carousel-text {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .carousel-text .text-container {
+  display: flex;
+  animation: carousel 10s linear infinite;
+}
+
+.carousel .carousel-text .text-content {
+  padding-right: 1rem;
+  font-weight: 600;
+  font-size: 88px;
+  font-variant: all-small-caps;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.where-to {
+  background: rgba(73, 193, 61, 0.3) !important;
 }

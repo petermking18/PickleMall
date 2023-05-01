@@ -91,7 +91,7 @@ export default function Footer() {
           </Grid>
           {/* col3 */}
           <Grid xs={6} md={4}>
-            <div className="footer-right">
+            <div className="footer-right font-barlow-condensed">
               <p>Convenient courts.</p>
               <p>Controlled climate.</p>
               <p>Consistent competition.</p>

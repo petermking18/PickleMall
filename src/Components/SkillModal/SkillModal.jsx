@@ -1,5 +1,12 @@
 import React from "react";
 
+import Newbie from "./Assets/newbie.png";
+import Novice from "./Assets/novice.png";
+import Low from "./Assets/low.png";
+import High from "./Assets/high.png";
+import Advanced from "./Assets/advanced.png";
+import Expert from "./Assets/expert.png";
+
 import "./SkillModal.scss";
 
 export default function SkillModal() {
@@ -50,6 +57,9 @@ export default function SkillModal() {
       "I have participated in and/or won tournatments at 4.5 or higher",
     ],
   ];
+
+  const paddlePhotos = [Newbie, Novice, Low, High, Advanced, Expert];
+
   return (
     <div className="skill-modal container">
       <h2 className="modal-header font-barlow-condensed text-deep-blue">
@@ -62,13 +72,19 @@ export default function SkillModal() {
       <p className="section-2-text">= "No" to five or more statements</p>
       <div>
         {attributes.map((attributeList, index) => (
-          <ul key={index} className="attribute-list shadow p-5 w-50">
-            {attributeList.map((attributeItem) => (
-              <li className="green-bulletpoint" key={attributeItem}>
-                {attributeItem}
-              </li>
-            ))}
-          </ul>
+          <div
+            className="d-flex justify-content-between"
+            key={attributeList[0]}
+          >
+            <ul className="attribute-list shadow p-5 w-50">
+              {attributeList.map((attributeItem) => (
+                <li className="green-bulletpoint" key={attributeItem}>
+                  {attributeItem}
+                </li>
+              ))}
+            </ul>
+            <img src={paddlePhotos[index]} alt="skill-level" />
+          </div>
         ))}
       </div>
     </div>

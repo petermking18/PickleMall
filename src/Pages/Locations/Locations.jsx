@@ -1,8 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
-import { ArrowRightAlt } from "@mui/icons-material";
 import { Button, Stack, ButtonGroup } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -77,7 +74,7 @@ export default function Locations() {
         <MapComponent className="map-container" />
         <ButtonGroup>
           <Button
-            color={selectedState == "" ? "kitchenGreen" : "lightGray"}
+            color={selectedState === "" ? "kitchenGreen" : "lightGray"}
             variant="contained"
             className="location-button"
             onClick={() => setSelectedState("")}
@@ -87,7 +84,7 @@ export default function Locations() {
           {availableStates.map((location) => (
             <Button
               key={location.name}
-              color={selectedState == location ? "kitchenGreen" : "lightGray"}
+              color={selectedState === location ? "kitchenGreen" : "lightGray"}
               variant="contained"
               className="location-button"
               onClick={() => setSelectedState(location)}
@@ -103,7 +100,7 @@ export default function Locations() {
               ref={(slider) => (locationsSlider = slider)}
             >
               {filteredLocations.map((l, idx) => (
-                <div key={idx} className={"card-wrapper"}>
+                <div key={l.address} className={"card-wrapper"}>
                   <div className={"card"}>
                     <div className={"card-top-photo-wrapper"}>
                       {/* todo: number of courts badge,
@@ -112,7 +109,11 @@ export default function Locations() {
                                      */}
                       <img
                         className={"card-top-photo"}
-                        src="https://placehold.jp/400x175.png"
+                        src={
+                          l.locationImg
+                            ? l.locationImg
+                            : "https://placehold.jp/400x175.png"
+                        }
                         alt={"Courts"}
                       />
                       {/* <img
@@ -157,8 +158,8 @@ export default function Locations() {
                                 schedule
                               </span>
                               <div className={"text-deep-blue info-text"}>
-                                {l.hours.map((h, idx) => (
-                                  <div key={idx}>{h}</div>
+                                {l.hours.map((h) => (
+                                  <div key={h}>{h}</div>
                                 ))}
                               </div>
                             </Stack>

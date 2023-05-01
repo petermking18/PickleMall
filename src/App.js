@@ -5,15 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Landing from "./Pages/Landing/Landing";
-
 import Nav2 from "./Components/Nav2/Nav2";
 import Footer from "./Components/Footer/Footer";
 
 import Home from "./Pages/Home/Home";
 import WhatToExpect from "./Pages/WhatToExpect/WhatToExpect";
 import Locations from "./Pages/Locations/Locations";
-import Events from "./Pages/Events/Events";
 import About from "./Pages/About/About";
 
 import "./custom-bootstrap.scss";
@@ -30,7 +27,6 @@ const App = () => (
         <Route path={"*"} element={<Home />} />
         <Route path={"/whattoexpect"} element={<WhatToExpect />} />
         <Route path={"/locations"} element={<Locations />} />
-        <Route path={"/events"} element={<Events />} />
         <Route path={"/about"} element={<About />} />
       </Routes>
       <Footer />
