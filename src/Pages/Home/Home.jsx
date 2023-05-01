@@ -11,7 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.scss";
 
 import locations from "../../Helpers/Locations";
-import staff from "../../Helpers/Staff";
 
 import racketsPhoto from "./Rackets.png";
 import courtsPhoto from "./Courts.png";
