@@ -5,6 +5,11 @@
     font-size: 40px;
   }
 
+  .text-black {
+    font-weight: 400;
+    line-height: 175%;
+  }
+
   .section-1 {
     background: url("../../Assets/Stock7.jpg");
     background-position: center center;
@@ -137,7 +142,7 @@
               border-top-left-radius: 8px;
               border-top-right-radius: 8px;
               width: 100%;
-              height: auto;
+              max-height: 12rem;
               object-fit: cover;
             }
 
@@ -213,10 +218,13 @@
       .stock-6 {
         position: relative;
         margin: auto;
-        max-height: 12.5rem;
+        max-height: 14.5rem;
         width: 100%;
         object-fit: cover;
         object-position: center -12rem;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -230,7 +238,10 @@
         max-height: 16.7rem;
         width: 100%;
         object-fit: cover;
-        object-position: center -12rem;
+        object-position: center -9em;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -242,12 +253,28 @@
   }
 }
 
-.stock-3and5 {
-  width: 40rem;
+.section-7 {
+  .prem-facilities {
+    overflow: hidden;
+    position: relative;
+
+    .stock-2 {
+      position: relative;
+      max-height: 26rem;
+      width: 100%;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
 }
 
-.stock-2 {
-  width: 50.9rem;
+.stock-3and5 {
+  width: 40rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 // Define the animation

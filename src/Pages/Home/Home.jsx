@@ -12,7 +12,6 @@ import "./Home.scss";
 
 import locations from "../../Helpers/Locations";
 
-import courtsPhoto from "./Courts.png";
 import pickleCircle from "./pickle-circle.svg";
 
 import stock1 from "../../Assets/Stock1.jpg";
@@ -123,7 +122,7 @@ export default function Home() {
                   &nbsp;
                 </div>
               </h1>
-              <p>
+              <p className="text-black">
                 The Picklemall offers a one-of-a-kind playing experience,
                 featuring state-of-the-art courts, equipment, and amenities that
                 cater to players' every need. With a range of courts available,
@@ -373,11 +372,11 @@ export default function Home() {
           </h1>
           <div className="d-flex shadow it-pays">
             <img src={stock6} className="stock-6" alt="stock" />
-            <div className="bg-white px-5">
+            <div className="bg-white px-5 py-4">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Come & Play
               </h1>
-              <p>
+              <p className="text-black">
                 Picklemall memberships are designed for maximum enjoyment. We
                 want to see you working on your game and playing several times
                 per week.
@@ -389,11 +388,11 @@ export default function Home() {
       <div className="section-5">
         <div className="container">
           <div className="d-flex find-people">
-            <div className="bg-white px-5">
+            <div className="bg-white p-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Find your people<span className="text-pickle-green">.</span>
               </h1>
-              <p>
+              <p className="text-black mb-5">
                 Community is core to pickleball, it is what allows us all to
                 laugh, sweat, and compete! Conveniently meet friends and find
                 teammates from all talent levels
@@ -408,7 +407,7 @@ export default function Home() {
                 Book a Court
               </Button>
             </div>
-            <img src={stock1} className="stock-1" alt="stock" />
+            <img src={stock1} className="stock-1 " alt="stock" />
           </div>
         </div>
       </div>
@@ -417,40 +416,31 @@ export default function Home() {
           <h1 className="font-barlow-condensed text-deep-blue">
             Control your court time<span className="text-pickle-green">.</span>
           </h1>
-          <p>
+          <p className="text-black mb-5">
             Immediately start playing with open play, memberships, or ad-hoc
             reservations. Picklemall courts are a breeze to consistently show up
             to.
           </p>
           <div className="d-flex">
-            <img src={stock5} className="stock-3and5" alt="stock" />
-            <img src={stock3} className="stock-3and5" alt="stock" />
+            <img src={stock5} className="stock-3and5 " alt="stock" />
+            <img src={stock3} className="stock-3and5 " alt="stock" />
           </div>
         </div>
       </div>
       <div className="section-7">
-        <div className="container py-5">
-          <div className="d-flex">
+        <div className="container">
+          <div className="d-flex align-items-center prem-facilities">
             <div className="bg-white px-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Premier facilities<span className="text-pickle-green">.</span>
               </h1>
-              <p>
+              <p className="text-black">
                 Nothing should get in the way of your game. Modern LED lighting,
                 AC, Heat, and professional grade court surfaces allow time on
                 the court to be fun, safe, and stress-free.
               </p>
-              <Button
-                className="book-button text-white mb-4"
-                color="volleyBlue"
-                variant="contained"
-                size="large"
-                disableElevation
-              >
-                Book a Court
-              </Button>
             </div>
-            <img src={stock2} className="stock-2" alt="stock" />
+            <img src={stock2} className="stock-2 " alt="stock" />
           </div>
         </div>
       </div>

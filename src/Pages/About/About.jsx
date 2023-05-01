@@ -7,8 +7,8 @@ import "./About.scss";
 export default function About() {
   return (
     <div className="about">
-      <div className="container d-flex">
-        <div className="about-text-container flex-grow-1">
+      <div className="d-flex">
+        <div className="about-text-container flex-grow-1 mx-5">
           <h1 className="about-header font-barlow-condensed text-deep-blue">
             ABOUT PICKLEMALL<span className="text-pickle-green">.</span>
           </h1>

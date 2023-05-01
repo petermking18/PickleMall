@@ -2,6 +2,7 @@
 
 .location-button {
   border-radius: 6px;
+  margin-right: 1rem;
 }
 
 .map-container {
@@ -74,19 +75,24 @@
           height: auto;
           position: relative;
 
+          .badge {
+            border-radius: 6px;
+            background-color: #002e43;
+            color: white;
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            z-index: 1;
+          }
+
           .card-top-photo {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
             width: 100%;
-            height: auto;
+            max-height: 8rem;
             object-fit: cover;
-          }
-
-          .pickle-circle {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translate(-30%, 50%);
           }
         }
 
@@ -143,4 +149,12 @@
       }
     }
   }
+}
+
+.evaluation-button {
+  background-color: #f2f2f2;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 6px !important;
 }
