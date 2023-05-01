@@ -12,7 +12,6 @@ import "./Home.scss";
 
 import locations from "../../Helpers/Locations";
 
-import racketsPhoto from "./Rackets.png";
 import courtsPhoto from "./Courts.png";
 import pickleCircle from "./pickle-circle.svg";
 
@@ -22,6 +21,7 @@ import stock3 from "../../Assets/Stock3.jpg";
 import stock5 from "../../Assets/Stock5.jpg";
 import stock6 from "../../Assets/Stock6.jpg";
 import GreenRackets from "./GreenRackets.png";
+import Placeholder from "../../Assets/Placeholder.png";
 
 export default function Home() {
   const section1QuickLinks = [
@@ -98,7 +98,7 @@ export default function Home() {
         <div className="content pt-5">
           <div className="container py-5">
             <h1 className="welcome w-50 mb-4">
-              Welcome to the future of Pickleball!
+              The Future of Pickleball Is Indoors.
             </h1>
             <Button
               className="book-button text-deep-blue mb-4"
@@ -118,16 +118,9 @@ export default function Home() {
             <Grid xs={12} md={8}>
               <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue">
                 <div className="text-nowrap">
-                  Convenient courts<span className="text-pickle-green">.</span>
+                  Welcome to Picklemall
+                  <span className="text-pickle-green">.</span>
                   &nbsp;
-                </div>
-                <div className="text-nowrap">
-                  Controlled climate<span className="text-pickle-green">.</span>
-                  &nbsp;
-                </div>
-                <div className="text-nowrap">
-                  Consistent competition
-                  <span className="text-pickle-green">.</span>&nbsp;
                 </div>
               </h1>
               <p>
@@ -146,10 +139,27 @@ export default function Home() {
                 everything you need to thrive at Picklemall, from top-notch
                 coaching to a range of social events and tournaments.
               </p>
+              <Button
+                variant={"contained"}
+                color={"volleyBlue"}
+                className={"text-nowrap my-4"}
+                disableElevation
+              >
+                Book a Court
+              </Button>
+              <Button
+                variant={"text"}
+                className={"text-volley-blue text- mx-2"}
+              >
+                Learn more&nbsp;
+                <span className={"material-symbols-outlined"}>
+                  arrow_forward
+                </span>
+              </Button>
             </Grid>
             <Grid xs={12} md={4}>
               <div className="card">
-                <img src={racketsPhoto} alt="Rackets" />
+                <img src={stock1} alt="Rackets" className=".card-top-photo" />
                 <div className="content p-4">
                   <h2 className="font-barlow-condensed my-0">Quick Links</h2>
                   <hr className="hr-pickle-green mb-4" />
@@ -194,20 +204,19 @@ export default function Home() {
               <div key={l.address} className={"card-wrapper"}>
                 <div className={"card"}>
                   <div className={"card-top-photo-wrapper"}>
-                    {/* todo: number of courts badge,
-                                        .before-first-card make width match,
-                                        paging buttons
-                                     */}
+                    <span className="badge">{l.hours}</span>
                     <img
                       className={"card-top-photo"}
-                      src={l.locationImg ? l.locationImg : courtsPhoto}
+                      src={l.locationImg ? l.locationImg : Placeholder}
                       alt={"Courts"}
                     />
-                    <img
-                      className={"pickle-circle"}
-                      src={pickleCircle}
-                      alt={"Pickle mall"}
-                    />
+                    {l.locationImg && (
+                      <img
+                        className={"pickle-circle"}
+                        src={pickleCircle}
+                        alt={"Pickle mall"}
+                      />
+                    )}
                   </div>
                   <div className={"content px-4 pb-3"}>
                     <h1
@@ -362,7 +371,7 @@ export default function Home() {
           <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
             It pays to show up<span className="text-pickle-green">.</span>
           </h1>
-          <div className="d-flex shadow">
+          <div className="d-flex shadow it-pays">
             <img src={stock6} className="stock-6" alt="stock" />
             <div className="bg-white px-5">
               <h1 className="font-barlow-condensed text-deep-blue">
@@ -378,8 +387,8 @@ export default function Home() {
         </div>
       </div>
       <div className="section-5">
-        <div className="container py-5">
-          <div className="d-flex">
+        <div className="container">
+          <div className="d-flex find-people">
             <div className="bg-white px-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Find your people<span className="text-pickle-green">.</span>

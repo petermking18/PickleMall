@@ -6,9 +6,9 @@
   }
 
   .section-1 {
-    background: url("./Rackets.png");
-    background-size: cover;
-
+    background: url("../../Assets/Stock7.jpg");
+    background-position: center center;
+    height: 33.5rem;
     position: relative;
 
     .content {
@@ -35,9 +35,12 @@
 
   .section-2 {
     .card {
+      overflow: hidden;
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover; /* Make the image cover the entire parent div without stretching */
+        object-position: center; /* Center the image */
       }
 
       box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
@@ -100,6 +103,7 @@
       .card-wrapper {
         height: 100%;
         padding-bottom: 2rem;
+        position: relative;
 
         .card {
           height: 100%;
@@ -116,6 +120,18 @@
             width: 100%;
             height: auto;
             position: relative;
+
+            .badge {
+              border-radius: 6px;
+              background-color: #002e43;
+              color: white;
+              position: absolute;
+              top: 1rem;
+              left: 2rem;
+              padding: 0.5rem 1rem;
+              font-weight: bold;
+              z-index: 1;
+            }
 
             .card-top-photo {
               border-top-left-radius: 8px;
@@ -190,6 +206,33 @@
 
   .section-4 {
     background-color: rgba(#c0e7f6, 0.55);
+    .it-pays {
+      overflow: hidden;
+      position: relative;
+
+      .stock-6 {
+        position: relative;
+        margin: auto;
+        max-height: 12.5rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center -12rem;
+      }
+    }
+  }
+
+  .section-5 {
+    .find-people {
+      overflow: hidden;
+      position: relative;
+      .stock-1 {
+        position: relative;
+        max-height: 16.7rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center -12rem;
+      }
+    }
   }
 
   hr.hr-pickle-green {
@@ -197,23 +240,6 @@
     background-color: var(--bs-pickle-green);
     border: none;
   }
-}
-
-.employee-photo {
-  border: 2px solid #49c13d;
-}
-
-.lower-sections {
-  overflow: hidden;
-}
-.stock-6 {
-  width: 36.5rem;
-  // height: 11.5rem;
-  height: auto;
-}
-
-.stock-1 {
-  width: 50.9rem;
 }
 
 .stock-3and5 {
