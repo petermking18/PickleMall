@@ -5,9 +5,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Placeholder from "../../Assets/Placeholder.png";
+
 import MapComponent from "../../Components/MapComponent/MapComponent";
 
 import locations from "../../Helpers/Locations";
+
+import InfoIcon from "../WhatToExpect/InfoIcon.png";
 
 import "./Locations.scss";
 
@@ -72,7 +76,7 @@ export default function Locations() {
           LOCATIONS<span className="text-pickle-green">.</span>
         </h1>
         <MapComponent className="map-container" />
-        <ButtonGroup>
+        <div>
           <Button
             color={selectedState === "" ? "kitchenGreen" : "lightGray"}
             variant="contained"
@@ -92,28 +96,21 @@ export default function Locations() {
               {location}
             </Button>
           ))}
-        </ButtonGroup>
+        </div>
         <div className="section-3">
           <div className="locations container-fluid px-0 py-5">
             <Slider
               {...locationsSliderSettings}
               ref={(slider) => (locationsSlider = slider)}
             >
-              {filteredLocations.map((l, idx) => (
+              {filteredLocations.map((l) => (
                 <div key={l.address} className={"card-wrapper"}>
                   <div className={"card"}>
                     <div className={"card-top-photo-wrapper"}>
-                      {/* todo: number of courts badge,
-                                        .before-first-card make width match,
-                                        paging buttons
-                                     */}
+                      <span className="badge">{l.hours}</span>
                       <img
                         className={"card-top-photo"}
-                        src={
-                          l.locationImg
-                            ? l.locationImg
-                            : "https://placehold.jp/400x175.png"
-                        }
+                        src={l.locationImg ? l.locationImg : Placeholder}
                         alt={"Courts"}
                       />
                       {/* <img
@@ -237,6 +234,15 @@ export default function Locations() {
                 </Button>
               </ButtonGroup>
             </div>
+            <Button className="evaluation-button bg-lightGray text-deep-blue shadow w-100 my-5">
+              <div className="d-flex justify-content-between align-items-center">
+                <img src={InfoIcon} alt="?" className="mx-1" />
+                <p className="mx-1">Don’t see your location? Let us know!</p>
+                <span className={"material-symbols-outlined text-dark"}>
+                  arrow_forward
+                </span>
+              </div>
+            </Button>
           </div>
         </div>
       </div>
