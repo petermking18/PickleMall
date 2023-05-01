@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "picklemall",
-    "dev": "pickle-mall-dev"
+    "default": "picklemall"
   }
 }

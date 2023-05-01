@@ -6,7 +6,7 @@ const locations = [
     state: "Arizona",
     region: "",
     address: "Address",
-    hours: ["Mon-Fri: 6am-8pm", "Sat: 6am-midnight", "Sun: 6am-11pm"],
+    hours: ["6am-10pm"],
     isOpen: true,
     notOpenMessage: "",
     numCourts: 24,

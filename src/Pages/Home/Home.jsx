@@ -446,30 +446,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section-8">
-        <div className="container py-5">
-          <h1 className="font-barlow-condensed text-deep-blue px-5">
-            Our Staff<span className="text-pickle-green">.</span>
-          </h1>
-          <Grid container spacing={8}>
-            {staff.map((employee) => (
-              <Grid item xs={12} md={3} key={employee.name}>
-                <div className="staff-card text-center shadow px-5 py-3 rounded">
-                  <img
-                    src={employee.photo}
-                    className="employee-photo rounded-circle"
-                    alt={employee.name}
-                  />
-                  <h1 className="font-barlow-condensed text-deep-blue">
-                    {employee.name}
-                  </h1>
-                  <p className="text-kitchen-green">{employee.role}</p>
-                </div>
-              </Grid>
-            ))}
-          </Grid>
-        </div>
-      </div>
     </div>
   );
 }
