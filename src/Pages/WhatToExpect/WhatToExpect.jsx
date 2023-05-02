@@ -54,7 +54,7 @@ export default function WhatToExpect() {
         </p>
         <div>
           {steps.map((step, index) => (
-            <div key={step.title}>
+            <div key={step.title} className="my-5">
               <h1 className="font-barlow-condensed text-deep-blue">
                 STEP {index + 1}: {step.title}
               </h1>

@@ -1,11 +1,20 @@
 import React from "react";
 
+import YesExample from "./Assets/yesexample.png";
+import NoExample from "./Assets/noexample.png";
+
 import Newbie from "./Assets/newbie.png";
 import Novice from "./Assets/novice.png";
 import Low from "./Assets/low.png";
 import High from "./Assets/high.png";
 import Advanced from "./Assets/advanced.png";
 import Expert from "./Assets/expert.png";
+
+import No from "./Assets/No.png";
+import NoviceYes from "./Assets/NoviceYes.png";
+import HighYes from "./Assets/HighYes.png";
+import AdvancedYes from "./Assets/AdvancedYes.png";
+import ExpertYes from "./Assets/ExpertYes.png";
 
 import "./SkillModal.scss";
 
@@ -58,22 +67,40 @@ export default function SkillModal() {
     ],
   ];
 
-  const paddlePhotos = [Newbie, Novice, Low, High, Advanced, Expert];
+  const paddlePhotos = [Novice, Low, High, Advanced, Expert];
+
+  const yesBalls = [NoviceYes, YesExample, HighYes, AdvancedYes, ExpertYes];
 
   return (
     <div className="skill-modal container">
       <h2 className="modal-header font-barlow-condensed text-deep-blue">
         Skill Level Evaluation<span className="text-pickle-green">.</span>
       </h2>
-      <p className="section-2-text">
-        The simple “Yes or No” way to figure our your skill level
-      </p>
-      <p className="section-2-text">= "Yes" to five or more statements</p>
-      <p className="section-2-text">= "No" to five or more statements</p>
+      <div className="d-flex justify-content-between align-items-center">
+        <div>
+          <p className="section-2-text">
+            The simple “Yes or No” way to figure our your skill level
+          </p>
+          <div className="d-flex my-3">
+            <img src={YesExample} alt="yes_example" />
+            <p className="section-2-text mx-5">
+              = "Yes" to five or more statements
+            </p>
+          </div>
+          <div className="d-flex my-3">
+            <img src={NoExample} alt="no_example" />
+            <p className="section-2-text mx-5">
+              = "No" to five or more statements
+            </p>
+          </div>
+        </div>
+        <img src={No} className="yes-ball" />
+        <img src={Newbie} className="paddle-img" />
+      </div>
       <div>
         {attributes.map((attributeList, index) => (
           <div
-            className="d-flex justify-content-between"
+            className="d-flex justify-content-between align-items-center"
             key={attributeList[0]}
           >
             <ul className="attribute-list shadow p-5 w-50">
@@ -83,7 +110,12 @@ export default function SkillModal() {
                 </li>
               ))}
             </ul>
-            <img src={paddlePhotos[index]} alt="skill-level" />
+            <img src={yesBalls[index]} className="yes-ball" alt="yes_ball" />
+            <img
+              src={paddlePhotos[index]}
+              className="paddle-img"
+              alt="skill-level"
+            />
           </div>
         ))}
       </div>

@@ -90,7 +90,7 @@ export default function Locations() {
               key={location.name}
               color={selectedState === location ? "kitchenGreen" : "lightGray"}
               variant="contained"
-              className="location-button"
+              className="location-button mx-1"
               onClick={() => setSelectedState(location)}
             >
               {location}
