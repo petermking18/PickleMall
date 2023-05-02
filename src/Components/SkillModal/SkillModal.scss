@@ -1,38 +1,36 @@
 @import "../../Global.scss";
 
+.skill-modal {
+  max-width: 50rem;
+}
+
 .modal-header {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
-.section-2-text {
-  //   font-family: "Nunito Sans";
-  color: black;
-  font-weight: 600;
+.content {
+  position: relative;
 }
 
-.attribute-list {
-  list-style: none;
+.text-content {
+  width: 45%;
 }
 
-.green-bulletpoint {
-  &::before {
-    content: "•";
-    color: #49c13d;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    font-size: 1.3rem;
-  }
+.info-img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: -2.1rem;
 }
-
-.yes-ball {
-  width: 4rem;
-  height: 4rem;
-}
-
-.paddle-img {
-  width: 7.6rem;
-  height: 11.6rem;
-}
+// .green-bulletpoint {
+//   &::before {
+//     content: "•";
+//     color: #49c13d;
+//     font-weight: bold;
+//     display: inline-block;
+//     width: 1em;
+//     margin-left: -1em;
+//     font-size: 1.3rem;
+//   }
+// }

@@ -94,7 +94,9 @@ export default function WhatToExpect() {
               backgroundColor: "rgba(0, 0, 0, 0.65)",
             },
             content: {
+              width: "75%",
               backgroundColor: "#f2f2f2",
+              margin: "auto",
             },
           }}
         >
