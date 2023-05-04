@@ -15,7 +15,7 @@ export default function SkillModal() {
         Skill Level Evaluation<span className="text-pickle-green">.</span>
       </h2>
       <div className="content">
-        <div className="text-content">
+        <div>
           <p className="section-2-text">
             The simple “Yes or No” way to figure our your skill level
           </p>

@@ -33,8 +33,8 @@ export default function Home() {
       text: "Shop Merchandise",
     },
     {
-      route: "/Events",
-      text: "Upcoming Events",
+      route: "/",
+      text: "Download on App Store",
     },
   ].map((l, idx) => (
     <div key={l.text}>
@@ -158,10 +158,12 @@ export default function Home() {
             </Grid>
             <Grid xs={12} md={4}>
               <div className="card">
-                <img src={stock1} alt="Rackets" className=".card-top-photo" />
+                <img src={stock1} alt="Rackets" className="card-top-photo" />
                 <div className="content p-4">
-                  <h2 className="font-barlow-condensed my-0">Quick Links</h2>
-                  <hr className="hr-pickle-green mb-4" />
+                  <h2 className="font-barlow-condensed text-deep-blue my-0">
+                    Learn More
+                  </h2>
+                  <hr className="hr-soft-serve mb-4" />
                   <Stack spacing={3}>{section1QuickLinks}</Stack>
                 </div>
               </div>
@@ -187,8 +189,8 @@ export default function Home() {
       </div>
 
       <div className="section-3">
-        <div className="locations container-fluid px-0 py-5">
-          <div className={"container"}>
+        <div className="locations py-5">
+          <div className={""}>
             <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
               Locations<span className="text-pickle-green">.</span>
             </h1>
@@ -325,13 +327,15 @@ export default function Home() {
                     Where to next?
                   </h1>
                   <div>
-                    <Button
-                      variant={"contained"}
-                      color={"volleyBlue"}
-                      disableElevation
-                    >
-                      Stay in the Loop
-                    </Button>
+                    <Link to={"/contact"}>
+                      <Button
+                        variant={"contained"}
+                        color={"volleyBlue"}
+                        disableElevation
+                      >
+                        Stay in the Loop
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -366,13 +370,13 @@ export default function Home() {
         </div>
       </div>
       <div className="section-4">
-        <div className="container py-5">
+        <div className="py-5">
           <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
             It pays to show up<span className="text-pickle-green">.</span>
           </h1>
           <div className="d-flex shadow it-pays">
-            <img src={stock6} className="stock-6" alt="stock" />
-            <div className="bg-white px-5 py-4">
+            <img src={stock6} className="stock-6 w-50" alt="stock" />
+            <div className="bg-white px-5 py-4 w-50">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Come & Play
               </h1>
@@ -386,9 +390,9 @@ export default function Home() {
         </div>
       </div>
       <div className="section-5">
-        <div className="container">
+        <div className="">
           <div className="d-flex find-people">
-            <div className="bg-white p-5">
+            <div className="bg-white w-50">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Find your people<span className="text-pickle-green">.</span>
               </h1>
@@ -407,12 +411,12 @@ export default function Home() {
                 Book a Court
               </Button>
             </div>
-            <img src={stock1} className="stock-1 " alt="stock" />
+            <img src={stock1} className="stock-1 w-50" alt="stock" />
           </div>
         </div>
       </div>
       <div className="section-6 bg-off-white-2">
-        <div className="container py-5">
+        <div className="py-5">
           <h1 className="font-barlow-condensed text-deep-blue">
             Control your court time<span className="text-pickle-green">.</span>
           </h1>
@@ -422,15 +426,15 @@ export default function Home() {
             to.
           </p>
           <div className="d-flex">
-            <img src={stock5} className="stock-3and5 " alt="stock" />
-            <img src={stock3} className="stock-3and5 " alt="stock" />
+            <img src={stock5} className="stock-3and5 w-50" alt="stock" />
+            <img src={stock3} className="stock-3and5 w-50" alt="stock" />
           </div>
         </div>
       </div>
       <div className="section-7">
-        <div className="container">
+        <div className="">
           <div className="d-flex align-items-center prem-facilities">
-            <div className="bg-white px-5">
+            <div className="bg-white w-50">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Premier facilities<span className="text-pickle-green">.</span>
               </h1>
@@ -440,7 +444,7 @@ export default function Home() {
                 the court to be fun, safe, and stress-free.
               </p>
             </div>
-            <img src={stock2} className="stock-2 " alt="stock" />
+            <img src={stock2} className="stock-2 w-50" alt="stock" />
           </div>
         </div>
       </div>

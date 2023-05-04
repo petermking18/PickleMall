@@ -50,7 +50,7 @@ export default function Footer() {
   ];
   return (
     <footer className={"bg-deep-blue text-light"}>
-      <div className={"container"}>
+      <div className={"footer-container"}>
         {/* col1 */}
         <Grid
           container
@@ -60,7 +60,7 @@ export default function Footer() {
           <Grid xs={12} md={4}>
             <div>
               <a href={"/"} className={"logo d-inline-block py-2"}>
-                <img className={""} src={logo} alt={"Pickle Mall"} />
+                <img className={"footer-logo"} src={logo} alt={"Pickle Mall"} />
               </a>
             </div>
             <p className="footer-text">
@@ -72,10 +72,7 @@ export default function Footer() {
           {/* col2 */}
           <Grid xs={4} className={"d-flex flex-column"}>
             <div className="footer-links">
-              <a
-                href={"/events"}
-                className={"small link-normal text-center text-sm-start"}
-              >
+              <a className={"small link-normal text-center text-sm-start"}>
                 Events
               </a>
               <a className={"small link-normal text-center text-sm-start"}>
@@ -84,14 +81,17 @@ export default function Footer() {
               <a className={"small link-normal text-center text-sm-start"}>
                 Membership
               </a>
-              <a className={"small link-normal text-center text-sm-start"}>
+              <a
+                href={"/contact"}
+                className={"small link-normal text-center text-sm-start"}
+              >
                 Contact Us
               </a>
             </div>
           </Grid>
           {/* col3 */}
           <Grid xs={6} md={4}>
-            <div className="footer-right font-barlow-condensed">
+            <div className="footer-right font-barlow-condensed py-2">
               <p>Convenient courts.</p>
               <p>Controlled climate.</p>
               <p>Consistent competition.</p>

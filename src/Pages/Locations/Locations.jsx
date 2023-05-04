@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { Link } from "react-router-dom";
+
 import Placeholder from "../../Assets/Placeholder.png";
 
 import MapComponent from "../../Components/MapComponent/MapComponent";
@@ -22,8 +24,10 @@ export default function Locations() {
     ? locations.filter((l) => l.state === selectedState)
     : locations;
 
+  const openLocations = locations.filter((location) => location.isOpen);
+
   const availableStates = [
-    ...new Set(locations.map((location) => location.state)),
+    ...new Set(openLocations.map((location) => location.state)),
   ].sort();
 
   let locationsSlider = useRef(null);
@@ -71,7 +75,7 @@ export default function Locations() {
 
   return (
     <div className="locations">
-      <div className="container">
+      <div className="locations-content">
         <h1 className="about-header font-barlow-condensed text-deep-blue">
           LOCATIONS<span className="text-pickle-green">.</span>
         </h1>
@@ -98,7 +102,7 @@ export default function Locations() {
           ))}
         </div>
         <div className="section-3">
-          <div className="locations container-fluid px-0 py-5">
+          <div className="locations px-0 py-5">
             <Slider
               {...locationsSliderSettings}
               ref={(slider) => (locationsSlider = slider)}
@@ -125,7 +129,7 @@ export default function Locations() {
                           "location font-barlow-condensed text-deep-blue mb-1"
                         }
                       >
-                        {l.location}
+                        {l.isOpen ? l.location : l.region}
                       </h1>
                       <div className={"info"}>
                         {l.isOpen ? (
@@ -234,15 +238,17 @@ export default function Locations() {
                 </Button>
               </ButtonGroup>
             </div>
-            <Button className="evaluation-button bg-lightGray text-deep-blue shadow w-100 my-5">
-              <div className="d-flex justify-content-between align-items-center">
-                <img src={InfoIcon} alt="?" className="mx-1" />
-                <p className="mx-1">Don’t see your location? Let us know!</p>
-                <span className={"material-symbols-outlined text-dark"}>
-                  arrow_forward
-                </span>
-              </div>
-            </Button>
+            <Link to={"/contact"}>
+              <Button className="evaluation-button bg-lightGray text-deep-blue shadow w-100 my-5">
+                <div className="d-flex justify-content-between align-items-center">
+                  <img src={InfoIcon} alt="?" className="mx-1" />
+                  <p className="mx-1">Don’t see your location? Let us know!</p>
+                  <span className={"material-symbols-outlined text-dark"}>
+                    arrow_forward
+                  </span>
+                </div>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

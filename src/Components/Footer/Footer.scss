@@ -1,7 +1,14 @@
 @import "../../Global.scss";
 
+.footer-container {
+  padding: 1rem 4.75rem 0.5rem;
+}
 .footer-text {
   white-space: normal;
+}
+
+.footer-logo {
+  width: 16.3rem;
 }
 
 .footer-links {

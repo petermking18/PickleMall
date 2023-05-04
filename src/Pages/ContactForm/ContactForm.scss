@@ -1,0 +1,63 @@
+@import "../../Global.scss";
+
+html,
+body,
+.page {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bs-off-white-2);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex-grow: 1;
+    background: url("../../Assets/background-pattern.svg") no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    .main-card-wrapper {
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        //@include media-breakpoint-up(sm) {
+        //    @media screen and (min-height: 620px) {
+        //        margin-bottom: 10rem;
+        //    }
+        //}
+
+        max-width: 600px;
+
+        .exclamation-circle {
+          border-radius: 25rem;
+          width: 80px;
+          height: 80px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            height: 40px;
+            width: 40px;
+            color: var(--bs-kitchen-green);
+          }
+        }
+      }
+    }
+  }
+
+  Footer {
+    margin-top: auto;
+  }
+}

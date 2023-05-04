@@ -42,11 +42,11 @@ export default function WhatToExpect() {
 
   return (
     <div className="what-to-expect">
-      <div className="container">
+      <div className="what-to-expect-content">
         <h1 className="about-header font-barlow-condensed text-deep-blue">
           WHAT TO EXPECT<span className="text-pickle-green">.</span>
         </h1>
-        <p className="w-50">
+        <p className="w-50 text-black">
           Welcome to Picklemall, the one-stop destination for all your
           pickleball needs. Whether you're a seasoned player or a beginner,
           we've got you covered with our state-of-the-art facilities, equipment,
@@ -63,8 +63,12 @@ export default function WhatToExpect() {
                   index % 2 === 0 ? "item-odd" : "item-even"
                 }`}
               >
-                <img src={step.image} alt="pickle-img" className="box-img" />
-                <p className="px-5">{step.text}</p>
+                <img
+                  src={step.image}
+                  alt="pickle-img"
+                  className={`box-img box-img-${index}`}
+                />
+                <p className="px-5 text-black">{step.text}</p>
               </div>
             </div>
           ))}

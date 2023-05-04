@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="about">
       <div className="d-flex">
-        <div className="container flex-grow-1">
+        <div className="about-content">
           <h1 className="about-header font-barlow-condensed text-deep-blue">
             ABOUT PICKLEMALL<span className="text-pickle-green">.</span>
           </h1>

@@ -1,6 +1,10 @@
 @import "../../Global.scss";
 @import "../../custom-bootstrap.scss";
 
+.what-to-expect-content {
+  padding: 0 5rem;
+}
+
 .evaluation-button {
   background-color: #f2f2f2;
   font-family: "Barlow Condensed", sans-serif;
@@ -28,6 +32,13 @@
   object-position: center;
 }
 
+.box-img-1 {
+  object-position: center -1rem;
+}
+.box-img-2 {
+  object-position: center 0;
+}
+
 @media (max-width: 991px) {
   .item-odd,
   .item-even {
@@ -43,10 +54,6 @@
   .item-odd p,
   .item-even p {
     order: 2;
-  }
-
-  .box-img {
-    width: 100%;
   }
 }
 
