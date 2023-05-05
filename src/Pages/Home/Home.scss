@@ -1,6 +1,7 @@
 @import "../../Global.scss";
 
 .home {
+  overflow-x: hidden;
   h1 {
     font-size: 40px;
   }
@@ -72,6 +73,9 @@
     background-color: rgba(#c0e7f6, 0.3);
     .locations {
       padding-left: 5rem;
+      @media (max-width: 992px) {
+        padding-left: 1rem;
+      }
       .slick-track {
         display: flex !important;
       }
@@ -220,29 +224,49 @@
 
   .section-4 {
     background-color: rgba(#c0e7f6, 0.55);
-    .py-5 {
+    .s4-header {
+      padding: 3.8rem 0;
       margin: 0 5rem;
+      @media (max-width: 992px) {
+        margin: 0 1rem;
+      }
     }
     .it-pays {
       overflow: hidden;
       position: relative;
-
-      .stock-6 {
+      border-radius: 8px;
+      .stock-6-wrapper {
+        flex-shrink: 1; /* Add this line to allow the image part to shrink */
+        flex-grow: 0;
+        flex-basis: 50%; /* Add this line to set the initial width of the image part */
         position: relative;
-        margin: auto;
-        max-height: 14.5rem;
-        object-fit: cover;
-        object-position: center -17rem;
-        width: 50%;
+        overflow: hidden;
         @media (max-width: 992px) {
-          width: 25%;
+          flex-basis: 20%;
+        }
+
+        .stock-6 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 68%;
         }
       }
 
       .bg-white {
-        width: 50%;
+        flex-grow: 1; /* Add this line to allow the text part to grow */
+        flex-shrink: 0;
+        flex-basis: 50%; /* Add this line to set the initial width of the text part */
+        padding: 1rem;
         @media (max-width: 992px) {
-          width: 75%;
+          flex-basis: 80%;
+          h1,
+          p {
+            margin: 0;
+          }
         }
       }
     }
@@ -267,7 +291,11 @@
         position: relative;
         max-height: 26.1rem;
         object-fit: cover;
-        object-position: center -12rem;
+        object-position: center;
+        width: 50%;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
       }
       .book-button {
         @media (max-width: 992px) {
@@ -286,10 +314,15 @@
 }
 
 .section-6 {
-  .py-5 {
+  .s6-content {
     margin: 0 5rem;
+    padding: 3rem 0;
     @media (max-width: 992px) {
-      margin: 0 1rem;
+      margin: 0;
+      padding: 1rem 0 0;
+      .s6-header {
+        margin: 0 1rem;
+      }
     }
   }
 
@@ -297,9 +330,6 @@
     position: relative;
     object-fit: cover;
     object-position: center;
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
 }
 
@@ -307,15 +337,14 @@
   .bg-white {
     padding: 0 5.6rem 0 7.2rem;
     width: 50%;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       width: 100%;
-      padding: 1rem;
     }
   }
   .prem-facilities {
     overflow: hidden;
     position: relative;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       flex-direction: column;
     }
 
@@ -325,10 +354,10 @@
       object-fit: cover;
       object-position: center;
       width: 50%;
-      @media (max-width: 768px) {
-        display: none;
-      }
     }
+  }
+  @media (max-width: 992px) {
+    display: none;
   }
 }
 

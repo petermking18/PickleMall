@@ -370,13 +370,15 @@ export default function Home() {
         </div>
       </div>
       <div className="section-4">
-        <div className="py-5">
+        <div className="s4-header">
           <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
             It pays to show up<span className="text-pickle-green">.</span>
           </h1>
           <div className="d-flex shadow it-pays">
-            <img src={stock6} className="stock-6" alt="stock" />
-            <div className="bg-white px-5 py-4">
+            <div className="stock-6-wrapper">
+              <img src={stock6} className="stock-6" alt="stock" />
+            </div>
+            <div className="bg-white">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Come & Play
               </h1>
@@ -411,20 +413,23 @@ export default function Home() {
                 Book a Court
               </Button>
             </div>
-            <img src={stock1} className="stock-1 w-50" alt="stock" />
+            <img src={stock1} className="stock-1" alt="stock" />
           </div>
         </div>
       </div>
       <div className="section-6 bg-off-white-2">
-        <div className="py-5">
-          <h1 className="font-barlow-condensed text-deep-blue">
-            Control your court time<span className="text-pickle-green">.</span>
-          </h1>
-          <p className="text-black mb-5">
-            Immediately start playing with open play, memberships, or ad-hoc
-            reservations. Picklemall courts are a breeze to consistently show up
-            to.
-          </p>
+        <div className="s6-content">
+          <div className="s6-header">
+            <h1 className="font-barlow-condensed text-deep-blue">
+              Control your court time
+              <span className="text-pickle-green">.</span>
+            </h1>
+            <p className="text-black mb-5">
+              Immediately start playing with open play, memberships, or ad-hoc
+              reservations. Picklemall courts are a breeze to consistently show
+              up to.
+            </p>
+          </div>
           <div className="d-flex">
             <img src={stock5} className="stock-3and5 w-50" alt="stock" />
             <img src={stock3} className="stock-3and5 w-50" alt="stock" />
