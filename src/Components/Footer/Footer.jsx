@@ -70,7 +70,7 @@ export default function Footer() {
             </p>
           </Grid>
           {/* col2 */}
-          <Grid xs={4} className={"d-flex flex-column"}>
+          <Grid xs={12} md={4} className={"d-flex flex-column"}>
             <div className="footer-links">
               <a className={"small link-normal text-center text-sm-start"}>
                 Events

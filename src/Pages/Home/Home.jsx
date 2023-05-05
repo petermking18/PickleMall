@@ -96,7 +96,7 @@ export default function Home() {
       <div className="section-1 my-0">
         <div className="content pt-5">
           <div className="container py-5">
-            <h1 className="welcome w-50 mb-4">
+            <h1 className="welcome mb-4">
               The Future of Pickleball Is Indoors.
             </h1>
             <Button
@@ -375,8 +375,8 @@ export default function Home() {
             It pays to show up<span className="text-pickle-green">.</span>
           </h1>
           <div className="d-flex shadow it-pays">
-            <img src={stock6} className="stock-6 w-50" alt="stock" />
-            <div className="bg-white px-5 py-4 w-50">
+            <img src={stock6} className="stock-6" alt="stock" />
+            <div className="bg-white px-5 py-4">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Come & Play
               </h1>
@@ -392,7 +392,7 @@ export default function Home() {
       <div className="section-5">
         <div className="">
           <div className="d-flex find-people">
-            <div className="bg-white w-50">
+            <div className="bg-white">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Find your people<span className="text-pickle-green">.</span>
               </h1>
@@ -434,7 +434,7 @@ export default function Home() {
       <div className="section-7">
         <div className="">
           <div className="d-flex align-items-center prem-facilities">
-            <div className="bg-white w-50">
+            <div className="bg-white">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Premier facilities<span className="text-pickle-green">.</span>
               </h1>
@@ -444,7 +444,7 @@ export default function Home() {
                 the court to be fun, safe, and stress-free.
               </p>
             </div>
-            <img src={stock2} className="stock-2 w-50" alt="stock" />
+            <img src={stock2} className="stock-2" alt="stock" />
           </div>
         </div>
       </div>

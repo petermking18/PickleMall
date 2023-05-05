@@ -29,11 +29,20 @@
         font-weight: 600;
         font-size: 80px;
         line-height: 88.5px;
+        width: 50%;
+        @media (max-width: 992px) {
+          width: 100%;
+          text-align: center;
+        }
       }
 
       .book-button {
         font-size: 25px;
         font-weight: 500;
+        @media (max-width: 992px) {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -224,8 +233,16 @@
         max-height: 14.5rem;
         object-fit: cover;
         object-position: center -17rem;
-        @media (max-width: 768px) {
-          display: none;
+        width: 50%;
+        @media (max-width: 992px) {
+          width: 25%;
+        }
+      }
+
+      .bg-white {
+        width: 50%;
+        @media (max-width: 992px) {
+          width: 75%;
         }
       }
     }
@@ -234,17 +251,28 @@
   .section-5 {
     .bg-white {
       padding: 5.6rem 5.6rem 0 7.2rem;
+      width: 50%;
+      @media (max-width: 992px) {
+        width: 100%;
+        padding: 1rem;
+      }
     }
     .find-people {
       overflow: hidden;
       position: relative;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
       .stock-1 {
         position: relative;
         max-height: 26.1rem;
         object-fit: cover;
         object-position: center -12rem;
-        @media (max-width: 768px) {
-          display: none;
+      }
+      .book-button {
+        @media (max-width: 992px) {
+          display: block;
+          margin: 0 auto;
         }
       }
     }
@@ -260,6 +288,9 @@
 .section-6 {
   .py-5 {
     margin: 0 5rem;
+    @media (max-width: 992px) {
+      margin: 0 1rem;
+    }
   }
 
   .stock-3and5 {
@@ -275,16 +306,25 @@
 .section-7 {
   .bg-white {
     padding: 0 5.6rem 0 7.2rem;
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 1rem;
+    }
   }
   .prem-facilities {
     overflow: hidden;
     position: relative;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .stock-2 {
       position: relative;
       max-height: 26rem;
       object-fit: cover;
       object-position: center;
+      width: 50%;
       @media (max-width: 768px) {
         display: none;
       }
