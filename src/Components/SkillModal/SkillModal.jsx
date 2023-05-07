@@ -12,29 +12,7 @@ export default function SkillModal() {
   return (
     <div className="skill-modal">
       <div className="skill-modal-inner">
-        {/* <h2 className="modal-header font-barlow-condensed text-deep-blue">
-        Skill Level Evaluation<span className="text-pickle-green">.</span>
-      </h2>
-      <div className="content">
-        <div>
-          <p className="section-2-text">
-            The simple “Yes or No” way to figure our your skill level
-          </p>
-          <div className="d-flex my-3">
-            <img src={YesExample} alt="yes_example" className="img-fluid" />
-            <p className="section-2-text mx-5">
-              = "Yes" to five or more statements
-            </p>
-          </div>
-          <div className="d-flex my-3">
-            <img src={NoExample} alt="no_example" className="img-fluid" />
-            <p className="section-2-text mx-5">
-              = "No" to five or more statements
-            </p>
-          </div>
-        </div>
-        <img src={Info} className="info-img img-fluid" alt="info" />
-      </div> */}
+        <img src={FullModal} alt="Skill Modal" />
       </div>
     </div>
   );
