@@ -10,8 +10,9 @@ import "./SkillModal.scss";
 
 export default function SkillModal() {
   return (
-    <div className="skill-modal container">
-      <h2 className="modal-header font-barlow-condensed text-deep-blue">
+    <div className="skill-modal">
+      <div className="skill-modal-inner">
+        {/* <h2 className="modal-header font-barlow-condensed text-deep-blue">
         Skill Level Evaluation<span className="text-pickle-green">.</span>
       </h2>
       <div className="content">
@@ -33,6 +34,7 @@ export default function SkillModal() {
           </div>
         </div>
         <img src={Info} className="info-img img-fluid" alt="info" />
+      </div> */}
       </div>
     </div>
   );

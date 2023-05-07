@@ -2,11 +2,17 @@
 
 .about-content {
   padding: 0 5.75rem 11.8rem 2.9rem;
+  @media (max-width: 992px) {
+    padding: 0 1rem;
+  }
 }
 
 .about-header {
   font-weight: 600;
-  font-size: 80px;
+  font-size: 5rem;
+  @media (max-width: 992px) {
+    font-size: 4.5rem;
+  }
 }
 
 .about-text {
@@ -18,7 +24,10 @@
   position: relative;
   width: 35rem;
   height: 100%;
-  overflow: hidden; /* Hide anything that goes outside the wrapper */
+  overflow: hidden;
+  @media (max-width: 1165px) {
+    display: none;
+  }
 }
 
 .racket-photo {
@@ -26,7 +35,4 @@
   height: 100%;
   object-fit: cover; /* Make the image cover the entire parent div without stretching */
   object-position: center; /* Center the image */
-  @media (max-width: 1165px) {
-    display: none;
-  }
 }

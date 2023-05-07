@@ -5,6 +5,9 @@
   .navbar {
     // height: $nav-height;
     padding: 0.5rem 2.5rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
 
     a.logo {
       position: relative;
@@ -26,6 +29,23 @@
         font-weight: 500;
         line-height: 19.2px;
         padding: 1rem;
+        @media (max-width: 767px) {
+          color: var(--bs-deep-blue);
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          padding: 0.5rem 1rem;
+        }
+
+        .hr-soft-serve {
+          height: 1px;
+          background-color: var(--bs-soft-serve);
+          border: none;
+        }
+      }
+      @media (max-width: 767px) {
+        background-color: var(--bs-bright-white);
+        padding-top: 1rem;
       }
     }
   }

@@ -43,10 +43,10 @@ export default function WhatToExpect() {
   return (
     <div className="what-to-expect">
       <div className="what-to-expect-content">
-        <h1 className="about-header font-barlow-condensed text-deep-blue">
+        <h1 className=" wte-header font-barlow-condensed text-deep-blue">
           WHAT TO EXPECT<span className="text-pickle-green">.</span>
         </h1>
-        <p className="w-50 text-black">
+        <p className="text-black">
           Welcome to Picklemall, the one-stop destination for all your
           pickleball needs. Whether you're a seasoned player or a beginner,
           we've got you covered with our state-of-the-art facilities, equipment,
@@ -74,7 +74,7 @@ export default function WhatToExpect() {
           ))}
         </div>
       </div>
-      <div className="mx-auto w-50 my-5">
+      <div className="mx-auto my-5 button-wrapper">
         <Button
           className="evaluation-button bg-lightGray text-deep-blue shadow w-100"
           onClick={() => setIsOpen(!modalIsOpen)}
@@ -98,11 +98,10 @@ export default function WhatToExpect() {
               backgroundColor: "rgba(0, 0, 0, 0.65)",
             },
             content: {
-              width: "75%",
               backgroundColor: "#f2f2f2",
-              margin: "auto",
             },
           }}
+          className="modal-content"
         >
           <button
             className="exit-modal-button"

@@ -1,32 +1,43 @@
 @import "../../Global.scss";
 
-.skill-modal {
-  max-width: 50rem;
-}
-
-.modal-header {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.content {
-  position: relative;
-}
-
-.info-img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  left: -2.1rem;
-}
-// .green-bulletpoint {
-//   &::before {
-//     content: "•";
-//     color: #49c13d;
-//     font-weight: bold;
-//     display: inline-block;
-//     width: 1em;
-//     margin-left: -1em;
-//     font-size: 1.3rem;
-//   }
+// .skill-modal {
+//   max-width: 50rem;
 // }
+
+// .modal-header {
+//   font-size: 2.5rem;
+//   font-weight: 600;
+// }
+
+// .content {
+//   position: relative;
+// }
+
+// .info-img {
+//   position: absolute;
+//   max-width: 100%;
+//   top: 0;
+//   left: -2.1rem;
+// }
+// // .green-bulletpoint {
+// //   &::before {
+// //     content: "•";
+// //     color: #49c13d;
+// //     font-weight: bold;
+// //     display: inline-block;
+// //     width: 1em;
+// //     margin-left: -1em;
+// //     font-size: 1.3rem;
+// //   }
+// // }
+
+.skill-modal {
+  height: 100rem;
+  .skill-modal-inner {
+    background-image: url("./Assets/FullModal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}

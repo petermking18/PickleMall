@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Stack, Collapse, IconButton } from "@mui/material";
 import logo from "../../Assets/logo.svg";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+
 import "./Nav2.scss";
 
 export default function Nav2() {
@@ -27,18 +30,33 @@ export default function Nav2() {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const navLinks = navItems.map((i, idx) => (
-    <Link key={i.text} to={i.route} className="nav-item">
+    <Link
+      key={i.text}
+      to={i.route}
+      className="nav-item"
+      onClick={() => setShowMobileNav(false)}
+    >
       {i.text}
+      {showMobileNav && <hr className="hr-soft-serve" />}
     </Link>
   ));
 
   return (
     <div className="nav2">
       <nav className="navbar bg-volley-blue">
-        <div className=" d-flex justify-content-center justify-content-md-between align-items-center">
+        <div className="container d-flex justify-content-between align-items-center">
           <Link to="/" className="logo d-inline-block py-2">
             <img className="mx-3" src={logo} alt={"Pickle Mall"} />
           </Link>
+          <div className="d-md-none">
+            <IconButton
+              className="text-light"
+              aria-label="Expand navigation"
+              onClick={(e) => setShowMobileNav(!showMobileNav)}
+            >
+              {showMobileNav ? <CloseIcon /> : <MenuIcon />}
+            </IconButton>
+          </div>
           <Stack
             direction="row"
             spacing={{ md: 4, lg: 8 }}
@@ -47,21 +65,10 @@ export default function Nav2() {
             {navLinks}
           </Stack>
         </div>
-        <div className="text-center d-md-none">
+        <div className="d-md-none">
           <Collapse in={showMobileNav} timeout={"auto"} unmountOnExit>
             <Stack className="nav-items">{navLinks}</Stack>
           </Collapse>
-          <IconButton
-            className="text-light"
-            aria-label="Expand navigation"
-            onClick={(e) => setShowMobileNav(!showMobileNav)}
-          >
-            {showMobileNav ? (
-              <span className="bi bi-chevron-up"></span>
-            ) : (
-              <span className="bi bi-chevron-down"></span>
-            )}
-          </IconButton>
         </div>
       </nav>
     </div>

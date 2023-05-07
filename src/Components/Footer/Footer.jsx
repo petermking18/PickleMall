@@ -72,25 +72,31 @@ export default function Footer() {
           {/* col2 */}
           <Grid xs={12} md={4} className={"d-flex flex-column"}>
             <div className="footer-links">
+              <a
+                className={"small link-normal text-center text-sm-start"}
+                href="/whattoexpect"
+              >
+                What to Expect
+              </a>
+              <a
+                className={"small link-normal text-center text-sm-start"}
+                href="/locations"
+              >
+                Locations
+              </a>
               <a className={"small link-normal text-center text-sm-start"}>
                 Events
               </a>
-              <a className={"small link-normal text-center text-sm-start"}>
-                Shop
-              </a>
-              <a className={"small link-normal text-center text-sm-start"}>
-                Membership
-              </a>
               <a
-                href={"/contact"}
+                href={"/about"}
                 className={"small link-normal text-center text-sm-start"}
               >
-                Contact Us
+                About
               </a>
             </div>
           </Grid>
           {/* col3 */}
-          <Grid xs={6} md={4}>
+          <Grid xs={12} md={4}>
             <div className="footer-right font-barlow-condensed py-2">
               <p>Convenient courts.</p>
               <p>Controlled climate.</p>
