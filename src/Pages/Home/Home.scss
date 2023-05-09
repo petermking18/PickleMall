@@ -52,7 +52,15 @@
     }
   }
 
+  .px-5rem {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
   .section-2 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
     .card {
       overflow: hidden;
       img {
@@ -284,7 +292,7 @@
 
   .section-5 {
     .bg-white {
-      padding: 5.6rem 5.6rem 0 7.2rem;
+      padding: 5.6rem 5.6rem 0 5rem;
       width: 50%;
       @media (max-width: 992px) {
         width: 100%;
@@ -345,7 +353,7 @@
 
 .section-7 {
   .bg-white {
-    padding: 0 5.6rem 0 7.2rem;
+    padding: 0 5.6rem 0 5rem;
     width: 50%;
     @media (max-width: 992px) {
       width: 100%;
@@ -373,7 +381,7 @@
 
 .section-8 {
   .bg-white {
-    padding: 0 5.6rem 0 7.2rem;
+    padding: 0 5rem;
   }
 }
 

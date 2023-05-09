@@ -96,7 +96,7 @@ export default function Home() {
     <div className="home">
       <div className="section-1 my-0">
         <div className="content pt-5">
-          <div className="container py-5">
+          <div className="px-5rem py-5">
             <h1 className="welcome mb-4">
               The Future of Pickleball Is Indoors.
             </h1>
@@ -113,9 +113,9 @@ export default function Home() {
         </div>
       </div>
       <div className="section-2">
-        <div className="container py-5">
+        <div className="py-5">
           <Grid container spacing={8}>
-            <Grid xs={12} md={8}>
+            <Grid xs={12} lg={8}>
               <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue">
                 <div className="text-nowrap">
                   Welcome to Picklemall
@@ -157,7 +157,7 @@ export default function Home() {
                 </span>
               </Button>
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid xs={12} lg={4}>
               <div className="card">
                 <img src={stock1} alt="Rackets" className="card-top-photo" />
                 <div className="content p-4">
