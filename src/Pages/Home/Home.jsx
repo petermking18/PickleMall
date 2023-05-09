@@ -54,16 +54,16 @@ export default function Home() {
     arrows: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4.35,
-    slidesToScroll: 4,
+    slidesToShow: 3.55,
+    slidesToScroll: 3,
     beforeChange: (current, next) => setLocationsIndex(next),
     mobileFirst: true,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3.55,
-          slidesToScroll: 3,
+          slidesToShow: 2.55,
+          slidesToScroll: 2,
         },
       },
       {
@@ -190,11 +190,16 @@ export default function Home() {
 
       <div className="section-3">
         <div className="locations py-5">
-          <div className={""}>
-            <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
-              Locations<span className="text-pickle-green">.</span>
-            </h1>
-          </div>
+          {/*<div className={""}>*/}
+          {/*  <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">*/}
+          {/*    Locations<span className="text-pickle-green">.</span>*/}
+          {/*  </h1>*/}
+          {/*</div>*/}
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
 
           <Slider
             {...locationsSliderSettings}
@@ -205,7 +210,9 @@ export default function Home() {
               <div key={l.address} className={"card-wrapper"}>
                 <div className={"card"}>
                   <div className={"card-top-photo-wrapper"}>
-                    <span className="badge">{l.hours}</span>
+                    {l.isOpen &&
+                    <span className="badge">{l.numCourts} {l.numCourts === 1 ? 'Court' : 'Courts'}</span>
+                    }
                     <img
                       className={"card-top-photo"}
                       src={l.locationImg ? l.locationImg : Placeholder}
@@ -321,13 +328,16 @@ export default function Home() {
                 <div className={"content px-4 pb-3"}>
                   <h1
                     className={
-                      "location font-barlow-condensed text-deep-blue mb-1"
+                      "location font-barlow-condensed text-deep-blue mb-1 text-nowrap"
                     }
                   >
                     Where to next?
                   </h1>
-                  <div>
-                    <Link to={"/contact"}>
+                  <div className={"text-kitchen-green not-open-message"}>
+                    Let us know where you are.
+                  </div>
+                  <div className={"mt-auto"}>
+                    <Link to={"/contact"} className={"no-underline"}>
                       <Button
                         variant={"contained"}
                         color={"volleyBlue"}
@@ -420,7 +430,7 @@ export default function Home() {
       <div className="section-6 bg-off-white-2">
         <div className="s6-content">
           <div className="s6-header">
-            <h1 className="font-barlow-condensed text-deep-blue">
+            <h1 className="font-barlow-condensed text-deep-blue mt-1">
               Control your court time
               <span className="text-pickle-green">.</span>
             </h1>

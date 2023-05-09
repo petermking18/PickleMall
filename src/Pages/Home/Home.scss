@@ -1,6 +1,10 @@
 @import "../../Global.scss";
 
 .home {
+  .no-underline {
+    text-decoration: none !important;
+  }
+
   overflow-x: hidden;
   h1 {
     font-size: 40px;
@@ -165,6 +169,12 @@
               right: 0;
               transform: translate(-30%, 50%);
             }
+          }
+
+          .not-open-message {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
           }
 
           .content {
