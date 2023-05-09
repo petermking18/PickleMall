@@ -7,3 +7,65 @@ $nav-height: 4rem;
 .font-barlow-condensed {
     font-family: 'Barlow Condensed', sans-serif;
 }
+
+//.container-margin-left {
+//    @include media-breakpoint-only(xxl) {
+//        margin-left: calc(
+//                ((100vw - 1320px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(xl) {
+//        margin-left: calc(
+//                ((100vw - 1140px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(lg) {
+//        margin-left: calc(
+//                ((100vw - 960px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(md) {
+//        margin-left: calc(
+//                ((100vw - 720px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(sm) {
+//        margin-left: calc(
+//                ((100vw - 540px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(xs) {
+//        margin-left: calc(var(--bs-gutter-x) * 0.5) !important;
+//    }
+//}
+//
+//.container-padding-left {
+//    @include media-breakpoint-only(xxl) {
+//        padding-left: calc(
+//                ((100vw - 1320px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(xl) {
+//        padding-left: calc(
+//                ((100vw - 1140px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(lg) {
+//        padding-left: calc(
+//                ((100vw - 960px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(md) {
+//        padding-left: calc(
+//                ((100vw - 720px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(sm) {
+//        padding-left: calc(
+//                ((100vw - 540px) / 2) + (var(--bs-gutter-x) * 0.5)
+//        ) !important;
+//    }
+//    @include media-breakpoint-only(xs) {
+//        padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+//    }
+//}

@@ -19,6 +19,7 @@ import stock2 from "../../Assets/Stock2.jpg";
 import stock3 from "../../Assets/Stock3.jpg";
 import stock5 from "../../Assets/Stock5.jpg";
 import stock6 from "../../Assets/Stock6.jpg";
+import courts from "../../Assets/Courts.png"
 import GreenRackets from "./GreenRackets.png";
 import Placeholder from "../../Assets/Placeholder.png";
 
@@ -449,7 +450,7 @@ export default function Home() {
       <div className="section-7">
         <div className="">
           <div className="d-flex align-items-center prem-facilities">
-            <div className="bg-white">
+            <div className="bg-white container-padding-left">
               <h1 className="font-barlow-condensed text-deep-blue">
                 Premier facilities<span className="text-pickle-green">.</span>
               </h1>
@@ -459,8 +460,15 @@ export default function Home() {
                 the court to be fun, safe, and stress-free.
               </p>
             </div>
-            <img src={stock2} className="stock-2" alt="stock" />
+            <img src={courts} className="stock-2" alt="stock" />
           </div>
+        </div>
+      </div>
+      <div className={"section-8 d-none d-lg-block"}>
+        <div className={"bg-white"}>
+          <h1 className="font-barlow-condensed text-deep-blue">
+            Our staff<span className="text-pickle-green">.</span>
+          </h1>
         </div>
       </div>
     </div>
