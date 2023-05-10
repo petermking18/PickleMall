@@ -71,7 +71,7 @@ export default function Home() {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2.55,
+                    slidesToShow: 2.15,
                     slidesToScroll: 2,
                 },
             },
@@ -85,7 +85,7 @@ export default function Home() {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1.25,
+                    slidesToShow: 1.05,
                     slidesToScroll: 1,
                 },
             },
@@ -96,8 +96,8 @@ export default function Home() {
     return (
         <div className="home">
             <div className="section-1 my-0">
-                <div className="content pt-5">
-                    <div className="px-5rem py-5">
+                <div className="content pt-md-0 pt-lg-5">
+                    <div className="px-md-5rem pt-1 py-md-3 py-lg-5">
                         <h1 className="welcome mb-4">
                             The Future of Pickleball Is Indoors.
                         </h1>
@@ -118,7 +118,7 @@ export default function Home() {
                     <Grid container spacing={8}>
                         <Grid xs={12} lg={8}>
                             <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue">
-                                <div className="text-nowrap">
+                                <div className="text-md-nowrap">
                                     Welcome to Picklemall
                                     <span className="text-pickle-green">.</span>
                                     &nbsp;
@@ -192,16 +192,11 @@ export default function Home() {
 
             <div className="section-3">
                 <div className="locations py-5">
-                    {/*<div className={""}>*/}
-                    {/*  <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">*/}
-                    {/*    Locations<span className="text-pickle-green">.</span>*/}
-                    {/*  </h1>*/}
-                    {/*</div>*/}
-
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <div className={""}>
+                      <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
+                        Locations<span className="text-pickle-green">.</span>
+                      </h1>
+                    </div>
 
                     <Slider
                         {...locationsSliderSettings}
@@ -383,8 +378,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="section-4">
-                <div className="s4-header">
-                    <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
+                <div className="s4-header py-5">
+                    <h1 className="text-nowrap font-barlow-condensed text-deep-blue mt-0 mb-5">
                         It pays to show up<span className="text-pickle-green">.</span>
                     </h1>
                     <div className="d-flex shadow it-pays">
@@ -414,7 +409,7 @@ export default function Home() {
                                 <h1 className="font-barlow-condensed text-deep-blue">
                                     Find your people<span className="text-pickle-green">.</span>
                                 </h1>
-                                <p className="text-black mb-5">
+                                <p className="text-black mb-4 mb-md-5">
                                     Community is core to pickleball, it is what allows us all to
                                     laugh, sweat, and compete! Conveniently meet friends and find
                                     teammates from all talent levels

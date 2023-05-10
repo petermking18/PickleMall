@@ -20,6 +20,11 @@
     // overflow: hidden !important;
 
     .nav-items {
+      height: 100vh;
+      @include media-breakpoint-up(md) {
+        height: auto;
+      }
+
       .nav-item {
         text-decoration: none;
         color: var(--bs-bright-white);

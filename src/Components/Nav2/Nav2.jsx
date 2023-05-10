@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Stack, Collapse, IconButton } from "@mui/material";
 import logo from "../../Assets/logo.svg";
@@ -28,6 +28,10 @@ export default function Nav2() {
   ];
 
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = showMobileNav ? 'hidden' : 'unset'
+  }, [showMobileNav])
 
   const navLinks = navItems.map((i, idx) => (
     <Link
