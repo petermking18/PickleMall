@@ -1,6 +1,18 @@
 @import "../../Global.scss";
 
 .home {
+  .fs-40px {
+    font-size: 40px !important;
+  }
+
+  .fs-24px {
+    font-size: 24px !important;
+  }
+
+  .fs-12px {
+    font-size: 12px !important;
+  }
+
   .no-underline {
     text-decoration: none !important;
   }
@@ -147,8 +159,8 @@
           .card-top-photo-wrapper {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+            height: 200px;
             width: 100%;
-            height: auto;
             position: relative;
 
             .badge {
@@ -167,7 +179,9 @@
               border-top-left-radius: 8px;
               border-top-right-radius: 8px;
               width: 100%;
-              max-height: 12rem;
+              height: 100%;
+              aspect-ratio: auto;
+              max-height: unset;
               object-fit: cover;
             }
 
@@ -194,7 +208,8 @@
             .location {
               font-size: 36px;
               font-weight: 600;
-              max-width: 70%; /* to stay away from .pickle-circle */
+              max-width: calc(100% - 115px); /* to stay away from .pickle-circle */
+              line-height: 2.5rem;
             }
 
             .info {
@@ -292,7 +307,7 @@
 
   .section-5 {
     .bg-white {
-      padding: 5.6rem 5.6rem 0 5rem;
+      padding: 0 5rem;
       width: 50%;
       @media (max-width: 992px) {
         width: 100%;
@@ -382,6 +397,23 @@
 .section-8 {
   .bg-white {
     padding: 0 5rem;
+
+    .staff-grid {
+      transform: translateX(-16px);
+
+      .staff-card {
+        box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
+        border-radius: 8px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border: 2px solid var(--bs-pickle-green);
+          border-radius: 72px;
+        }
+      }
+    }
+
   }
 }
 
