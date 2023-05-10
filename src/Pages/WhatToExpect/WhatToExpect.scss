@@ -49,14 +49,14 @@
 
 .item-odd {
   .box-img {
-    border-radius: 8px 0;
+    border-radius: 8px 0 0 8px;
   }
 }
 
 .item-even {
   flex-direction: row-reverse;
   .box-img {
-    border-radius: 0 8px;
+    border-radius: 0 8px 8px 0;
   }
 }
 

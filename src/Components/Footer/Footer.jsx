@@ -30,11 +30,11 @@ export default function Footer() {
             link: "https://www.instagram.com/thepicklemall/",
         },
 
-        {
-            name: "youtube,",
-            icon: youtubeIcon,
-            link: "",
-        },
+        // {
+        //     name: "youtube,",
+        //     icon: youtubeIcon,
+        //     link: "",
+        // },
 
         {
             name: "linkedin,",
