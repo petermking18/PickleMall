@@ -55,7 +55,7 @@ export default function Footer() {
                 <Grid
                     container
                     spacing={3}
-                    className={"mt-2 mb-1 text-nowrap align-items-center"}
+                    className={"mt-0 mb-1 text-nowrap align-items-center"}
                 >
                     <Grid xs={12} md={4}>
                         <div>

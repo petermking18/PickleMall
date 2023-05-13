@@ -76,7 +76,7 @@ export default function Locations() {
   return (
     <div className="locations">
       <div className="locations-content">
-        <h1 className="about-header font-barlow-condensed text-deep-blue">
+        <h1 className="about-header font-barlow-condensed text-deep-blue fs-35px fs-md-80px">
           LOCATIONS<span className="text-pickle-green">.</span>
         </h1>
         <MapComponent className="map-container" />

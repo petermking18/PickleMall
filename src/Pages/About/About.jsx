@@ -1,6 +1,7 @@
 import React from "react";
 
 import stock7 from "../../Assets/Stock7.jpg";
+import overlay from '../../Assets/Stock7-overlay.png';
 
 import "./About.scss";
 
@@ -9,13 +10,13 @@ export default function About() {
     <div className="about">
       <div className="d-flex">
         <div className="about-content">
-          <h1 className="about-header font-barlow-condensed text-deep-blue">
+          <h1 className="about-header font-barlow-condensed text-deep-blue fs-35px fs-md-80px mb-2">
             ABOUT PICKLEMALL<span className="text-pickle-green">.</span>
           </h1>
-          <h1 className="font-barlow-condensed text-deep-blue">
+          <h1 className="font-barlow-condensed text-deep-blue fs-24px fs-md-32px">
             Who we are<span className="text-pickle-green">.</span>
           </h1>
-          <p className="about-text mb-5">
+          <p className="about-text mb-5 fs-14px fs-md-16px">
             Indoor pickleball is the ultimate game-changer for enthusiasts of
             this addictive sport, offering a thrilling experience that surpasses
             outdoor play in every way. With Picklemall as the solution to the
@@ -58,6 +59,7 @@ export default function About() {
         <div className="about-image-container">
           <div className="img-wrapper">
             <img src={stock7} alt="racket" className="racket-photo" />
+            <img src={overlay} alt={'overlay'} className={'racket-photo-overlay'}/>
           </div>
         </div>
       </div>
