@@ -41,7 +41,7 @@ export default function Home() {
     ].map((l, idx) => (
         <div key={l.text}>
             <Link className="quick-link d-flex justify-content-between" to={l.route}>
-                <span className="fw-semibold">{l.text}</span>
+                <span className="fw-semibold fs-14px fs-md-16px">{l.text}</span>
                 <ArrowRightAlt className="text-kitchen-green"/>
             </Link>
         </div>
@@ -113,18 +113,18 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="section-2">
-                <div className="py-5">
+            <div className="section-2 px-4 px-md-5rem">
+                <div className="pb-4 py-md-5 mt-md-3">
                     <Grid container spacing={8}>
-                        <Grid xs={12} lg={8}>
-                            <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue">
-                                <div className="text-md-nowrap">
+                        <Grid xs={12} lg={8} className={'pb-0'}>
+                            <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue mt-md-0">
+                                <div className="text-md-nowrap fs-24px fs-md-40px">
                                     Welcome to Picklemall
                                     <span className="text-pickle-green">.</span>
                                     &nbsp;
                                 </div>
                             </h1>
-                            <p className="text-black">
+                            <p className="text-black fs-14px fs-md-16px mb-0 mb-md-3">
                                 The Picklemall offers a one-of-a-kind playing experience,
                                 featuring state-of-the-art courts, equipment, and amenities that
                                 cater to players' every need. With a range of courts available,
@@ -140,29 +140,31 @@ export default function Home() {
                                 everything you need to thrive at Picklemall, from top-notch
                                 coaching to a range of social events and tournaments.
                             </p>
-                            <Button
-                                variant={"contained"}
-                                color={"volleyBlue"}
-                                className={"text-nowrap my-4"}
-                                disableElevation
-                            >
-                                Book a Court
-                            </Button>
-                            <Button
-                                variant={"text"}
-                                className={"text-volley-blue text- mx-2"}
-                            >
-                                Learn more&nbsp;
-                                <span className={"material-symbols-outlined"}>
-                  arrow_forward
-                </span>
-                            </Button>
+                            <div className={'d-none d-md-block'}>
+                                <Button
+                                    variant={"contained"}
+                                    color={"volleyBlue"}
+                                    className={"text-nowrap my-4"}
+                                    disableElevation
+                                >
+                                    Book a Court
+                                </Button>
+                                <Button
+                                    variant={"text"}
+                                    className={"text-volley-blue text- mx-2"}
+                                >
+                                    Learn more&nbsp;
+                                    <span className={"material-symbols-outlined"}>
+                                  arrow_forward
+                                </span>
+                                </Button>
+                            </div>
                         </Grid>
                         <Grid xs={12} lg={4}>
                             <div className="card">
                                 <img src={stock1} alt="Rackets" className="card-top-photo"/>
                                 <div className="content p-4">
-                                    <h2 className="font-barlow-condensed text-deep-blue my-0">
+                                    <h2 className="font-barlow-condensed fs-20px fs-md-24px text-deep-blue my-0">
                                         Learn More
                                     </h2>
                                     <hr className="hr-soft-serve mb-4"/>
@@ -174,28 +176,28 @@ export default function Home() {
                 </div>
             </div>
             <div className="carousel">
-                <h1 className="carousel-text font-barlow-condensed text-white">
-          <span className="text-container py-5">
-            <span className="text-content">
-              CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
-                CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
-                CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
-            </span>
-            <span className="text-content">
-              CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
-                CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
-                CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
-            </span>
-          </span>
+                <h1 className="carousel-text font-barlow-condensed text-white my-0 d-flex align-items-center">
+                  <span className="text-container">
+                    <span className="text-content fs-30px fs-md-88px text-v-center lh-88px mt--0-45rem mt-md--1-5rem">
+                      CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
+                        CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
+                        CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
+                    </span>
+                    <span className="text-content fs-30px fs-md-88px text-v-center lh-88px mt--0-45rem mt-md--1-5rem">
+                      CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
+                        CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
+                        CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
+                    </span>
+                  </span>
                 </h1>
             </div>
 
             <div className="section-3">
-                <div className="locations py-5">
+                <div className="locations pb-4 py-md-5">
                     <div className={""}>
-                      <h1 className="text-nowrap font-barlow-condensed text-deep-blue mb-5">
-                        Locations<span className="text-pickle-green">.</span>
-                      </h1>
+                        <h1 className="text-nowrap font-barlow-condensed text-deep-blue pt-3 pt-md-0 mt-0 mb-4 mb-md-5 fs-35px fs-md-40px">
+                            Locations<span className="text-pickle-green">.</span>
+                        </h1>
                     </div>
 
                     <Slider
@@ -273,36 +275,40 @@ export default function Home() {
                                             )}
                                         </div>
 
-                                        <div className={"buttons-row mt-auto pt-2"}>
+                                        <div className={"buttons-row mt-auto pt-3"}>
                                             {l.isOpen ? (
                                                 <Stack direction={"row"} spacing={2}>
-                                                    <Button
-                                                        variant={"contained"}
-                                                        color={"volleyBlue"}
-                                                        className={"text-nowrap"}
-                                                        disableElevation
-                                                    >
-                                                        Book a Court
-                                                    </Button>
-                                                    <Button
-                                                        variant={"text"}
-                                                        className={"text-volley-blue text-nowrap"}
-                                                    >
-                                                        Learn more&nbsp;
-                                                        <span className={"material-symbols-outlined"}>
-                              arrow_forward
-                            </span>
-                                                    </Button>
+                                                    <Link to={l.bookLink} className={'no-decoration'}>
+                                                        <Button
+                                                            variant={"contained"}
+                                                            color={"volleyBlue"}
+                                                            className={"text-nowrap"}
+                                                            disableElevation
+                                                        >
+                                                            Book a Court
+                                                        </Button>
+                                                    </Link>
+                                                    <Link to={l.bookLink} className={'no-decoration'}>
+                                                        <Button
+                                                            variant={"text"}
+                                                            className={"text-volley-blue text-nowrap"}
+                                                            >
+                                                            Learn more&nbsp;
+                                                            <span className={"material-symbols-outlined"}>arrow_forward</span>
+                                                        </Button>
+                                                    </Link>
                                                 </Stack>
                                             ) : (
                                                 <div>
-                                                    <Button
-                                                        variant={"contained"}
-                                                        color={"volleyBlue"}
-                                                        disableElevation
-                                                    >
-                                                        Join the Waitlist
-                                                    </Button>
+                                                    <Link to={'/contact'} className={'no-decoration'}>
+                                                        <Button
+                                                            variant={"contained"}
+                                                            color={"volleyBlue"}
+                                                            disableElevation
+                                                        >
+                                                            Join the Waitlist
+                                                        </Button>
+                                                    </Link>
                                                 </div>
                                             )}
                                         </div>
@@ -313,10 +319,6 @@ export default function Home() {
                         <div className={"card-wrapper"}>
                             <div className={"card where-to"}>
                                 <div className={"card-top-photo-wrapper"}>
-                                    {/* todo: number of courts badge,
-                                        .before-first-card make width match,
-                                        paging buttons
-                                     */}
                                     <img
                                         className={"card-top-photo"}
                                         src={GreenRackets}
@@ -361,7 +363,7 @@ export default function Home() {
                                 disabled={locationsIndex === 0}
                                 onClick={() => locationsSlider.slickPrev()}
                             >
-                <span className={"material-symbols-outlined text-dark"}>
+                <span className={"material-symbols-outlined text-dark fs-16px py-1"}>
                   arrow_back
                 </span>
                             </Button>
@@ -369,7 +371,7 @@ export default function Home() {
                                 className={"forward-button"}
                                 onClick={() => locationsSlider.slickNext()}
                             >
-                <span className={"material-symbols-outlined text-dark"}>
+                <span className={"material-symbols-outlined text-dark fs-16px py-1"}>
                   arrow_forward
                 </span>
                             </Button>
@@ -378,8 +380,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="section-4">
-                <div className="s4-header py-5">
-                    <h1 className="text-nowrap font-barlow-condensed text-deep-blue mt-0 mb-5">
+                <div className="s4-header pt-3 pb-5 py-md-5">
+                    <h1 className="text-nowrap font-barlow-condensed text-deep-blue fs-35px fs-md-40px mt-0 mb-4">
                         It pays to show up<span className="text-pickle-green">.</span>
                     </h1>
                     <div className="d-flex shadow it-pays">
@@ -387,11 +389,11 @@ export default function Home() {
                             <img src={stock6} className="stock-6" alt="stock"/>
                         </div>
                         <div className="bg-white d-flex justify-content-center align-items-center">
-                            <div className={'p-3'}>
-                                <h1 className="font-barlow-condensed text-deep-blue fs-24px mt-0 mb-1">
+                            <div className={'py-md-4 px-md-5'}>
+                                <h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">
                                     Come & Play
                                 </h1>
-                                <p className="text-black mb-0">
+                                <p className="text-black fs-12px fs-md-16px mb-0">
                                     Picklemall memberships are designed for maximum enjoyment. We
                                     want to see you working on your game and playing several times
                                     per week.
@@ -406,17 +408,17 @@ export default function Home() {
                     <div className="d-flex find-people">
                         <div className="bg-white d-flex align-items-center">
                             <div>
-                                <h1 className="font-barlow-condensed text-deep-blue">
+                                <h1 className="font-barlow-condensed text-deep-blue fs-35px fs-md-40px mb-2">
                                     Find your people<span className="text-pickle-green">.</span>
                                 </h1>
-                                <p className="text-black mb-4 mb-md-5">
+                                <p className="text-black mt-0 mb-4 mb-md-4 fs-14px fs-md-16px">
                                     Community is core to pickleball, it is what allows us all to
                                     laugh, sweat, and compete! Conveniently meet friends and find
                                     teammates from all talent levels
                                 </p>
                                 <Link className={'no-underline'} to={'https://book.thepicklemall.com/book/Picklemall'}>
                                     <Button
-                                        className="book-button text-white mb-4"
+                                        className="book-button text-white mb-3 mt-md-2 fs-14px fs-md-16px"
                                         color="volleyBlue"
                                         variant="contained"
                                         size="large"
@@ -434,11 +436,11 @@ export default function Home() {
             <div className="section-6 bg-off-white-2">
                 <div className="s6-content">
                     <div className="s6-header">
-                        <h1 className="font-barlow-condensed text-deep-blue mt-1 mb-1">
+                        <h1 className="font-barlow-condensed text-deep-blue mt-1 mb-1 fs-35px fs-md-40px">
                             Control your court time
                             <span className="text-pickle-green">.</span>
                         </h1>
-                        <p className="text-black mb-5">
+                        <p className="text-black mt-0 mb-5 fs-14px fs-md-16px">
                             Immediately start playing with open play, memberships, or ad-hoc
                             reservations. Picklemall courts are a breeze to consistently show
                             up to.
@@ -476,7 +478,8 @@ export default function Home() {
                         {staff.map((s, idx) =>
                             <Grid key={idx} xs={3}>
                                 <div className={"staff-card-wrapper"}>
-                                    <div className={"staff-card m-3 p-3 bg-bright-white d-flex flex-column justify-content-center align-items-center text-center"}>
+                                    <div
+                                        className={"staff-card m-3 p-3 bg-bright-white d-flex flex-column justify-content-center align-items-center text-center"}>
                                         <img className={'mt-2'} src={s.photo} alt={"headshot"}/>
                                         <h3 className={'name font-barlow-condensed fs-24px text-deep-blue mt-2 mb-1'}>{s.name}</h3>
                                         <small className={'title text-kitchen-green fw-500 mb-2'}>{s.title}</small>

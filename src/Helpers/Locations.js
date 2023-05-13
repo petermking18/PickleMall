@@ -11,6 +11,7 @@ const locations = [
     notOpenMessage: "",
     numCourts: 24,
     locationImg: TempeLocation,
+    bookLink: 'https://book.thepicklemall.com/book/Picklemall'
   },
   {
     location: "Texas",

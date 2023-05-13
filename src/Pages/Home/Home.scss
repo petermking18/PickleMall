@@ -16,6 +16,58 @@
     line-height: 175%;
   }
 
+  .fw-700 {
+    font-weight: 700 !important;
+  }
+
+  .fs-12px {
+    font-size: 12px !important;
+  }
+  .fs-14px {
+    font-size: 14px !important;
+  }
+  .fs-16px {
+    font-size: 16px !important;
+  }
+  .fs-20px {
+    font-size: 20px !important;
+  }
+  .fs-30px {
+    font-size: 30px !important;
+  }
+  .fs-35px {
+    font-size: 35px !important;
+  }
+  .mt--0-45rem {
+    margin-top: -0.45rem !important;
+  }
+  @include media-breakpoint-up(md) {
+    .fs-md-15px {
+      font-size: 15px !important;
+    }
+    .fs-md-16px {
+      font-size: 16px !important;
+    }
+    .fs-md-20px {
+      font-size: 20px !important;
+    }
+    .fs-md-24px {
+      font-size: 24px !important;
+    }
+    .fs-md-40px {
+      font-size: 40px !important;
+    }
+    .fs-md-88px {
+      font-size: 88px !important;
+    }
+    .mt-md--1-5rem {
+      margin-top: -1.5rem !important;
+    }
+  }
+  .lh-88px {
+    line-height: 88px !important;
+  }
+
   .section-1 {
     background: url("../../Assets/Stock7.jpg");
     background-position: center center;
@@ -26,7 +78,7 @@
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0) 1.56%,
-        rgba(0, 0, 0, 0.7) 100%
+        rgba(0, 0, 0, 0.81) 100%
       );
 
       .welcome {
@@ -73,8 +125,6 @@
   }
 
   .section-2 {
-    padding-left: 5rem;
-    padding-right: 5rem;
 
     .card {
       overflow: hidden;
@@ -253,6 +303,11 @@
           &:hover {
             background-color: #bce7c3;
           }
+
+          &:disabled {
+            //background-color: lightgray !important;
+            opacity: 0.4;
+          }
         }
       }
     }
@@ -330,6 +385,10 @@
         width: 50%;
         @media (max-width: 992px) {
           width: 100%;
+        }
+
+        @include media-breakpoint-down(md) {
+          height: 192px !important;
         }
       }
       .book-button {
@@ -429,6 +488,10 @@
   }
 }
 
+.text-v-center {
+  vertical-align: top;
+}
+
 .carousel {
   background-image: url("../../Assets/Stock6.jpg");
   background-repeat: no-repeat;
@@ -443,11 +506,18 @@
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+
+  height: 59px;
+  @include media-breakpoint-up(md) {
+    height: 169px;
+  }
 }
 
 .carousel .carousel-text .text-container {
   display: flex;
+  align-items: center;
   animation: carousel 10s linear infinite;
+
 }
 
 .carousel .carousel-text .text-content {

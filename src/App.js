@@ -18,6 +18,8 @@ import ContactForm from "./Pages/ContactForm/ContactForm";
 import "./custom-bootstrap.scss";
 import "./App.scss";
 
+// import "./ScrollTop"
+
 const App = () => (
   <ThemeProvider theme={theme}>
     <CssBaseline />

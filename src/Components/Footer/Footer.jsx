@@ -50,7 +50,7 @@ export default function Footer() {
     ];
     return (
         <footer className={"bg-deep-blue text-light"}>
-            <div className={"footer-container"}>
+            <div className={"footer-container px-3 px-md-5rem"}>
                 {/* col1 */}
                 <Grid
                     container
@@ -71,25 +71,25 @@ export default function Footer() {
                     </Grid>
                     {/* col2 */}
                     <Grid xs={12} md={4} className={"d-flex flex-column"}>
-                        <div className="footer-links fs-16px">
+                        <div className="footer-links fs-16px pl-md-5">
                             <a
-                                className={"small link-normal text-center text-sm-start"}
+                                className={"small link-normal text-start"}
                                 href="/whattoexpect"
                             >
                                 What to Expect
                             </a>
                             <a
-                                className={"small link-normal text-center text-sm-start"}
+                                className={"small link-normal text-start"}
                                 href="/locations"
                             >
                                 Locations
                             </a>
-                            <a className={"small link-normal text-center text-sm-start"}>
+                            <a className={"small link-normal text-start"}>
                                 Events
                             </a>
                             <a
                                 href={"/about"}
-                                className={"small link-normal text-center text-sm-start"}
+                                className={"small link-normal text-start"}
                             >
                                 About
                             </a>
@@ -102,7 +102,7 @@ export default function Footer() {
                             <p className={'my-0'}>Controlled climate.</p>
                             <p className={'my-0'}>Consistent competition.</p>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex justify-content-center justify-content-md-start">
                             {socials.map((social) => (
                                 <div key={social.name} className="social-icon">
                                     <a href={social.link} target="_blank">
@@ -113,10 +113,10 @@ export default function Footer() {
                         </div>
                     </Grid>
                     {/* bottom row */}
-                    <Grid xs={12} sm={3} className={"text-center text-sm-start"}>
+                    <Grid xs={12} sm={3} className={"text-center text-sm-start d-none d-md-block mb-3"}>
                         <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                     </Grid>
-                    <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px"}>
+                    <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-md-3"}>
                         <a
                             href={"/"}
                             className={"small link-normal text-center text-sm-start"}
@@ -137,6 +137,9 @@ export default function Footer() {
                         >
                             <span>Do Not Sell My Information</span>
                         </a>
+                    </Grid>
+                    <Grid xs={12} sm={3} className={"text-center text-sm-start d-block d-md-none mb-3"}>
+                        <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                     </Grid>
                 </Grid>
             </div>
