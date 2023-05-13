@@ -49,10 +49,10 @@ export default function WhatToExpect() {
     return (
         <div className="what-to-expect">
             <div className="what-to-expect-content">
-                <h1 className=" wte-header font-barlow-condensed text-deep-blue mb-3">
+                <h1 className=" wte-header font-barlow-condensed text-deep-blue mb-3 fs-35px fs-md-80px">
                     WHAT TO EXPECT<span className="text-pickle-green">.</span>
                 </h1>
-                <p className="text-black">
+                <p className="text-black fs-14px fs-md-16px">
                     Welcome to Picklemall, the one-stop destination for all your
                     pickleball needs. Whether you're a seasoned player or a beginner,
                     we've got you covered with our state-of-the-art facilities, equipment,
@@ -61,7 +61,7 @@ export default function WhatToExpect() {
                 <div>
                     {steps.map((step, index) => (
                         <div key={step.title} className="my-5">
-                            <h1 className="font-barlow-condensed text-deep-blue">
+                            <h1 className="font-barlow-condensed text-deep-blue fs-24px fs-md-32px">
                                 STEP {index + 1}: {step.title}
                             </h1>
                             <div
@@ -72,9 +72,9 @@ export default function WhatToExpect() {
                                 <img
                                     src={step.image}
                                     alt="pickle-img"
-                                    className={`box-img box-img-${index}`}
+                                    className={`box-img box-img-${index} mb-0`}
                                 />
-                                <p className="px-5 text-black">{step.text}</p>
+                                <p className="px-4 px-md-5 py-3 py-md-0 text-black fs-14px fs-md-16px">{step.text}</p>
                             </div>
                         </div>
                     ))}
@@ -82,13 +82,13 @@ export default function WhatToExpect() {
             </div>
             <div className="mx-auto my-5 button-wrapper">
                 <Button
-                    className="evaluation-button bg-lightGray text-deep-blue shadow w-100"
+                    className="evaluation-button bg-lightGray text-deep-blue shadow w-100 d-block"
                     onClick={() => setIsOpen(!modalIsOpen)}
                 >
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-around justify-content-md-center align-items-center">
                         <img src={InfoIcon} alt="?" className="mx-1"/>
-                        <p className="mx-1">
-                            Don’t know your skill? Take a look at this evaluation
+                        <p className="mx-md-2">
+                            Don’t know your skill?<br className={'d-block d-md-none'}/> Take a look at this evaluation
                         </p>
                         <span className={"material-symbols-outlined text-dark"}>
               arrow_forward
