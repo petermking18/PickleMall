@@ -100,10 +100,10 @@ export default function Home() {
     return (
         <div className="home">
             <div className="section-1 my-0">
-                <div className="content pt-md-0 pt-lg-5">
-                    <div className="px-md-5rem pt-1 py-md-3 py-lg-5">
-                        <h1 className="welcome mb-4">
-                            The Future of Pickleball Is Indoors.
+                <div className="content pt-md-0 pt-lg-0 d-flex align-items-center justify-content-center justify-content-md-start h-100">
+                    <div className="px-md-5rem pt-1 py-md-3 py-lg-5 d-flex d-md-block justify-content-center">
+                        <h1 className="welcome my-4 d-inline">
+                            The Future of<br className={'d-none d-md-block'}/> Pickleball<br className={'d-block d-md-none'}/> is Indoors.
                         </h1>
                         {/*<Button*/}
                         {/*    className="book-button text-deep-blue mb-4"*/}
