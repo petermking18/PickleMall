@@ -10,7 +10,7 @@ export default function About() {
     <div className="about">
       <div className="d-flex">
         <div className="about-content">
-          <h1 className="about-header font-barlow-condensed text-deep-blue fs-35px fs-md-80px mb-2">
+          <h1 className="about-header font-barlow-condensed text-deep-blue fs-35px mt-md-3 fs-md-80px mb-2">
             ABOUT PICKLEMALL<span className="text-pickle-green">.</span>
           </h1>
           <h1 className="font-barlow-condensed text-deep-blue fs-24px fs-md-32px">

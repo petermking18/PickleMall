@@ -49,7 +49,7 @@ export default function WhatToExpect() {
     return (
         <div className="what-to-expect">
             <div className="what-to-expect-content">
-                <h1 className=" wte-header font-barlow-condensed text-deep-blue mb-3 fs-35px fs-md-80px">
+                <h1 className=" wte-header font-barlow-condensed text-deep-blue mb-3 mt-md-3 fs-35px fs-md-80px">
                     WHAT TO EXPECT<span className="text-pickle-green">.</span>
                 </h1>
                 <p className="text-black fs-14px fs-md-16px">

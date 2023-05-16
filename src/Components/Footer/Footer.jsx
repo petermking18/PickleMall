@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
+import {Link} from "react-router-dom";
 
 import twitterIcon from "./Icons/Twitter.png";
 import facebookIcon from "./Icons/Facebook.png";
@@ -72,27 +73,31 @@ export default function Footer() {
                     {/* col2 */}
                     <Grid xs={12} md={4} className={"d-flex flex-column"}>
                         <div className="footer-links fs-16px pl-md-5">
-                            <a
-                                className={"small link-normal text-start"}
-                                href="/whattoexpect"
-                            >
-                                What to Expect
-                            </a>
-                            <a
-                                className={"small link-normal text-start"}
-                                href="/locations"
-                            >
-                                Locations
-                            </a>
-                            <a className={"small link-normal text-start"}>
-                                Events
-                            </a>
-                            <a
-                                href={"/about"}
+                            <Link to={"/home"}
+                               className={"small link-normal text-start"}>
+                                Home
+                            </Link>
+                            {/*<a*/}
+                            {/*    className={"small link-normal text-start"}*/}
+                            {/*    href="/whattoexpect"*/}
+                            {/*>*/}
+                            {/*    What to Expect*/}
+                            {/*</a>*/}
+                            {/*<a*/}
+                            {/*    className={"small link-normal text-start"}*/}
+                            {/*    href="/locations"*/}
+                            {/*>*/}
+                            {/*    Locations*/}
+                            {/*</a>*/}
+                            {/*<a className={"small link-normal text-start"}>*/}
+                            {/*    Events*/}
+                            {/*</a>*/}
+                            <Link
+                                to={"/about"}
                                 className={"small link-normal text-start"}
                             >
                                 About
-                            </a>
+                            </Link>
                         </div>
                     </Grid>
                     {/* col3 */}
@@ -117,26 +122,26 @@ export default function Footer() {
                         <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                     </Grid>
                     <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-md-3"}>
-                        <a
-                            href={"/"}
+                        <Link
+                            to={"/PrivacyPolicy"}
                             className={"small link-normal text-center text-sm-start"}
                         >
                             <span>Privacy Policy</span>
-                        </a>
+                        </Link>
                         <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
-                        <a
-                            href={"/"}
+                        <Link
+                            to={"/"}
                             className={"small link-normal text-center text-sm-start"}
                         >
                             <span>Terms of Service</span>
-                        </a>
+                        </Link>
                         <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
-                        <a
-                            href={"/"}
+                        <Link
+                            to={"/"}
                             className={"small link-normal text-center text-sm-start"}
                         >
                             <span>Do Not Sell My Information</span>
-                        </a>
+                        </Link>
                     </Grid>
                     <Grid xs={12} sm={3} className={"text-center text-sm-start d-block d-md-none mb-3"}>
                         <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>

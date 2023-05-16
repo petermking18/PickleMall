@@ -10,17 +10,21 @@ import "./Nav2.scss";
 export default function Nav2() {
   const navItems = [
     {
-      route: "/WhatToExpect",
-      text: "What To Expect",
-    },
-    {
-      route: "/Locations",
-      text: "Locations",
-    },
-    {
       route: "/",
-      text: "Events",
+      text: "Home"
     },
+    // {
+    //   route: "/WhatToExpect",
+    //   text: "What To Expect",
+    // },
+    // {
+    //   route: "/Locations",
+    //   text: "Locations",
+    // },
+    // {
+    //   route: "/",
+    //   text: "Events",
+    // },
     {
       route: "/About",
       text: "About",

@@ -1,16 +1,18 @@
 import TempeLocation from "../Assets/TempeLocation.jpg";
+import Stock8 from '../Assets/Stock8.png';
+
 
 const locations = [
   {
     location: "Tempe, AZ",
     state: "Arizona",
-    region: "",
+    region: "Tempe, AZ",
     address: "Address",
     hours: ["6am-10pm"],
-    isOpen: true,
-    notOpenMessage: "",
+    isOpen: false,
+    notOpenMessage: "Opening July 2023",
     numCourts: 24,
-    locationImg: TempeLocation,
+    locationImg: Stock8,
     bookLink: 'https://book.thepicklemall.com/book/Picklemall'
   },
   {

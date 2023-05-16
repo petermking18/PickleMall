@@ -14,6 +14,7 @@ import WhatToExpect from "./Pages/WhatToExpect/WhatToExpect";
 import Locations from "./Pages/Locations/Locations";
 import About from "./Pages/About/About";
 import ContactForm from "./Pages/ContactForm/ContactForm";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 
 import "./custom-bootstrap.scss";
 import "./App.scss";
@@ -25,16 +26,19 @@ const App = () => (
         <CssBaseline/>
         <BrowserRouter>
             <ScrollTop/>
-            <Nav2/>
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"*"} element={<Home/>}/>
-                <Route path={"/whattoexpect"} element={<WhatToExpect/>}/>
-                <Route path={"/locations"} element={<Locations/>}/>
-                <Route path={"/about"} element={<About/>}/>
-                <Route path={"/contact"} element={<ContactForm/>}/>
-            </Routes>
-            <Footer/>
+            <div className={'root-page'}>
+                <Nav2/>
+                <Routes>
+                    <Route path={"/"} element={<Home/>}/>
+                    <Route path={"*"} element={<Home/>}/>
+                    <Route path={"/whattoexpect"} element={<WhatToExpect/>}/>
+                    {/*<Route path={"/locations"} element={<Locations/>}/>*/}
+                    <Route path={"/about"} element={<About/>}/>
+                    <Route path={"/contact"} element={<ContactForm/>}/>
+                    <Route path={"/privacypolicy"} element={<PrivacyPolicy/>}/>
+                </Routes>
+                <Footer/>
+            </div>
         </BrowserRouter>
     </ThemeProvider>
 );

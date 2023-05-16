@@ -329,7 +329,8 @@
       }
     }
     .find-people {
-      overflow: hidden;
+      overflow-y: hidden;
+      overflow-x: visible;
       position: relative;
       @media (max-width: 992px) {
         flex-direction: column;
@@ -473,7 +474,11 @@
 .carousel .carousel-text .text-container {
   display: flex;
   align-items: center;
-  animation: carousel 10s linear infinite;
+  animation: carousel 15s linear infinite;
+
+  @include media-breakpoint-up(md) {
+    animation-duration: 20s;
+  }
 
 }
 

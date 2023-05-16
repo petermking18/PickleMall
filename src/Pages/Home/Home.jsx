@@ -30,14 +30,18 @@ export default function Home() {
             route: "/About",
             text: "About Picklemall",
         },
+        // {
+        //     route: "/Shop",
+        //     text: "Shop Merchandise",
+        // },
+        // {
+        //     route: "/",
+        //     text: "Download on App Store",
+        // },
         {
-            route: "/Shop",
-            text: "Shop Merchandise",
-        },
-        {
-            route: "/",
-            text: "Download on App Store",
-        },
+            route: "/Contact",
+            text: "Stay in the Loop"
+        }
     ].map((l, idx) => (
         <div key={l.text}>
             <Link className="quick-link d-flex justify-content-between" to={l.route}>
@@ -101,15 +105,15 @@ export default function Home() {
                         <h1 className="welcome mb-4">
                             The Future of Pickleball Is Indoors.
                         </h1>
-                        <Button
-                            className="book-button text-deep-blue mb-4"
-                            color="rallyBlue"
-                            variant="contained"
-                            size="large"
-                            disableElevation
-                        >
-                            Book a Court
-                        </Button>
+                        {/*<Button*/}
+                        {/*    className="book-button text-deep-blue mb-4"*/}
+                        {/*    color="rallyBlue"*/}
+                        {/*    variant="contained"*/}
+                        {/*    size="large"*/}
+                        {/*    disableElevation*/}
+                        {/*>*/}
+                        {/*    Book a Court*/}
+                        {/*</Button>*/}
                     </div>
                 </div>
             </div>
@@ -141,23 +145,23 @@ export default function Home() {
                                 coaching to a range of social events and tournaments.
                             </p>
                             <div className={'d-none d-md-block'}>
-                                <Button
-                                    variant={"contained"}
-                                    color={"volleyBlue"}
-                                    className={"text-nowrap my-4"}
-                                    disableElevation
-                                >
-                                    Book a Court
-                                </Button>
-                                <Button
-                                    variant={"text"}
-                                    className={"text-volley-blue text- mx-2"}
-                                >
-                                    Learn more&nbsp;
-                                    <span className={"material-symbols-outlined"}>
-                                  arrow_forward
-                                </span>
-                                </Button>
+                                {/*<Button*/}
+                                {/*    variant={"contained"}*/}
+                                {/*    color={"volleyBlue"}*/}
+                                {/*    className={"text-nowrap my-4"}*/}
+                                {/*    disableElevation*/}
+                                {/*>*/}
+                                {/*    Book a Court*/}
+                                {/*</Button>*/}
+                                {/*<Button*/}
+                                {/*    variant={"text"}*/}
+                                {/*    className={"text-volley-blue text- mx-2"}*/}
+                                {/*>*/}
+                                {/*    Learn more&nbsp;*/}
+                                {/*    <span className={"material-symbols-outlined"}>*/}
+                                {/*  arrow_forward*/}
+                                {/*</span>*/}
+                                {/*</Button>*/}
                             </div>
                         </Grid>
                         <Grid xs={12} lg={4}>
@@ -209,7 +213,7 @@ export default function Home() {
                             <div key={l.address} className={"card-wrapper"}>
                                 <div className={"card"}>
                                     <div className={"card-top-photo-wrapper"}>
-                                        {l.isOpen &&
+                                        {(l.isOpen || l.numCourts) &&
                                             <span
                                                 className="badge fs-12px">{l.numCourts} {l.numCourts === 1 ? 'Court' : 'Courts'}</span>
                                         }
@@ -416,17 +420,17 @@ export default function Home() {
                                     laugh, sweat, and compete! Conveniently meet friends and find
                                     teammates from all talent levels
                                 </p>
-                                <Link className={'no-underline'} to={'https://book.thepicklemall.com/book/Picklemall'}>
-                                    <Button
-                                        className="book-button text-white mb-3 mt-md-2 fs-14px fs-md-16px"
-                                        color="volleyBlue"
-                                        variant="contained"
-                                        size="large"
-                                        disableElevation
-                                    >
-                                        Book a Court
-                                    </Button>
-                                </Link>
+                                {/*<Link className={'no-underline'} to={'https://book.thepicklemall.com/book/Picklemall'}>*/}
+                                {/*    <Button*/}
+                                {/*        className="book-button text-white mb-3 mt-md-2 fs-14px fs-md-16px"*/}
+                                {/*        color="volleyBlue"*/}
+                                {/*        variant="contained"*/}
+                                {/*        size="large"*/}
+                                {/*        disableElevation*/}
+                                {/*    >*/}
+                                {/*        Book a Court*/}
+                                {/*    </Button>*/}
+                                {/*</Link>*/}
                             </div>
                         </div>
                         <img src={stock1} className="stock-1" alt="stock"/>
@@ -469,27 +473,27 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className={"section-8 d-none d-lg-block"}>
-                <div className={"bg-white"}>
-                    <h1 className="font-barlow-condensed text-deep-blue mb-3">
-                        Our staff<span className="text-pickle-green">.</span>
-                    </h1>
-                    <Grid className={'staff-grid mb-5'} container spacing={0}>
-                        {staff.map((s, idx) =>
-                            <Grid key={idx} xs={3}>
-                                <div className={"staff-card-wrapper"}>
-                                    <div
-                                        className={"staff-card m-3 p-3 bg-bright-white d-flex flex-column justify-content-center align-items-center text-center"}>
-                                        <img className={'mt-2'} src={s.photo} alt={"headshot"}/>
-                                        <h3 className={'name font-barlow-condensed fs-24px text-deep-blue mt-2 mb-1'}>{s.name}</h3>
-                                        <small className={'title text-kitchen-green fw-500 mb-2'}>{s.title}</small>
-                                    </div>
-                                </div>
-                            </Grid>
-                        )}
-                    </Grid>
-                </div>
-            </div>
+            {/*<div className={"section-8 d-none d-lg-block"}>*/}
+            {/*    <div className={"bg-white"}>*/}
+            {/*        <h1 className="font-barlow-condensed text-deep-blue mb-3">*/}
+            {/*            Our staff<span className="text-pickle-green">.</span>*/}
+            {/*        </h1>*/}
+            {/*        <Grid className={'staff-grid mb-5'} container spacing={0}>*/}
+            {/*            {staff.map((s, idx) =>*/}
+            {/*                <Grid key={idx} xs={3}>*/}
+            {/*                    <div className={"staff-card-wrapper"}>*/}
+            {/*                        <div*/}
+            {/*                            className={"staff-card m-3 p-3 bg-bright-white d-flex flex-column justify-content-center align-items-center text-center"}>*/}
+            {/*                            <img className={'mt-2'} src={s.photo} alt={"headshot"}/>*/}
+            {/*                            <h3 className={'name font-barlow-condensed fs-24px text-deep-blue mt-2 mb-1'}>{s.name}</h3>*/}
+            {/*                            <small className={'title text-kitchen-green fw-500 mb-2'}>{s.title}</small>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </Grid>*/}
+            {/*            )}*/}
+            {/*        </Grid>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 }
