@@ -37,11 +37,11 @@ export default function Footer() {
         //     link: "",
         // },
 
-        // {
-        //     name: "linkedin,",
-        //     icon: linkedinIcon,
-        //     link: "",
-        // },
+        {
+            name: "linkedin,",
+            icon: linkedinIcon,
+            link: "https://www.linkedin.com/company/picklemall/",
+        },
 
         {
             name: "tiktok,",

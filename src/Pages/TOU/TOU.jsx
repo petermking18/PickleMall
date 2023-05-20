@@ -13,7 +13,7 @@ export default function TOU() {
                 <p className={'mt-1 mb-5'}>
                     Last modified: April 18, 2023
                 </p>
-                
+
                 <p>
                     <strong>Acceptance of the Terms of Use</strong>
                 </p>
