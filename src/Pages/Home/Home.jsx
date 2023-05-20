@@ -106,7 +106,7 @@ export default function Home() {
                     className="content pt-md-0 pt-lg-0 d-md-flex align-items-center justify-content-center justify-content-md-start h-100">
                     <div className="px-md-5rem pt-1 py-md-3 py-lg-5 d-flex d-md-block justify-content-center w-md-50">
                         <h1 className="welcome my-4 d-inline">
-                            The future of Pickleball
+                            The Future of Pickleball
                         </h1>
                         {/*<Button*/}
                         {/*    className="book-button text-deep-blue mb-4"*/}
@@ -404,7 +404,7 @@ export default function Home() {
                                     At Picklemall, we are on a mission to revolutionize the indoor pickleball experience
                                     across the United States. Our innovative concept combines the adaptive reuse of mall
                                     spaces, cutting-edge technology, and an unwavering passion for the game. With the
-                                    support of pickleball fanatic and billionaire financier Steve Kuhn, we are primed
+                                    support of the pickleball community, we are primed
                                     for rapid nationwide expansion, bringing the joy of pickleball to communities all
                                     over the country.
                                 </p>

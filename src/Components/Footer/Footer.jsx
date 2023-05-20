@@ -135,13 +135,13 @@ export default function Footer() {
                         >
                             <span>Terms of Use</span>
                         </Link>
-                        <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
-                        <Link
-                            to={"/"}
-                            className={"small link-normal text-center text-sm-start"}
-                        >
-                            <span>Do Not Sell My Information</span>
-                        </Link>
+                        {/*<span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>*/}
+                        {/*<Link*/}
+                        {/*    to={"/"}*/}
+                        {/*    className={"small link-normal text-center text-sm-start"}*/}
+                        {/*>*/}
+                        {/*    <span>Do Not Sell My Information</span>*/}
+                        {/*</Link>*/}
                     </Grid>
                     <Grid xs={12} sm={3} className={"text-center text-sm-start d-block d-md-none mb-3"}>
                         <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>

@@ -11,6 +11,14 @@
 
     a.logo {
       position: relative;
+      @include media-breakpoint-up(md) {
+        img {
+          width: 175px;
+          height: auto;
+          left: -5px;
+        }
+      }
+
 
       @include media-breakpoint-up(md) {
         left: -1;
@@ -46,6 +54,10 @@
           height: 1px;
           background-color: var(--bs-soft-serve);
           border: none;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 20px !important;
         }
       }
       @media (max-width: 767px) {

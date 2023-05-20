@@ -42,14 +42,14 @@ export default function EmailCollection() {
     }
 
     return <div className={'EmailCollection'}>
-        <div className={'email-card bg-white p-md-2'}>
+        <div className={'email-card p-md-2'}>
             {vs !== ViewStates.Submitted &&
                 <div className={'d-md-flex p-2'}>
                     <div className={'pe-md-2'}>
                         <TextField id={'inputEmailCollection'}
                                    label={'Email'}
                                    variant={'outlined'}
-                                   color={'volleyBlue'}
+                                   color={'lightGray'}
                                    size={'small'}
                                    className={'mr-2'}
                                    onKeyDown={(e) => keyDown(e)}
@@ -58,7 +58,7 @@ export default function EmailCollection() {
                         />
                     </div>
                     <div className={'d-flex justify-content-center pt-2 pt-md-0'}>
-                        <Button color={'volleyBlue'}
+                        <Button color={'lightGray'}
                                 size={'small'}
                                 variant={'contained'}
                                 disableElevation
@@ -68,7 +68,7 @@ export default function EmailCollection() {
                             Stay in the loop
                             {vs === ViewStates.Submitting && (
                                 <CircularProgress
-                                    color="volleyBlue"
+                                    color="brightWhite"
                                     style={{
                                         width: "18px",
                                         height: "18px",
@@ -86,7 +86,7 @@ export default function EmailCollection() {
                 <div className="exclamation-circle bg-volley-blue me-2">
                     <CheckCircleOutline />
                 </div>
-                <span className={'fs-14px fs-md-16px'}>We'll be in touch!</span>
+                <span className={'fs-14px fs-md-16px text-light'}>We'll be in touch!</span>
             </div>
             }
         </div>

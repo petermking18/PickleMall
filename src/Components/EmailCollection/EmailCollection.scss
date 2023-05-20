@@ -2,7 +2,35 @@
 
 .EmailCollection {
     .email-card {
+        background-color: rgba(var(--bs-deep-blue-rgb), 0.7);
         border-radius: 12px;
+
+        .MuiFormControl-root {
+            .MuiOutlinedInput-root {
+                fieldset {
+                    border-color: rgba(var(--bs-bright-white-rgb), 0.7);
+                    border-width: 2px;
+                }
+            }
+            label {
+                color: #fff;
+            }
+
+            input {
+                color: #fff;
+            }
+        }
+
+        .MuiButtonBase-root {
+            &:disabled {
+                background-color: rgba(var(--bs-bright-white-rgb), 0.2);
+                color: var(--bs-bright-white);
+
+                &:hover {
+                    cursor: not-allowed !important;
+                }
+            }
+        }
 
         .exclamation-circle {
             border-radius: 25rem;
