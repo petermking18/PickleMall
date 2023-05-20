@@ -1,0 +1,23 @@
+@import "../../Global.scss";
+
+.EmailCollection {
+    .email-card {
+        border-radius: 12px;
+
+        .exclamation-circle {
+            border-radius: 25rem;
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                color: var(--bs-bright-white);
+            }
+        }
+    }
+}

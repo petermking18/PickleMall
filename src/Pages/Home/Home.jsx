@@ -24,6 +24,8 @@ import courts from "../../Assets/Courts.png"
 import GreenRackets from "./GreenRackets.png";
 import Placeholder from "../../Assets/Placeholder.png";
 
+import EmailCollection from '../../Components/EmailCollection/EmailCollection'
+
 export default function Home() {
     const section1QuickLinks = [
         {
@@ -100,10 +102,11 @@ export default function Home() {
     return (
         <div className="home">
             <div className="section-1 my-0">
-                <div className="content pt-md-0 pt-lg-0 d-flex align-items-center justify-content-center justify-content-md-start h-100">
-                    <div className="px-md-5rem pt-1 py-md-3 py-lg-5 d-flex d-md-block justify-content-center">
+                <div
+                    className="content pt-md-0 pt-lg-0 d-md-flex align-items-center justify-content-center justify-content-md-start h-100">
+                    <div className="px-md-5rem pt-1 py-md-3 py-lg-5 d-flex d-md-block justify-content-center w-md-50">
                         <h1 className="welcome my-4 d-inline">
-                            The Future of<br className={'d-none d-md-block'}/> Pickleball<br className={'d-block d-md-none'}/> is Indoors.
+                            The future of Pickleball
                         </h1>
                         {/*<Button*/}
                         {/*    className="book-button text-deep-blue mb-4"*/}
@@ -115,53 +118,52 @@ export default function Home() {
                         {/*    Book a Court*/}
                         {/*</Button>*/}
                     </div>
+                    <div className={'w-md-50 d-flex justify-content-center flex-grow-1'}>
+                        <EmailCollection/>
+                    </div>
                 </div>
             </div>
             <div className="section-2 px-4 px-md-5rem">
                 <div className="pb-4 py-md-5 mt-md-3">
                     <Grid container spacing={8}>
-                        <Grid xs={12} lg={8} className={'pb-0'}>
-                            <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue mt-md-0">
-                                <div className="text-md-nowrap fs-24px fs-md-40px">
-                                    Welcome to Picklemall
-                                    <span className="text-pickle-green">.</span>
-                                    &nbsp;
+                        <Grid xs={12} lg={8} className={'pb-0 d-flex align-items-center'}>
+                            <div className={'mb-md-5'}>
+                                <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue mt-md-0">
+                                    <div className="text-md-nowrap fs-24px fs-md-40px">
+                                        Welcome to Picklemall
+                                        <span className="text-pickle-green">.</span>
+                                        &nbsp;
+                                    </div>
+                                </h1>
+                                <p className="text-black fs-14px fs-md-16px mb-0 mb-md-3">
+                                    Discover the next level of pickleball at Picklemall, where innovation, community,
+                                    and
+                                    premium
+                                    facilities come together. As the pioneering modular indoor pickleball concept in the
+                                    U.S., we're
+                                    revolutionizing the way you play and connect with others who share your passion for
+                                    the
+                                    game.
+                                </p>
+                                <div className={'d-none d-md-block'}>
+                                    {/*<Button*/}
+                                    {/*    variant={"contained"}*/}
+                                    {/*    color={"volleyBlue"}*/}
+                                    {/*    className={"text-nowrap my-4"}*/}
+                                    {/*    disableElevation*/}
+                                    {/*>*/}
+                                    {/*    Book a Court*/}
+                                    {/*</Button>*/}
+                                    {/*<Button*/}
+                                    {/*    variant={"text"}*/}
+                                    {/*    className={"text-volley-blue text- mx-2"}*/}
+                                    {/*>*/}
+                                    {/*    Learn more&nbsp;*/}
+                                    {/*    <span className={"material-symbols-outlined"}>*/}
+                                    {/*  arrow_forward*/}
+                                    {/*</span>*/}
+                                    {/*</Button>*/}
                                 </div>
-                            </h1>
-                            <p className="text-black fs-14px fs-md-16px mb-0 mb-md-3">
-                                The Picklemall offers a one-of-a-kind playing experience,
-                                featuring state-of-the-art courts, equipment, and amenities that
-                                cater to players' every need. With a range of courts available,
-                                players can choose the ideal playing surface for their skill
-                                level and play style, ensuring a challenging and exciting game
-                                every time.
-                                <br/>
-                                <br/>
-                                Picklemall is committed to providing an inclusive and welcoming
-                                environment for players of all ages and backgrounds, fostering a
-                                sense of community and camaraderie among players. Whether you're
-                                a seasoned pro or a newcomer to the sport, you'll find
-                                everything you need to thrive at Picklemall, from top-notch
-                                coaching to a range of social events and tournaments.
-                            </p>
-                            <div className={'d-none d-md-block'}>
-                                {/*<Button*/}
-                                {/*    variant={"contained"}*/}
-                                {/*    color={"volleyBlue"}*/}
-                                {/*    className={"text-nowrap my-4"}*/}
-                                {/*    disableElevation*/}
-                                {/*>*/}
-                                {/*    Book a Court*/}
-                                {/*</Button>*/}
-                                {/*<Button*/}
-                                {/*    variant={"text"}*/}
-                                {/*    className={"text-volley-blue text- mx-2"}*/}
-                                {/*>*/}
-                                {/*    Learn more&nbsp;*/}
-                                {/*    <span className={"material-symbols-outlined"}>*/}
-                                {/*  arrow_forward*/}
-                                {/*</span>*/}
-                                {/*</Button>*/}
                             </div>
                         </Grid>
                         <Grid xs={12} lg={4}>
@@ -296,9 +298,10 @@ export default function Home() {
                                                         <Button
                                                             variant={"text"}
                                                             className={"text-volley-blue text-nowrap"}
-                                                            >
+                                                        >
                                                             Learn more&nbsp;
-                                                            <span className={"material-symbols-outlined"}>arrow_forward</span>
+                                                            <span
+                                                                className={"material-symbols-outlined"}>arrow_forward</span>
                                                         </Button>
                                                     </Link>
                                                 </Stack>
@@ -416,9 +419,15 @@ export default function Home() {
                                     Find your people<span className="text-pickle-green">.</span>
                                 </h1>
                                 <p className="text-black mt-0 mb-4 mb-md-4 fs-14px fs-md-16px">
-                                    Community is core to pickleball, it is what allows us all to
-                                    laugh, sweat, and compete! Conveniently meet friends and find
-                                    teammates from all talent levels
+                                    At Picklemall, we're more than just a pickleball venue – we're a thriving community.
+                                    Step into our state-of-the-art facilities and feel the energy of players coming
+                                    together, forging new friendships, and sharing the love for the game.
+                                    <br/>
+                                    <br/>
+                                    Whether you're a seasoned player or a beginner, our diverse range of activities
+                                    caters to everyone. Join leagues, tournaments, and clinics for competitive play and
+                                    skill development. Or simply enjoy open play sessions, where you can meet new people
+                                    and engage in friendly matches.
                                 </p>
                                 {/*<Link className={'no-underline'} to={'https://book.thepicklemall.com/book/Picklemall'}>*/}
                                 {/*    <Button*/}
@@ -445,9 +454,15 @@ export default function Home() {
                             <span className="text-pickle-green">.</span>
                         </h1>
                         <p className="text-black mt-0 mb-5 fs-14px fs-md-16px">
-                            Immediately start playing with open play, memberships, or ad-hoc
-                            reservations. Picklemall courts are a breeze to consistently show
-                            up to.
+                            At Picklemall, we prioritize convenience and give you the power to control your court time
+                            like never before. We understand that your time is valuable, and we're committed to ensuring
+                            a seamless and efficient experience for all players.
+                            <br/>
+                            <br/>
+                            Gone are the days of waiting around for your turn on the court. With our user-friendly
+                            mobile app, scheduling a pickleball game at Picklemall is as easy as a few taps on your
+                            phone. Reserve your court, set your playtime, and unlock the door to your Picklemall
+                            experience—all at your fingertips.
                         </p>
                     </div>
                     <div className="d-flex">
@@ -459,14 +474,24 @@ export default function Home() {
             <div className="section-7">
                 <div className="">
                     <div className="d-flex align-items-center prem-facilities">
-                        <div className="bg-white container-padding-left">
-                            <h1 className="font-barlow-condensed text-deep-blue">
+                        <div className="bg-white">
+                            <h1 className="font-barlow-condensed text-deep-blue fs-35px fs-md-40px my-1 mt-md-5">
                                 Premier facilities<span className="text-pickle-green">.</span>
                             </h1>
-                            <p className="text-black">
-                                Nothing should get in the way of your game. Modern LED lighting,
-                                AC, Heat, and professional grade court surfaces allow time on
-                                the court to be fun, safe, and stress-free.
+                            <p className="text-black fs-14px fs-md-16px">
+                                At Picklemall, we're dedicated to providing a superior pickleball experience. Our
+                                state-of-the-art facilities feature top-notch championship-style courts, ensuring
+                                exceptional gameplay for players of all levels. Enjoy climate-controlled environments
+                                that offer optimal conditions year- round, allowing you to focus on the game without
+                                distractions.
+                                <br/>
+                                <br/>
+                                We believe in the power of technology to elevate the player experience. In the coming
+                                months, we will be launching a user-friendly mobile app, available on both Android and
+                                iOS platforms. The Picklemall app will revolutionize how players schedule games, track
+                                their performance, and improve their skills. Additionally, our cutting-edge court
+                                cameras will allow players to review their gameplay footage in real time, offering
+                                valuable insights and learning opportunities.
                             </p>
                         </div>
                         <img src={courts} className="stock-2" alt="stock"/>
