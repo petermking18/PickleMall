@@ -15,6 +15,7 @@ import Locations from "./Pages/Locations/Locations";
 import About from "./Pages/About/About";
 import ContactForm from "./Pages/ContactForm/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
+import TOU from './Pages/TOU/TOU'
 
 import "./custom-bootstrap.scss";
 import "./App.scss";
@@ -36,6 +37,7 @@ const App = () => (
                     <Route path={"/about"} element={<About/>}/>
                     <Route path={"/contact"} element={<ContactForm/>}/>
                     <Route path={"/privacypolicy"} element={<PrivacyPolicy/>}/>
+                    <Route path={"/termsofuse"} element={<TOU/>}/>
                 </Routes>
                 <Footer/>
             </div>

@@ -130,10 +130,10 @@ export default function Footer() {
                         </Link>
                         <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
                         <Link
-                            to={"/"}
+                            to={"/TermsOfUse"}
                             className={"small link-normal text-center text-sm-start"}
                         >
-                            <span>Terms of Service</span>
+                            <span>Terms of Use</span>
                         </Link>
                         <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
                         <Link
