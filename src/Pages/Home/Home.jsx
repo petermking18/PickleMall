@@ -400,7 +400,7 @@ export default function Home() {
                                 {/*<h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">*/}
                                 {/*    Come & Play*/}
                                 {/*</h1>*/}
-                                <p className="text-black fs-12px fs-md-16px mt-0 mb-0">
+                                <p className="text-black fs-14px fs-md-16px mt-0 mb-0">
                                     At Picklemall, we are on a mission to revolutionize the indoor pickleball experience
                                     across the United States. Our innovative concept combines the adaptive reuse of mall
                                     spaces, cutting-edge technology, and an unwavering passion for the game. With the
@@ -533,7 +533,7 @@ export default function Home() {
                                 {/*<h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">*/}
                                 {/*    Come & Play*/}
                                 {/*</h1>*/}
-                                <p className="text-black fs-12px fs-md-16px mt-0 mb-0">
+                                <p className="text-black fs-14px fs-md-16px mt-0 mb-0">
                                     We invite you to join us on this exciting journey as we redefine the pickleball
                                     experience. Follow us on Instagram to stay updated on our progress at Arizona Mills
                                     and our rapid expansion across the United States. For more information and updates,
