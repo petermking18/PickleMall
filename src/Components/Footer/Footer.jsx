@@ -14,16 +14,16 @@ import "./Footer.scss";
 
 export default function Footer() {
     const socials = [
-        {
-            name: "twitter,",
-            icon: twitterIcon,
-            link: "",
-        },
-        {
-            name: "facebook,",
-            icon: facebookIcon,
-            link: "",
-        },
+        // {
+        //     name: "twitter,",
+        //     icon: twitterIcon,
+        //     link: "",
+        // },
+        // {
+        //     name: "facebook,",
+        //     icon: facebookIcon,
+        //     link: "",
+        // },
 
         {
             name: "instagram,",
@@ -37,11 +37,11 @@ export default function Footer() {
         //     link: "",
         // },
 
-        {
-            name: "linkedin,",
-            icon: linkedinIcon,
-            link: "",
-        },
+        // {
+        //     name: "linkedin,",
+        //     icon: linkedinIcon,
+        //     link: "",
+        // },
 
         {
             name: "tiktok,",

@@ -388,8 +388,8 @@ export default function Home() {
             </div>
             <div className="section-4">
                 <div className="s4-header pt-3 pb-5 py-md-5">
-                    <h1 className="text-nowrap font-barlow-condensed text-deep-blue fs-35px fs-md-40px mt-0 mb-4">
-                        It pays to show up<span className="text-pickle-green">.</span>
+                    <h1 className="font-barlow-condensed text-deep-blue fs-35px fs-md-40px mt-0 mb-4">
+                        Revolutionizing the Indoor Pickleball Experience<span className="text-pickle-green">.</span>
                     </h1>
                     <div className="d-flex shadow it-pays">
                         <div className="stock-6-wrapper">
@@ -397,13 +397,16 @@ export default function Home() {
                         </div>
                         <div className="bg-white d-flex justify-content-center align-items-center">
                             <div className={'py-md-4 px-md-5'}>
-                                <h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">
-                                    Come & Play
-                                </h1>
-                                <p className="text-black fs-12px fs-md-16px mb-0">
-                                    Picklemall memberships are designed for maximum enjoyment. We
-                                    want to see you working on your game and playing several times
-                                    per week.
+                                {/*<h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">*/}
+                                {/*    Come & Play*/}
+                                {/*</h1>*/}
+                                <p className="text-black fs-12px fs-md-16px mt-0 mb-0">
+                                    At Picklemall, we are on a mission to revolutionize the indoor pickleball experience
+                                    across the United States. Our innovative concept combines the adaptive reuse of mall
+                                    spaces, cutting-edge technology, and an unwavering passion for the game. With the
+                                    support of pickleball fanatic and billionaire financier Steve Kuhn, we are primed
+                                    for rapid nationwide expansion, bringing the joy of pickleball to communities all
+                                    over the country.
                                 </p>
                             </div>
                         </div>
@@ -476,7 +479,7 @@ export default function Home() {
                     <div className="d-flex align-items-center prem-facilities">
                         <div className="bg-white">
                             <h1 className="font-barlow-condensed text-deep-blue fs-35px fs-md-40px my-1 mt-md-5">
-                                Premier facilities<span className="text-pickle-green">.</span>
+                                Premium facilities<span className="text-pickle-green">.</span>
                             </h1>
                             <p className="text-black fs-14px fs-md-16px">
                                 At Picklemall, we're dedicated to providing a superior pickleball experience. Our
@@ -519,6 +522,32 @@ export default function Home() {
             {/*        </Grid>*/}
             {/*    </div>*/}
             {/*</div>*/}
+            <div className="section-9">
+                <div className="s9-header pt-3 pb-5 py-md-5">
+                    <h1 className="font-barlow-condensed text-deep-blue fs-35px fs-md-40px mt-0 mb-4">
+                        Join the Picklemall Community<span className="text-pickle-green">.</span>
+                    </h1>
+                    <div className="d-flex shadow it-pays">
+                        <div className="bg-white d-flex justify-content-center align-items-center">
+                            <div className={'py-md-4 px-md-5'}>
+                                {/*<h1 className="font-barlow-condensed text-deep-blue fs-20px fs-md-24px mt-0 mb-1 fw-700">*/}
+                                {/*    Come & Play*/}
+                                {/*</h1>*/}
+                                <p className="text-black fs-12px fs-md-16px mt-0 mb-0">
+                                    We invite you to join us on this exciting journey as we redefine the pickleball
+                                    experience. Follow us on Instagram to stay updated on our progress at Arizona Mills
+                                    and our rapid expansion across the United States. For more information and updates,
+                                    visit our website at www.thepicklemall.com. Experience the future of pickleball with
+                                    Picklemall!
+                                </p>
+                            </div>
+                        </div>
+                        <div className="stock-6-wrapper">
+                            <img src={stock6} className="stock-6" alt="stock"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
