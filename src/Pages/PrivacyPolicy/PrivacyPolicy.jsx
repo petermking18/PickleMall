@@ -6,16 +6,20 @@ export default function PrivacyPolicy() {
 
     return (
         <div className={'privacy-policy'}>
-            <div className={'d-flex justify-content-center py-5'}>
-                <img src={logo} alt={'logo'}/>
-            </div>
             <div className={'container fs-16px pb-5'}>
+                <div className={'d-flex justify-content-center justify-content-md-center py-5'}>
+                    <img src={logo} alt={'logo'}/>
+                </div>
+                <h1 className={'mb-0'}>Website Privacy Policy</h1>
+                <p className={'mt-1 mb-5'}>
+                    Last modified: April 18, 2023
+                </p>
+
+                <b>Introduction</b>
                 <p>
                     PickleMall, Inc. ("Company" or "We" or “PickleMall”) respect your privacy and are committed to
                     protecting it through our compliance with this policy.
-                </p>
-
-                <p>
+                    <br/>
                     This policy describes the types of information we may collect from you or that you may provide when
                     you visit the website https://thepicklemall.com (our "Website") or the application (collectively
                     referred to as the “Platforms”) and our practices for collecting, using, maintaining, protecting,

@@ -5,6 +5,12 @@
         height: 96px;
         width: auto;
     }
+    @include media-breakpoint-down(md) {
+        img {
+            height: 70px;
+            margin-left: -20px;
+        }
+    }
 
     ul {
         margin-top: 0.5rem;
