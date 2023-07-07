@@ -12,59 +12,87 @@ $nav-height: 4rem;
     text-decoration: none !important;
 }
 
+@function pxToRem($pxSize) {
+    @return calc($pxSize / 16 + rem);
+}
 
-.fs-12px {
-    font-size: 12px !important;
+
+$fs-list: 12 14 15 16 18 20 22 24 30 32 35 40 80 88 96;
+
+@each $value in $fs-list {
+    .fs-#{$value}px {
+        font-size: $value + px !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        .fs-md-#{$value}px {
+            font-size: $value + px !important;
+        }
+    }
 }
-.fs-14px {
-    font-size: 14px !important;
+
+$fw-list: 500 600 700;
+
+@each $value in $fw-list {
+    .fw-#{$value} {
+        font-weight: $value !important;
+    }
 }
-.fs-16px {
-    font-size: 16px !important;
-}
-.fs-20px {
-    font-size: 20px !important;
-}
-.fs-24px {
-    font-size: 24px !important;
-}
-.fs-30px {
-    font-size: 30px !important;
-}
-.fs-35px {
-    font-size: 35px !important;
-}
-.fs-40px {
-    font-size: 40px !important;
-}
+
+
+
+//.fs-12px {
+//    font-size: 12px !important;
+//}
+//.fs-14px {
+//    font-size: 14px !important;
+//}
+//.fs-16px {
+//    font-size: 16px !important;
+//}
+//.fs-20px {
+//    font-size: 20px !important;
+//}
+//.fs-24px {
+//    font-size: 24px !important;
+//}
+//.fs-30px {
+//    font-size: 30px !important;
+//}
+//.fs-35px {
+//    font-size: 35px !important;
+//}
+//.fs-40px {
+//    font-size: 40px !important;
+//}
 .mt--0-45rem {
     margin-top: -0.45rem !important;
 }
 @include media-breakpoint-up(md) {
-    .fs-md-15px {
-        font-size: 15px !important;
-    }
-    .fs-md-16px {
-        font-size: 16px !important;
-    }
-    .fs-md-20px {
-        font-size: 20px !important;
-    }
-    .fs-md-24px {
-        font-size: 24px !important;
-    }
-    .fs-md-32px {
-        font-size: 32px !important;
-    }
-    .fs-md-40px {
-        font-size: 40px !important;
-    }
-    .fs-md-80px {
-        font-size: 80px !important;
-    }
-    .fs-md-88px {
-        font-size: 88px !important;
-    }
+    //.fs-md-15px {
+    //    font-size: 15px !important;
+    //}
+    //.fs-md-16px {
+    //    font-size: 16px !important;
+    //}
+    //.fs-md-20px {
+    //    font-size: 20px !important;
+    //}
+    //.fs-md-24px {
+    //    font-size: 24px !important;
+    //}
+    //.fs-md-32px {
+    //    font-size: 32px !important;
+    //}
+    //.fs-md-40px {
+    //    font-size: 40px !important;
+    //}
+    //.fs-md-80px {
+    //    font-size: 80px !important;
+    //}
+    //.fs-md-88px {
+    //    font-size: 88px !important;
+    //}
     .mt-md--1-5rem {
         margin-top: -1.5rem !important;
     }

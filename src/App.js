@@ -5,11 +5,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Nav2 from "./Components/Nav2/Nav2";
+import Nav from "./Components/Nav3/Nav";
 import Footer from "./Components/Footer/Footer";
 
 import Landing from "./Pages/Landing/Landing";
-import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home2/Home";
 import WhatToExpect from "./Pages/WhatToExpect/WhatToExpect";
 import Locations from "./Pages/Locations/Locations";
 import About from "./Pages/About/About";
@@ -28,7 +28,7 @@ const App = () => (
         <BrowserRouter>
             <ScrollTop/>
             <div className={'root-page'}>
-                <Nav2/>
+                <Nav/>
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
                     <Route path={"*"} element={<Home/>}/>

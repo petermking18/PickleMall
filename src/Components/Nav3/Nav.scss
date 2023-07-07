@@ -1,0 +1,71 @@
+@import "../../Global.scss";
+
+.nav2 {
+  width: 100%;
+  .navbar {
+    // height: $nav-height;
+    padding: 0rem 2.5rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+
+    a.logo {
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+        transform: translateX(-1rem);
+        img {
+          width: 97px;
+          height: auto;
+          left: -5px;
+        }
+      }
+
+
+      @include media-breakpoint-up(md) {
+        left: -1;
+      }
+    }
+
+    // overflow: hidden !important;
+
+    .nav-items {
+      height: 100vh;
+      @include media-breakpoint-up(md) {
+        height: auto;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        color: var(--bs-bright-white);
+        text-transform: uppercase;
+        @extend .font-barlow-condensed;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        padding: 1rem;
+        @media (max-width: 767px) {
+          color: var(--bs-deep-blue);
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          padding: 0.5rem 1rem;
+        }
+
+        .hr-soft-serve {
+          height: 1px;
+          background-color: var(--bs-soft-serve);
+          border: none;
+        }
+
+        @include media-breakpoint-up(md) {
+          //font-size: 20px !important;
+        }
+      }
+      @media (max-width: 767px) {
+        background-color: var(--bs-bright-white);
+        padding-top: 1rem;
+      }
+    }
+  }
+}

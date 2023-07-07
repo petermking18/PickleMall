@@ -3,16 +3,17 @@
 @import '../node_modules/bootstrap/scss/variables';
 
 $custom-colors: (
-    "rally-blue": #bbf1ff,
-    "volley-blue": #237d91,
-    "pickle-green": #49c13d,
-    "kitchen-green": #367236,
-    "soft-serve": #f4cbf3,
-    "taupe": #e2dfd5,
-    "deep-blue": #002e43,
-    "bright-white": #ffffff,
-    "off-white": #f7f7f7,
-    "off-white-2": #f2f2f2
+        "rally-blue": #bbf1ff,
+        "volley-blue": #237d91,
+        "pickle-green": #49c13d,
+        "kitchen-green": #367236,
+        "soft-serve": #f4cbf3,
+        "taupe": #e2dfd5,
+        "deep-blue": #002e43,
+        "bright-white": #ffffff,
+        "off-white": #f7f7f7,
+        "off-white-2": #f2f2f2,
+        "light-blue": #C0E7F6
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
