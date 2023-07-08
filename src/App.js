@@ -12,7 +12,7 @@ import Landing from "./Pages/Landing/Landing";
 import Home from "./Pages/Home2/Home";
 import WhatToExpect from "./Pages/WhatToExpect/WhatToExpect";
 import Locations from "./Pages/Locations/Locations";
-import About from "./Pages/About/About";
+import About from "./Pages/About2/About";
 import ContactForm from "./Pages/ContactForm/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 import TOU from './Pages/TOU/TOU'

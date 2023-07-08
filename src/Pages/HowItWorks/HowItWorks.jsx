@@ -1,8 +1,8 @@
 import React, {useState, useRef} from "react"
 import {Link} from "react-router-dom"
 import {Button, useMediaQuery} from "@mui/material"
-import Grid from "@mui/material/Unstable_Grid2"
 import {useTheme} from "@mui/material"
+import Grid from "@mui/material/Unstable_Grid2"
 
 import "./HowItWorks.scss"
 import Common from '../../Common'
@@ -21,16 +21,16 @@ export default function HowItWorks() {
             {/* header */}
             <div className={"container mb-md-5"}>
                 <div className={"text-center mt-md-4 mb-md-3 pt-3 pb-2 pt-md-5 pb-md-3"}>
-                    <h1 className={"font-barlow-condensed text-deep-blue fs-32px fx-md-40px my-0"}>
+                    <h1 className={"font-barlow-condensed text-deep-blue fs-32px fs-md-40px my-0"}>
                         How It Works
                     </h1>
                     <svg className={"d-none d-md-inline-block"} xmlns="http://www.w3.org/2000/svg" width="272"
                          height="4" viewBox="0 0 272 4" fill="none">
-                        <path d="M0 2H272" stroke="#49C13D" stroke-width="4"/>
+                        <path d="M0 2H272" stroke="#49C13D" strokeWidth="4"/>
                     </svg>
                     <svg className={"d-inline-block d-md-none"} xmlns="http://www.w3.org/2000/svg" width="189"
                          height="4" viewBox="0 0 189 4" fill="none">
-                        <path d="M0 2H189" stroke="#49C13D" stroke-width="3"/>
+                        <path d="M0 2H189" stroke="#49C13D" strokeWidth="3"/>
                     </svg>
                 </div>
 

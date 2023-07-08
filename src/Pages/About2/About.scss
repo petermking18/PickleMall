@@ -1,0 +1,24 @@
+@import "../../Global.scss";
+
+.about {
+
+    .section-1 {
+
+        img {
+            width: 80%;
+            height: auto;
+
+            @include media-breakpoint-down(md) {
+                width: 100vw;
+            }
+        }
+
+    }
+
+    .section-2 {
+        background-image: url("./section_2_bg.png");
+        background-size: cover;
+
+    }
+
+}
