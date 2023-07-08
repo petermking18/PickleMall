@@ -13,7 +13,7 @@ import Home from "./Pages/Home2/Home";
 import WhatToExpect from "./Pages/WhatToExpect/WhatToExpect";
 import Locations from "./Pages/Locations/Locations";
 import About from "./Pages/About2/About";
-import ContactForm from "./Pages/ContactForm/ContactForm";
+import ContactForm from "./Pages/ContactForm2/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 import TOU from './Pages/TOU/TOU'
 import Press from './Pages/Press/Press'
