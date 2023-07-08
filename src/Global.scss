@@ -10,6 +10,7 @@ $nav-height: 4rem;
 
 .no-decoration {
     text-decoration: none !important;
+    color: inherit !important;
 }
 
 @function pxToRem($pxSize) {

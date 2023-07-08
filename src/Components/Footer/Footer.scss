@@ -1,26 +1,9 @@
 @import "../../Global.scss";
 
 footer {
-  .fs-12px {
-    font-size: 12px !important;
-  }
-  .fs-16px {
-    font-size: 16px !important;
-  }
-  @include media-breakpoint-up(md) {
-    .fs-md-16px {
-      font-size: 16px !important;
-    }
-  }
-
-  .px-md-5rem {
-    @include media-breakpoint-up(md) {
-      padding-left: 5rem !important;
-      padding-right: 5rem !important;
-    }
-  }
 }
 .footer-container {
+
 }
 .footer-text {
   white-space: normal;

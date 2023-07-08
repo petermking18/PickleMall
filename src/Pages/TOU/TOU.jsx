@@ -9,7 +9,7 @@ export default function TOU() {
                 <div className={'d-flex justify-content-center justify-content-md-center py-5'}>
                     <img src={logo} alt={'logo'}/>
                 </div>
-                <h1 className={'mb-0'}>Website Terms of Use</h1>
+                <h1 className={'mb-0'}>Website Terms of Service</h1>
                 <p className={'mt-1 mb-5'}>
                     Last modified: April 18, 2023
                 </p>
