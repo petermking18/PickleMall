@@ -138,6 +138,7 @@
 
             .slider-wrapper {
                 width: 100vw !important;
+                max-width: 2000px !important;
             }
 
             //padding-left: 5rem;
@@ -209,7 +210,7 @@
                     .card-top-photo-wrapper {
                         border-top-left-radius: 8px;
                         border-top-right-radius: 8px;
-                        height: 200px;
+                        height: 45%;
                         width: 100%;
                         position: relative;
 
@@ -239,7 +240,7 @@
                             position: absolute;
                             bottom: 0;
                             right: 0;
-                            transform: translate(-30%, 50%);
+                            transform: translate(-20%, 50%);
                         }
                     }
 
@@ -258,7 +259,7 @@
                         .location {
                             font-size: 36px;
                             font-weight: 600;
-                            max-width: calc(100% - 115px); /* to stay away from .pickle-circle */
+                            max-width: calc(100% - 100px); /* to stay away from .pickle-circle */
                             line-height: 2.5rem;
                         }
 

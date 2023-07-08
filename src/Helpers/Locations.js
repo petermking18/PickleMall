@@ -11,7 +11,7 @@ const locations = [
     hours: ["6am-10pm"],
     isOpen: false,
     notOpenMessage: "Opening July 2023",
-    numCourts: 24,
+    numCourts: 16,
     locationImg: Stock8,
     bookLink: 'https://book.thepicklemall.com/book/Picklemall'
   },

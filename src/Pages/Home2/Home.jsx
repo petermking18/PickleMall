@@ -70,33 +70,54 @@ export default function Home() {
         mobileFirst: true,
         responsive: [
             {
+                breakpoint: 3000,
+                settings: {
+                    slidesToShow: 4.55,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 4.55,
+                    slidesToScroll: 4
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2.55,
-                    slidesToScroll: 2,
+                    slidesToShow: 3.55,
+                    slidesToScroll: 3,
                 },
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2.15,
+                    slidesToShow: 2.5,
                     slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1.55,
+                    slidesToShow: 1.5,
                     slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1.05,
+                    slidesToShow: 1.25,
                     slidesToScroll: 1,
                 },
             },
+            {
+                breakpoint: 100,
+                settings: {
+                    slidesToShow: 1.25,
+                    slidesToScroll: 1
+                }
+            }
         ],
     };
 
@@ -266,7 +287,7 @@ export default function Home() {
                                         <div className={"content px-4 pb-3"}>
                                             <h1
                                                 className={
-                                                    "location location-name font-barlow-condensed text-deep-blue my-3"
+                                                    "location location-name text-nowrap font-barlow-condensed text-deep-blue my-3"
                                                 }
                                             >
                                                 {l.isOpen ? l.location : l.region}
