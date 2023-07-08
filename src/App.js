@@ -21,6 +21,7 @@ import "./custom-bootstrap.scss";
 import "./App.scss";
 
 import ScrollTop from "./ScrollTop"
+import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 
 const App = () => (
     <ThemeProvider theme={theme}>
@@ -32,7 +33,8 @@ const App = () => (
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
                     <Route path={"*"} element={<Home/>}/>
-                    <Route path={"/whattoexpect"} element={<WhatToExpect/>}/>
+                    <Route path={"/HowItWorks"} element={<HowItWorks/>}/>
+                    {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
                     {/*<Route path={"/locations"} element={<Locations/>}/>*/}
                     <Route path={"/about"} element={<About/>}/>
                     <Route path={"/contact"} element={<ContactForm/>}/>

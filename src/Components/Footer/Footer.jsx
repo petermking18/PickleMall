@@ -26,30 +26,26 @@ export default function Footer() {
             icon: facebookIcon,
             link: "https://www.facebook.com/profile.php?id=100091996094267",
         },
-
         {
             name: "instagram,",
             icon: instagramIcon,
             link: "https://www.instagram.com/thepicklemall/",
         },
-
         // {
         //     name: "youtube,",
         //     icon: youtubeIcon,
         //     link: "",
         // },
-
         {
             name: "linkedin,",
             icon: linkedinIcon,
             link: "https://www.linkedin.com/company/picklemall/",
         },
-
         {
             name: "tiktok,",
             icon: tiktokIcon,
             link: "https://www.tiktok.com/@thepicklemall",
-        },
+        }
     ];
     return (
         <footer className={"bg-deep-blue text-light"}>
@@ -57,11 +53,9 @@ export default function Footer() {
                 <div className={"container"}>
                     <div className={"footer-container"}>
                         {/* col1 */}
-                        <Grid
-                            container
+                        <Grid container
                             spacing={3}
-                            className={"mt-0 mb-1 text-nowrap align-items-center"}
-                        >
+                            className={"mt-0 mb-1 text-nowrap align-items-center"}>
                             <Grid xs={12} md={4}>
                                 <div>
                                     <a href={"/"} className={"logo d-inline-block py-2"}>
@@ -75,7 +69,7 @@ export default function Footer() {
                                 </p>
                             </Grid>
                             {/* col2 */}
-                            <Grid xs={12} md={4} className={"d-flex flex-column"}>
+                            <Grid xs={12} md={4} className={"ps-md-5 d-flex flex-column"}>
                                 <div className="footer-links fs-16px pl-md-5">
                                     <Link to={"/HowItWorks"}
                                           className={"small link-normal text-start"}>
@@ -85,15 +79,13 @@ export default function Footer() {
                                           className={"small link-normal text-start"}>
                                         About
                                     </Link>
-                                    <Link
-                                        to={"/Press"}
-                                        className={"small link-normal text-start"}
-                                    >
+                                    <Link to={"/Press"}
+                                        className={"small link-normal text-start"}>
                                         Press
                                     </Link>
                                     <Link to={Common.BookingLink}
                                           className={"small link-normal text-start"}>
-                                        Book a Court
+                                        Book Now
                                     </Link>
                                 </div>
                             </Grid>
@@ -137,17 +129,13 @@ export default function Footer() {
                             <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                         </Grid>
                         <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-0"}>
-                            <Link
-                                to={"/PrivacyPolicy"}
-                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}
-                            >
+                            <Link to={"/PrivacyPolicy"}
+                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}>
                                 <span className={"align-middle"}>Privacy Policy</span>
                             </Link>
-                            <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
-                            <Link
-                                to={"/TermsOfService"}
-                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}
-                            >
+                            <span className={"d-none d-sm-inline align-middle"}>&emsp;|&emsp;</span>
+                            <Link to={"/TermsOfService"}
+                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}>
                                 <span className={"align-middle"}>Terms of Service</span>
                             </Link>
                             {/*<span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>*/}
