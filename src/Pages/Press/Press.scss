@@ -1,6 +1,8 @@
 @import "../../Global.scss";
 
 .press {
+    max-width: 100vw;
+    overflow-x: hidden;
 
     .text-custom-gray {
         color: #707070 !important;
