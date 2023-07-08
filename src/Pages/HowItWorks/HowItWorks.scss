@@ -38,4 +38,48 @@
 
     }
 
+    .section-2 {
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1 / 0.9;
+
+            @include media-breakpoint-up(md) {
+                aspect-ratio: unset;
+            }
+
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .grid-bg-dark {
+            background-image: url("./grid_bg_dark.png");
+            background-size: cover;
+            background-origin: border-box;
+        }
+        .grid-bg-light {
+            background-image: url("./grid_bg_light.png");
+            background-size: cover;
+            background-origin: border-box;
+        }
+
+        @include media-breakpoint-up(md) {
+            .grid-bg-md-dark {
+                background-image: url("./grid_bg_dark.png");
+                background-size: cover;
+                background-origin: border-box;
+            }
+            .grid-bg-md-light {
+                background-image: url("./grid_bg_light.png");
+                background-size: cover;
+                background-origin: border-box;
+            }
+        }
+    }
+
 }
