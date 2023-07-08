@@ -1,0 +1,43 @@
+@import "../../Global.scss";
+
+html,
+body,
+.page {
+    //min-height: 100vh;
+}
+
+body {
+    background-color: var(--bs-off-white-2);
+}
+
+
+.main-card-wrapper {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+
+        //max-width: 600px;
+
+        .exclamation-circle {
+            border-radius: 25rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                height: 40px;
+                width: 40px;
+                color: var(--bs-deep-blue);
+
+                @include media-breakpoint-up(md) {
+                    color: var(--bs-bright-white);
+                }
+            }
+        }
+    }
+}

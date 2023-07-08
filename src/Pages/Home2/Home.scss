@@ -131,7 +131,7 @@
     }
 
     .section-3 {
-        background-color: rgba(#c0e7f6, 0.3);
+        //background-color: rgba(#c0e7f6, 0.3);
 
         .locations {
             overflow-x: visible;
@@ -310,6 +310,18 @@
                     }
                 }
             }
+        }
+    }
+
+    .contact-section {
+        background-image: none;
+        background-color: var(--bs-light-blue);
+
+        @include media-breakpoint-up(md) {
+            background-image: url("./Contact_background.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
 

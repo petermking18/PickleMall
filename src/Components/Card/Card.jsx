@@ -2,9 +2,9 @@ import React from 'react'
 
 import './Card.scss'
 
-export default function Card({children}) {
+export default function Card({children, className}) {
     return <>
-    <div className='card bg-bright-white'>
+    <div className={className ? className : 'card bg-bright-white'}>
         {children}
     </div>
     </>

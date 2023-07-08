@@ -25,6 +25,7 @@ import BlueRackets from "./BlueRackets.png";
 import Placeholder from "../../Assets/Placeholder.png";
 import p_icon from "./p_icon.svg"
 import Common from "../../Common";
+import ContactForm from '../../Components/ContactForm/ContactForm';
 
 import EmailCollection from '../../Components/EmailCollection/EmailCollection'
 
@@ -249,7 +250,7 @@ export default function Home() {
                 </h1>
             </div>
 
-            <div className="section-3">
+            <div className="section-3 bg-bright-white">
                 <div className="locations container pb-4 py-md-5">
                     <div className={""}>
                         <h1 className="text-nowrap font-barlow-condensed text-deep-blue pt-3 pt-md-0 mt-0 mb-4 mb-md-5 fs-35px fs-md-40px">
@@ -439,6 +440,11 @@ export default function Home() {
                             </Button>
                         </ButtonGroup>
                     </div>
+                </div>
+            </div>
+            <div className={"contact-section px-md-5 py-md-5"}>
+                <div className={"container my-md-5 py-md-5 d-flex justify-content-center align-items-center"}>
+                    <ContactForm/>
                 </div>
             </div>
             {/*<div className="section-4">*/}
