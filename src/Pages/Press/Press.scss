@@ -1,0 +1,262 @@
+@import "../../Global.scss";
+
+.press {
+
+    .text-custom-gray {
+        color: #707070 !important;
+    }
+
+    .section-1 {
+
+        img.section-1-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include media-breakpoint-up(lg) {
+            img.section-1-bg {
+                width: 60vw;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        @include media-breakpoint-up(xxl) {
+            img.section-1-bg {
+                width: 55vw;
+            }
+        }
+
+    }
+
+    .other-articles {
+        overflow-x: visible;
+
+        @include media-breakpoint-down(md) {
+            .slider-wrapper {
+                width: 100vw !important;
+                max-width: 2000px !important;
+                overflow-x: visible !important;
+            }
+        }
+
+        //padding-left: 5rem;
+        @media (max-width: 992px) {
+            //padding-left: 1rem;
+        }
+
+        .slick-list,
+        .slick-slider,
+        .slider-wrapper,
+        .slick-slide,
+        .card-wrapper {
+            overflow-x: visible !important;
+        }
+
+        .slick-track {
+            display: flex !important;
+            overflow-x: visible !important;
+        }
+
+        .slick-slide {
+            padding-right: 7px;
+            height: inherit !important;
+            //aspect-ratio: 1 / 1.25;
+
+            > div {
+                height: 100%;
+            }
+        }
+
+        .slick-slide:has(div.before-first-card) {
+            padding: 0 !important;
+
+            @include media-breakpoint-only(xxl) {
+                width: calc(
+                        ((100vw - 1320px) / 2) + (var(--bs-gutter-x) * 0.5)
+                ) !important;
+            }
+            @include media-breakpoint-only(xl) {
+                width: calc(
+                        ((100vw - 1140px) / 2) + (var(--bs-gutter-x) * 0.5)
+                ) !important;
+            }
+            @include media-breakpoint-only(lg) {
+                width: calc(
+                        ((100vw - 960px) / 2) + (var(--bs-gutter-x) * 0.5)
+                ) !important;
+            }
+            @include media-breakpoint-only(md) {
+                width: calc(
+                        ((100vw - 720px) / 2) + (var(--bs-gutter-x) * 0.5)
+                ) !important;
+            }
+            @include media-breakpoint-only(sm) {
+                width: calc(
+                        ((100vw - 540px) / 2) + (var(--bs-gutter-x) * 0.5)
+                ) !important;
+            }
+            @include media-breakpoint-only(xs) {
+                width: calc(var(--bs-gutter-x) * 0.5) !important;
+            }
+        }
+
+        .slick-slide > div {
+            overflow-x: visible !important;
+        }
+
+
+        .slider-wrapper {
+            transform: translate(-30px, -30px);
+        }
+        .slick-list {
+            width: calc(100% + 30px);
+        }
+        @include media-breakpoint-up(md) { // some magic
+            .slick-track {
+                padding-right: 30px;
+            }
+        }
+
+        .card-wrapper {
+            height: 100%;
+            position: relative;
+            overflow-x: visible !important;
+            padding-bottom: 65px;
+
+            .card {
+                margin-left: 30px;
+                margin-top: 30px;
+                height: 100%;
+                background-color: $white;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                box-shadow: 0px 4px 36px rgba(0, 10, 22, 0.13);
+
+                .card-top-photo-wrapper {
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    height: 45%;
+                    width: 100%;
+                    position: relative;
+
+                    .badge {
+                        border-radius: 6px;
+                        background-color: #002e43;
+                        color: white;
+                        position: absolute;
+                        top: 1rem;
+                        left: 2rem;
+                        padding: 0.5rem 1rem;
+                        font-weight: bold;
+                        z-index: 1;
+                    }
+
+                    .card-top-photo {
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        width: 100%;
+                        height: 100%;
+                        aspect-ratio: auto;
+                        max-height: unset;
+                        object-fit: cover;
+                    }
+
+                    .pickle-circle {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        transform: translate(-20%, 50%);
+                    }
+                }
+
+                .not-open-message {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14px;
+                }
+
+                .content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+
+                    .location {
+                        font-size: 36px;
+                        font-weight: 600;
+                        max-width: calc(100% - 100px); /* to stay away from .pickle-circle */
+                        line-height: 2.5rem;
+                    }
+
+                    .info {
+                        .not-open-message {
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 14px;
+                        }
+
+                        .info-icon {
+                            font-size: 1rem;
+                        }
+
+                        .info-text {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .locations-page-control {
+            .back-button {
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+            }
+
+            .forward-button {
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+
+            Button {
+                border-color: var(--bs-deep-blue);
+
+                &:not(:hover) {
+                    background-color: var(--bs-bright-white);
+                }
+
+                &:hover {
+                    background-color: var(--bs-light-blue);
+                }
+
+                &:disabled {
+                    //background-color: lightgray !important;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+
+    .contact-us {
+        @include media-breakpoint-up(md) {
+            .w-md-60 {
+                width: 60% !important;
+            }
+        }
+
+        .card {
+            background: url("./contact_bg.png");
+            background-size: cover;
+
+            .contact-button {
+                border-color: var(--bs-bright-white) !important;
+            }
+        }
+    }
+
+}

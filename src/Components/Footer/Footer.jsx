@@ -58,9 +58,9 @@ export default function Footer() {
                             className={"mt-0 mb-1 text-nowrap align-items-center"}>
                             <Grid xs={12} md={4}>
                                 <div>
-                                    <a href={"/"} className={"logo d-inline-block py-2"}>
+                                    <Link to={"/"} className={"logo d-inline-block py-2"}>
                                         <img className={"footer-logo"} src={logo} alt={"Pickle Mall"}/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <p className="footer-text fs-12px">
                                     Book your court time now and experience the thrill of pickleball at our indoor facility!
@@ -99,9 +99,9 @@ export default function Footer() {
                                 <div className="d-flex justify-content-center justify-content-md-start">
                                     {socials.map((social) => (
                                         <div key={social.name} className="social-icon">
-                                            <a href={social.link} target="_blank">
+                                            <Link to={social.link} target="_blank">
                                                 <img src={social.icon} alt={social.name}/>
-                                            </a>
+                                            </Link>
                                         </div>
                                     ))}
                                 </div>

@@ -1,12 +1,12 @@
 @import "../../Global.scss";
 
 .privacy-policy {
-    img {
+    img, svg {
         height: 96px;
         width: auto;
     }
     @include media-breakpoint-down(md) {
-        img {
+        img, svg {
             height: 70px;
             margin-left: -20px;
         }

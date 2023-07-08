@@ -32,7 +32,7 @@ $fs-list: 12 14 15 16 18 20 22 24 26 30 32 35 40 80 88 96;
     }
 }
 
-$fw-list: 500 600 700;
+$fw-list: 400 500 600 700;
 
 @each $value in $fw-list {
     .fw-#{$value} {

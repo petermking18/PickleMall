@@ -16,6 +16,7 @@ import About from "./Pages/About2/About";
 import ContactForm from "./Pages/ContactForm/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 import TOU from './Pages/TOU/TOU'
+import Press from './Pages/Press/Press'
 
 import "./custom-bootstrap.scss";
 import "./App.scss";
@@ -37,6 +38,7 @@ const App = () => (
                     {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
                     {/*<Route path={"/locations"} element={<Locations/>}/>*/}
                     <Route path={"/about"} element={<About/>}/>
+                    <Route path={"/Press"} element={<Press/>}/>
                     <Route path={"/contact"} element={<ContactForm/>}/>
                     <Route path={"/privacypolicy"} element={<PrivacyPolicy/>}/>
                     <Route path={"/termsofservice"} element={<TOU/>}/>
