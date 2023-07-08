@@ -9,8 +9,7 @@ import Common from '../../Common'
 
 import section_1_bg from './section_1_bg.png'
 
-import grid_bg_dark from './grid_bg_dark.png'
-import grid_bg_light from './grid_bg_light.png'
+import app_download_icon from './app_download_icon.png'
 
 export default function HowItWorks() {
     const theme = useTheme()
@@ -74,7 +73,7 @@ export default function HowItWorks() {
 
             {/* section-2: 4 easy steps */}
             <div className={"section-2 container my-5"}>
-                <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-32px"}>
+                <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-32px mb-4"}>
                     4 Easy Steps
                 </h1>
                 <Grid container spacing={gridSpacing} className={"mx-md-3"}>
@@ -145,6 +144,25 @@ export default function HowItWorks() {
                     </Grid>
                 </Grid>
             </div>
+
+            {/* app button */}
+            <div className={"section-app-button container mb-5 pb-md-3"}>
+                <Link to={Common.AppStoreLink}
+                      className={"outer-link no-decoration w-md-75 mx-auto d-flex justify-content-center align-items-center"}>
+                    <div className={"app-button w-100 bg-light-blue d-flex justify-content-between align-items-center px-4 py-0"}>
+                        <div className={"d-flex justify-content-start align-items-center me-5"}>
+                            <img src={app_download_icon} alt={"Download"} style={{height: '34px', width: '34px'}} className={"me-3"} />
+                            <p className={"font-barlow-condensed text-deep-blue fs-18px fs-md-24px fw-500"}>
+                                Get Started with the Picklemall App Now!
+                            </p>
+                        </div>
+                        <svg className={"ms-5"} xmlns="http://www.w3.org/2000/svg" width="19" height="9" viewBox="0 0 19 9" fill="none">
+                            <path d="M16.125 5.24375H0.75C0.533333 5.24375 0.354167 5.17292 0.2125 5.03125C0.0708334 4.88958 0 4.71042 0 4.49375C0 4.27708 0.0708334 4.09792 0.2125 3.95625C0.354167 3.81458 0.533333 3.74375 0.75 3.74375H16.15L14 1.59375C13.8667 1.46042 13.8 1.29375 13.8 1.09375C13.8 0.89375 13.875 0.71875 14.025 0.56875C14.175 0.41875 14.35 0.34375 14.55 0.34375C14.75 0.34375 14.925 0.41875 15.075 0.56875L18.475 3.96875C18.5583 4.05208 18.6167 4.13542 18.65 4.21875C18.6833 4.30208 18.7 4.39375 18.7 4.49375C18.7 4.59375 18.6833 4.68542 18.65 4.76875C18.6167 4.85208 18.5583 4.93542 18.475 5.01875L15.075 8.41875C14.9083 8.58542 14.7292 8.66458 14.5375 8.65625C14.3458 8.64792 14.175 8.56875 14.025 8.41875C13.875 8.26875 13.8 8.08958 13.8 7.88125C13.8 7.67292 13.8667 7.50208 14 7.36875L16.125 5.24375Z" fill="#367236"/>
+                        </svg>
+                    </div>
+                </Link>
+            </div>
+
         </div>
     )
 }
