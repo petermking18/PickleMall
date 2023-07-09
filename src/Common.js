@@ -1,4 +1,4 @@
 export default {
-    BookingLink: "https://www.google.com",
+    BookingLink: "http://Picklemall.podify.club/book",
     AppStoreLink: "https://www.google.com/images"
 }

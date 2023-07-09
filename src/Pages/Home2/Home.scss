@@ -40,6 +40,15 @@
                             rgba(0, 0, 0, 0.81) 100%
             );
 
+            @include media-breakpoint-down(md) {
+                //background: linear-gradient(
+                //                0deg,
+                //                rgba(0, 0, 0, 0) 1.56%,
+                //                rgba(0, 0, 0, 0.81) 100%
+                //);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 1.56%, rgba(0, 0, 0, 0.81) 100%);
+            }
+
             .welcome {
                 @extend .font-barlow-condensed;
                 color: var(--bs-bright-white);
@@ -50,8 +59,8 @@
                 @include media-breakpoint-down(md) {
                     width: 100%;
                     text-align: center;
-                    font-size: 35px;
-                    line-height: 40px;
+                    font-size: 40px;
+                    line-height: 43.5px;
                 }
             }
 
@@ -67,7 +76,11 @@
         }
 
         @include media-breakpoint-down(md) {
-            height: 210px;
+            height: 270px;
+
+            > .content > .container {
+                height: 100%;
+            }
         }
     }
 
@@ -92,12 +105,15 @@
 
         .p-icon {
             position: absolute;
-            width: 40vw;
-            height: auto;
+            //width: 40vw;
+            //height: auto;
             aspect-ratio: 603 / 574;
+            width: 310px;
             flex-shrink: 0;
-            right: 0;
-            top: 2rem;
+            //right: 0;
+            //top: 2rem;
+            top: 0;
+            right: -100px;
             z-index: 4;
         }
         @include media-breakpoint-up(md) {

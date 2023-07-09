@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import Placeholder from "../../Assets/Placeholder.png";
 import pickleCircle from "../Home2/pickle-circle.svg";
 
+import courts from "./courts.png"
 import axios from "./axios.png"
 import bizJournals from "./bizJournals.png"
 import newsNationNow from './newsNationNow.png'
@@ -169,7 +170,7 @@ export default function Press() {
                                 className={'no-decoration'}
                                 target={"_blank"}
                                 title={"Yahoo Finance: Picklemall hopes to bring pickleball to a mall near you"}>
-                                <img className={"section-1-bg"} alt={"Picklemall courts"} src={section_1_bg}/>
+                                <img className={"section-1-bg"} alt={"Picklemall courts"} src={courts}/>
                             </Link>
                         </Grid>
                     </Grid>

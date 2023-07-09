@@ -130,14 +130,14 @@ export default function Home() {
                     className="content pt-md-0 pt-lg-0 d-md-flex align-items-center justify-content-center justify-content-md-start h-100">
                     <div
                         className="container py-3 py-md-3 py-lg-5 d-flex flex-column d-md-block justify-content-center w-md-50">
-                        <h1 className="welcome my-2 my-md-4 d-inline">
-                            The Future of <br className={"d-none d-md-block"}/>Pickleball
+                        <h1 className="welcome mt-3 mb-2 my-md-4 d-inline fw-700">
+                            The Future <br className={"d-block d-md-none"}/>of <br className={"d-none d-md-block"}/>Pickleball
                         </h1>
-                        <p className={"px-4 px-md-0 fs-14px fs-md-16px text-center text-md-start text-bright-white my-0 my-md-3"}>
-                            Convenient Courts. Controlled climate. Consistent Competition.
+                        <p className={"px-4 px-md-0 fs-12px fs-md-16px text-center text-md-start text-bright-white my-2 my-md-3"}>
+                            Convenient Courts. Controlled climate. <br className={"d-block d-md-none"}/>Consistent Competition.
                         </p>
                         <Link to={Common.BookingLink}
-                              className={"no-decoration mx-auto mx-md-0"}>
+                              className={"no-decoration mx-auto mx-md-0 mt-2 mt-md-0"}>
                             <Button
                                 className="text-deep-blue mt-2 mb-4"
                                 color="rallyBlue"
@@ -158,8 +158,8 @@ export default function Home() {
                 <div className="pb-4 py-md-5 mt-md-3 position-relative">
                     <Grid container spacing={8}>
                         <Grid xs={12} md={6} className={'pb-0 d-flex align-items-center content'}>
-                            <div className={'mb-md-5'}>
-                                <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue mt-md-0">
+                            <div className={'mb-md-5 mt-3 mt-md-0'}>
+                                <h1 className="d-flex flex-wrap font-barlow-condensed text-deep-blue mt-md-0 mb-3">
                                     <div className="text-md-nowrap fs-24px fs-md-40px">
                                         Welcome to Picklemall
                                         <span className="text-pickle-green">.</span>
@@ -171,10 +171,10 @@ export default function Home() {
                                     premium facilities come together. At Picklemall, we are revolutionizing the way you
                                     book, play, and interact with others who share your passion for the game.
                                 </p>
-                                <p className={"font-barlow-condensed fw-600 text-deep-blue fs-16px fs-md-20px mb-0"}>
+                                <p className={"font-barlow-condensed fw-600 text-deep-blue fs-20px fs-md-20px mb-4 mb-md-0"}>
                                     RESERVE. ARRIVE. PLAY. SHARE.
                                 </p>
-                                <div className={"mt-0 mt-md-3 mb-3 mb-md-0"}>
+                                <div className={"mt-0 mt-md-3 mb-3 mb-md-0 d-none d-md-block"}>
                                     {
                                         [
                                             {
@@ -233,10 +233,10 @@ export default function Home() {
                     <img alt={"Picklemall"} src={p_icon} className={"p-icon"}/>
                 </div>
             </div>
-            <div className="carousel">
+            <div className="carousel my-4 my-md-0">
                 <h1 className="carousel-text font-barlow-condensed text-white my-0 d-flex align-items-center">
                   <span className="text-container">
-                    <span className="text-content fs-30px fs-md-88px text-v-center lh-88px mt--0-45rem mt-md--1-5rem">
+                    <span className="text-content fs-32px fs-md-88px text-v-center lh-88px mt--0-45rem mt-md--1-5rem">
                       CONVENIENT COURTS<span className="text-pickle-green">.</span>{" "}
                         CONTROLLED CLIMATE<span className="text-pickle-green">.</span>{" "}
                         CONSISTENT COMPETITION<span className="text-pickle-green">.</span>
@@ -253,7 +253,7 @@ export default function Home() {
             <div className="section-3 bg-bright-white">
                 <div className="locations container pb-4 py-md-5">
                     <div className={""}>
-                        <h1 className="text-nowrap font-barlow-condensed text-deep-blue pt-3 pt-md-0 mt-0 mb-4 mb-md-5 fs-35px fs-md-40px">
+                        <h1 className="text-nowrap font-barlow-condensed text-deep-blue pt-3 pt-md-0 mt-0 mb-4 mb-md-5 fs-22px fs-md-40px">
                             Find a Picklemall Near You<span className="text-pickle-green">.</span>
                         </h1>
                     </div>
