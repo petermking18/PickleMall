@@ -32,16 +32,16 @@ const App = () => (
             <div className={'root-page'}>
                 <Nav/>
                 <Routes>
-                    <Route path={"/"} element={<Home/>}/>
-                    <Route path={"*"} element={<Home/>}/>
-                    <Route path={"/HowItWorks"} element={<HowItWorks/>}/>
+                    <Route path={"/"} element={<Home/>} title={"Picklemall"}/>
+                    <Route path={"*"} element={<Home/>} title={"Picklemall"}/>
+                    <Route path={"/HowItWorks"} element={<HowItWorks/>} title={"How It Works"}/>
                     {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
                     {/*<Route path={"/locations"} element={<Locations/>}/>*/}
-                    <Route path={"/about"} element={<About/>}/>
-                    <Route path={"/Press"} element={<Press/>}/>
-                    <Route path={"/contact"} element={<ContactForm/>}/>
-                    <Route path={"/privacypolicy"} element={<PrivacyPolicy/>}/>
-                    <Route path={"/termsofservice"} element={<TOU/>}/>
+                    <Route path={"/about"} element={<About/>} title={"About"}/>
+                    <Route path={"/Press"} element={<Press/>} title={"Picklemall Press"}/>
+                    <Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>
+                    <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
+                    <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
                 </Routes>
                 <Footer/>
             </div>

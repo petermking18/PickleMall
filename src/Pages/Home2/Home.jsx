@@ -48,7 +48,7 @@ export default function Home() {
             text: "Stay in the Loop"
         }
     ].map((l, idx) => (
-        <div key={l.text}>
+        <div key={l.idx}>
             <Link className="quick-link d-flex justify-content-between" to={l.route}>
                 <span className="fw-semibold fs-14px fs-md-16px">{l.text}</span>
                 <ArrowRightAlt className="text-kitchen-green"/>
@@ -186,7 +186,7 @@ export default function Home() {
                                                 size: "small"
                                             }
                                         ].map((size, idx) =>
-                                            <div className={size.className}>
+                                            <div key={idx} className={size.className}>
                                                 <Link to={Common.BookingLink}
                                                       className={"no-decoration"}>
                                                     <Button
@@ -264,8 +264,8 @@ export default function Home() {
                             ref={(slider) => (locationsSlider = slider)}
                         >
                             {/*<div className={"before-first-card"}></div>*/}
-                            {locations.map((l) => (
-                                <div key={l.address} className={"card-wrapper"}>
+                            {locations.map((l, idx) => (
+                                <div key={idx} className={"card-wrapper"}>
                                     <div className={"card"}>
                                         <div className={"card-top-photo-wrapper"}>
                                             {(l.isOpen || l.numCourts) &&
@@ -322,7 +322,7 @@ export default function Home() {
                             </span>
                                                             <div className={"text-deep-blue info-text"}>
                                                                 {l.hours.map((h, idx) => (
-                                                                    <div key={h}>{h}</div>
+                                                                    <div key={idx}>{h}</div>
                                                                 ))}
                                                             </div>
                                                         </Stack>
@@ -342,21 +342,20 @@ export default function Home() {
                                                                 variant={"contained"}
                                                                 color={"volleyBlue"}
                                                                 className={"text-nowrap"}
-                                                                disableElevation
-                                                            >
+                                                                disableElevation>
                                                                 Book a Court
                                                             </Button>
                                                         </Link>
-                                                        <Link to={l.bookLink} className={'no-decoration'}>
-                                                            <Button
-                                                                variant={"text"}
-                                                                className={"text-volley-blue text-nowrap"}
-                                                            >
-                                                                Learn more&nbsp;
-                                                                <span
-                                                                    className={"material-symbols-outlined"}>arrow_forward</span>
-                                                            </Button>
-                                                        </Link>
+                                                        {/*<Link to={l.bookLink} className={'no-decoration'}>*/}
+                                                        {/*    <Button*/}
+                                                        {/*        variant={"text"}*/}
+                                                        {/*        className={"text-volley-blue text-nowrap"}*/}
+                                                        {/*    >*/}
+                                                        {/*        Learn more&nbsp;*/}
+                                                        {/*        <span*/}
+                                                        {/*            className={"material-symbols-outlined"}>arrow_forward</span>*/}
+                                                        {/*    </Button>*/}
+                                                        {/*</Link>*/}
                                                     </Stack>
                                                 ) : (
                                                     <div>
