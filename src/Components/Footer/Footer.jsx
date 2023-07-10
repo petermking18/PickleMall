@@ -134,14 +134,14 @@ export default function Footer() {
                         </Grid>
                         <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-0 policy-row"}>
                             <Link to={"/PrivacyPolicy"}
-                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex align-items-center align-middle"}>
+                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex justify-content-center align-items-center align-middle"}>
                                 <span>Privacy Policy</span>
                             </Link>
                             <span className={"d-none d-sm-flex align-items-center"}>
                                 <span className={"d-flex align-items-center"}>&emsp;|&emsp;</span>
                             </span>
                             <Link to={"/TermsOfService"}
-                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex align-items-center"}>
+                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex justify-content-center align-items-center"}>
                                 <span>Terms of Service</span>
                             </Link>
                             {/*<span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>*/}
