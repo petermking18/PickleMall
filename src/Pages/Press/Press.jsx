@@ -134,40 +134,42 @@ export default function Press() {
             </div>
 
             {/* section-1: the future of pickleball */}
-            <div className={"section-1 position-relative pb-md-5 mb-md-5"}>
+            <div className={"section-1 position-relative pb-md-3 mb-md-0"}>
                 <div className={"container overflow-x-md-visible mb-4 mb-md-0"}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={5} className={"d-flex justify-content-center align-items-center"}>
                         <Grid sm={12} md={4}>
-                            <h2 className={"font-barlow-condensed fw-600 text-volley-blue fs-20px mb-md-0"}>
-                                FEATURED STORY: YAHOO FINANCE
-                            </h2>
-                            <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-40px mt-md-2"}>
-                                Picklemall hopes to bring pickleball to a mall near you
-                            </h1>
-                            <p className={"fs-16px mb-3 mb-md-4"}>
-                                Picklemall, a new startup, aims to respond to both the struggling retail real estate
-                                industry and the increasing demand for pickleball by transforming vacant mall space into
-                                indoor courts. This July, the startup will open its first US location in Tempe, Ariz.
-                                with 24 courts.
-                            </p>
-                            <Link
-                                to={"https://finance.yahoo.com/news/picklemall-hopes-to-bring-pickleball-to-a-mall-near-you-203039745.html"}
-                                className={'no-decoration'}
-                                target={"_blank"}
-                                title={"Yahoo Finance: Picklemall hopes to bring pickleball to a mall near you"}>
-                                <Button variant={"contained"}
-                                        color={"deepBlue"}
-                                        className={"text-nowrap"}
-                                        size={"small"}
-                                        disableElevation>
-                                    Read the Story
-                                </Button>
-                            </Link>
+                            <div className={""}>
+                                <h2 className={"font-barlow-condensed fw-600 text-volley-blue fs-20px mb-md-0 mt-md-0"}>
+                                    FEATURED STORY: YAHOO FINANCE
+                                </h2>
+                                <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-40px mt-md-0"}>
+                                    Picklemall hopes to bring pickleball to a mall near you
+                                </h1>
+                                <p className={"fs-16px mb-3 mb-md-4"}>
+                                    Picklemall, a new startup, aims to respond to both the struggling retail real estate
+                                    industry and the increasing demand for pickleball by transforming vacant mall space into
+                                    indoor courts. This July, the startup will open its first US location in Tempe, Ariz.
+                                    with 24 courts.
+                                </p>
+                                <Link
+                                    to={"https://finance.yahoo.com/news/picklemall-hopes-to-bring-pickleball-to-a-mall-near-you-203039745.html"}
+                                    className={'no-decoration'}
+                                    target={"_blank"}
+                                    title={"Yahoo Finance: Picklemall hopes to bring pickleball to a mall near you"}>
+                                    <Button variant={"contained"}
+                                            color={"deepBlue"}
+                                            className={"text-nowrap"}
+                                            size={"small"}
+                                            disableElevation>
+                                        Read the Story
+                                    </Button>
+                                </Link>
+                            </div>
                         </Grid>
-                        <Grid sm={12} md={8} className={"px-0 px-md-2"}>
+                        <Grid sm={12} md={8} className={"px-0 px-md-4 image-wrapper"}>
                             <Link
                                 to={"https://finance.yahoo.com/news/picklemall-hopes-to-bring-pickleball-to-a-mall-near-you-203039745.html"}
-                                className={'no-decoration'}
+                                className={'no-decoration h-100 w-100'}
                                 target={"_blank"}
                                 title={"Yahoo Finance: Picklemall hopes to bring pickleball to a mall near you"}>
                                 <img className={"section-1-bg"} alt={"Picklemall courts"} src={courts}/>
@@ -279,7 +281,7 @@ export default function Press() {
                               className={"no-decoration"}>
                             <Button variant={"outlined"}
                                     color={"brightWhite"}
-                                    className={"rounded-5 px-3 contact-button"}>
+                                    className={"rounded-5 px-3 contact-button text-nowrap"}>
                                 Contact Us
                             </Button>
                         </Link>

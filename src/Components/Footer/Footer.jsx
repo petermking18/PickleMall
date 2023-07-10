@@ -54,8 +54,8 @@ export default function Footer() {
                     <div className={"footer-container"}>
                         {/* col1 */}
                         <Grid container
-                            spacing={3}
-                            className={"mt-0 mb-1 text-nowrap align-items-center"}>
+                              spacing={3}
+                              className={"mt-0 mb-1 text-nowrap align-items-center"}>
                             <Grid xs={12} md={4}>
                                 <div>
                                     <Link to={"/"} className={"logo d-inline-block py-2"}>
@@ -63,8 +63,10 @@ export default function Footer() {
                                     </Link>
                                 </div>
                                 <p className="footer-text fs-12px">
-                                    Book your court time now and experience the thrill of pickleball at our indoor facility!
-                                    Our courts are available for all skill levels and guarantee an exciting time. Reserve
+                                    Book your court time now and experience the thrill of pickleball at our indoor
+                                    facility!
+                                    Our courts are available for all skill levels and guarantee an exciting time.
+                                    Reserve
                                     your court today and have a blast!
                                 </p>
                             </Grid>
@@ -80,7 +82,7 @@ export default function Footer() {
                                         About
                                     </Link>
                                     <Link to={"/Press"}
-                                        className={"small link-normal text-start"}>
+                                          className={"small link-normal text-start"}>
                                         Press
                                     </Link>
                                     <Link to={Common.BookingLink}
@@ -107,16 +109,18 @@ export default function Footer() {
                                 </div>
                             </Grid>
                             <Grid xs={12} className={"mb-4"}>
-                                <Link to={Common.AppStoreLink}
-                                      className={"no-decoration"}>
-                                    <div className={"d-none d-md-block"}>
-                                        <p className={"font-barlow-condensed fs-20px mt-0 mb-3"}>
-                                            GET THE PICKLEMALL APP
-                                        </p>
-                                        <img alt={"App store"} src={appStore} style={{ width: '128px', height: '40px'}}/>
-                                    </div>
-                                </Link>
-
+                                {Common.AppStoreLink &&
+                                    <Link to={Common.AppStoreLink}
+                                          className={"no-decoration"}>
+                                        <div className={"d-none d-md-block"}>
+                                            <p className={"font-barlow-condensed fs-20px mt-0 mb-3"}>
+                                                GET THE PICKLEMALL APP
+                                            </p>
+                                            <img alt={"App store"} src={appStore}
+                                                 style={{width: '128px', height: '40px'}}/>
+                                        </div>
+                                    </Link>
+                                }
                             </Grid>
                         </Grid>
                     </div>
@@ -128,15 +132,17 @@ export default function Footer() {
                         <Grid xs={12} sm={2.2} className={"text-center text-sm-start d-none d-md-block mb-0"}>
                             <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                         </Grid>
-                        <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-0"}>
+                        <Grid xs={12} md={9} className={"d-flex flex-column flex-sm-row fs-12px mb-0 policy-row"}>
                             <Link to={"/PrivacyPolicy"}
-                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}>
-                                <span className={"align-middle"}>Privacy Policy</span>
+                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex align-items-center align-middle"}>
+                                <span>Privacy Policy</span>
                             </Link>
-                            <span className={"d-none d-sm-inline align-middle"}>&emsp;|&emsp;</span>
+                            <span className={"d-none d-sm-flex align-items-center"}>
+                                <span className={"d-flex align-items-center"}>&emsp;|&emsp;</span>
+                            </span>
                             <Link to={"/TermsOfService"}
-                                className={"small link-normal text-center text-sm-start mb-2 mb-md-0"}>
-                                <span className={"align-middle"}>Terms of Service</span>
+                                  className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex align-items-center"}>
+                                <span>Terms of Service</span>
                             </Link>
                             {/*<span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>*/}
                             {/*<Link*/}

@@ -5,16 +5,22 @@ footer {
 .footer-container {
 
 }
+
+.policy-row {
+  transform: translateY(1px);
+}
+
 .footer-text {
   white-space: normal;
 }
 
 .footer-logo {
   width: 128px;
-  height: 44px;
+  height: auto;
+  aspect-ratio: 128 / 44;
   @include media-breakpoint-up(md) {
-    width: 262px;
-    height: 88px;
+    width: 210px;
+    height: auto;
   }
 }
 
