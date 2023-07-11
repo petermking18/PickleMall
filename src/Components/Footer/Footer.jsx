@@ -128,7 +128,7 @@ export default function Footer() {
             </div>
             <div className={"bg-kitchen-green text-bright-white"}>
                 <div className={"container"}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} className={"overflow-y-hidden"}>
                         <Grid xs={12} sm={2.2} className={"text-center text-sm-start d-none d-md-block mb-0"}>
                             <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>
                         </Grid>

@@ -27,6 +27,13 @@
             object-fit: cover;
         }
 
+        @include media-breakpoint-up(md) {
+            .main-article-title {
+                line-height: 48.5px;
+            }
+        }
+        
+
         //@include media-breakpoint-up(lg) {
         //    img.section-1-bg {
         //        width: 60vw;

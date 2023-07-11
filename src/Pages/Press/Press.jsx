@@ -142,7 +142,7 @@ export default function Press() {
                                 <h2 className={"font-barlow-condensed fw-600 text-volley-blue fs-20px mb-md-0 mt-md-0"}>
                                     FEATURED STORY: YAHOO FINANCE
                                 </h2>
-                                <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-40px mt-md-0"}>
+                                <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-40px mt-md-0 main-article-title"}>
                                     Picklemall hopes to bring pickleball to a mall near you
                                 </h1>
                                 <p className={"fs-16px mb-3 mb-md-4"}>
