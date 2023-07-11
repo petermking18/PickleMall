@@ -43,7 +43,7 @@ export default function About() {
                     <Grid xs={12} md={6} className={"d-flex justify-content-start align-items-center"}>
                         <div className={isLarge ? "" : "container my-2"}>
                             <h1 className={"font-barlow-condensed text-deep-blue fs-22px fs-md-32px"}>
-                                Welcome to Picklemall
+                                What We Do
                             </h1>
                             <p className={"fs-16px mb-3 mb-md-4"}>
                                 Picklemall combines the adaptive reuse of mall spaces, cutting-edge technology, and a

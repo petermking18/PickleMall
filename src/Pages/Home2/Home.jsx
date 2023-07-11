@@ -134,7 +134,7 @@ export default function Home() {
                             The Future <br className={"d-block d-md-none"}/>of <br className={"d-none d-md-block"}/>Pickleball
                         </h1>
                         <p className={"px-4 px-md-0 fs-12px fs-md-16px text-center text-md-start text-bright-white my-2 my-md-3"}>
-                            Convenient Courts. Controlled climate. <br className={"d-block d-md-none"}/>Consistent Competition.
+                            Convenient Courts. Controlled Climate. <br className={"d-block d-md-none"}/>Consistent Competition.
                         </p>
                         <Link to={Common.BookingLink}
                               className={"no-decoration mx-auto mx-md-0 mt-2 mt-md-0"}>
