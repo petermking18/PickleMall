@@ -24,29 +24,38 @@ import "./App.scss";
 import ScrollTop from "./ScrollTop"
 import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 
-const App = () => (
-    <ThemeProvider theme={theme}>
-        <CssBaseline/>
-        <BrowserRouter>
-            <ScrollTop/>
-            <div className={'root-page'}>
-                <Nav/>
-                <Routes>
-                    <Route path={"/"} element={<Home/>} title={"Picklemall"}/>
-                    <Route path={"*"} element={<Home/>} title={"Picklemall"}/>
-                    <Route path={"/HowItWorks"} element={<HowItWorks/>} title={"How It Works"}/>
-                    {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
-                    {/*<Route path={"/locations"} element={<Locations/>}/>*/}
-                    <Route path={"/about"} element={<About/>} title={"About"}/>
-                    <Route path={"/Press"} element={<Press/>} title={"Picklemall Press"}/>
-                    <Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>
-                    <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
-                    <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
-                </Routes>
-                <Footer/>
-            </div>
-        </BrowserRouter>
-    </ThemeProvider>
-);
+import CouponPage from './Pages/Coupon/CouponPage'
+
+const App = () => {
+    const bodyOnly = () => window.location.pathname.toLowerCase().startsWith('/coupon')
+
+
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            <BrowserRouter>
+                <ScrollTop/>
+                <div className={'root-page'}>
+                    {!bodyOnly() && <Nav/>}
+                    <Routes>
+                        <Route path={"/"} element={<Home/>} title={"Picklemall"}/>
+                        <Route path={"*"} element={<Home/>} title={"Picklemall"}/>
+                        <Route path={"/HowItWorks"} element={<HowItWorks/>} title={"How It Works"}/>
+                        {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
+                        {/*<Route path={"/locations"} element={<Locations/>}/>*/}
+                        <Route path={"/about"} element={<About/>} title={"About"}/>
+                        <Route path={"/Press"} element={<Press/>} title={"Picklemall Press"}/>
+                        <Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>
+                        <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
+                        <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
+
+                        <Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>
+                    </Routes>
+                    {!bodyOnly() && <Footer/>}
+                </div>
+            </BrowserRouter>
+        </ThemeProvider>
+    )
+};
 
 export default App;

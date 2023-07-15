@@ -1,0 +1,44 @@
+@import "../../Global.scss";
+
+.lh-23px {
+    line-height: 23px;
+}
+
+.coupon-page {
+    flex-grow: 1;
+
+    .get-contact {
+        .main-card-wrapper {
+            filter: drop-shadow(0px 4px 36px rgba(0, 10, 22, 0.13));
+        }
+    }
+
+    .coupon {
+        max-width: 922px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .inner {
+            .left-pane {
+                .inner {
+                    background-image: url("./left_pane.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-origin: padding-box;
+                    background-position: center;
+
+                    .logo {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .right-pane {
+                .code-box {
+                    box-shadow: 0px 4px 36px 0px rgba(0, 10, 22, 0.13);
+                }
+            }
+        }
+    }
+}
