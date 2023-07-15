@@ -86,9 +86,9 @@ export default function CouponPage() {
                                             <img className={"logo m-1"} src={logo} alt={"Picklemall"}/>
                                         </div>
                                     </Grid>
-                                    <Grid xs={12} md={8} className={"right-pane py-3 px-5"}>
+                                    <Grid xs={12} md={8} className={"right-pane py-3 px-2 px-md-5"}>
                                         <div className={"container"}>
-                                            <h1 className={"font-barlow-condensed text-deep-blue fs-35px fw-600 mt-3 mb-1"}>
+                                            <h1 className={"title font-barlow-condensed text-deep-blue fs-35px fw-600 mt-3 mb-1"}>
                                                 Welcome to Picklemall!
                                             </h1>
                                             <h5 className={"fs-16px text-deep-blue fw-500 mt-0 mb-3"}>
