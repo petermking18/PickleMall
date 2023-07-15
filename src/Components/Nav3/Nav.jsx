@@ -64,28 +64,32 @@ export default function Nav() {
                         className="nav-items d-none d-md-flex"
                     >
                         {navLinks}
-                        <Link to={Common.BookingLink}
-                              className={'no-decoration my-auto'}>
-                            <Button variant={"contained"}
-                                    color={"rallyBlue"}
-                                    disableElevation>
-                                Book a Court
-                            </Button>
-                        </Link>
+                        {Common.BookingLink &&
+                            <Link to={Common.BookingLink}
+                                  className={'no-decoration my-auto'}>
+                                <Button variant={"contained"}
+                                        color={"rallyBlue"}
+                                        disableElevation>
+                                    Book a Court
+                                </Button>
+                            </Link>
+                        }
                     </Stack>
                 </div>
                 <div className="d-md-none">
                     <Collapse in={showMobileNav} timeout={"auto"} unmountOnExit>
                         <Stack className="nav-items">
                             {navLinks}
-                            <Link
-                                to={Common.BookingLink}
-                                className="nav-item"
-                                onClick={() => setShowMobileNav(false)}
-                            >
-                                Book a Court
-                                <hr className="hr-soft-serve"/>
-                            </Link>
+                            {Common.BookingLink &&
+                                <Link
+                                    to={Common.BookingLink}
+                                    className="nav-item"
+                                    onClick={() => setShowMobileNav(false)}
+                                >
+                                    Book a Court
+                                    <hr className="hr-soft-serve"/>
+                                </Link>
+                            }
                         </Stack>
                     </Collapse>
                 </div>

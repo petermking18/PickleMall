@@ -134,20 +134,22 @@ export default function Home() {
                             The Future <br className={"d-block d-md-none"}/>of <br className={"d-none d-md-block"}/>Pickleball
                         </h1>
                         <p className={"px-4 px-md-0 fs-12px fs-md-16px text-center text-md-start text-bright-white my-2 my-md-3"}>
-                            Convenient Courts. Controlled Climate. <br className={"d-block d-md-none"}/>Consistent Competition.
+                            Convenient Courts. Controlled Climate. <br className={"d-block d-md-none"}/>Consistent
+                            Competition.
                         </p>
-                        <Link to={Common.BookingLink}
-                              className={"no-decoration mx-auto mx-md-0 mt-2 mt-md-0"}>
-                            <Button
-                                className="text-deep-blue mt-2 mb-4"
-                                color="rallyBlue"
-                                variant="contained"
-                                disableElevation
-                            >
-                                Book a Court
-                            </Button>
-                        </Link>
-
+                        {Common.BookingLink &&
+                            <Link to={Common.BookingLink}
+                                  className={"no-decoration mx-auto mx-md-0 mt-2 mt-md-0"}>
+                                <Button
+                                    className="text-deep-blue mt-2 mb-4"
+                                    color="rallyBlue"
+                                    variant="contained"
+                                    disableElevation
+                                >
+                                    Book a Court
+                                </Button>
+                            </Link>
+                        }
                     </div>
                     {/*<div className={'w-md-50 d-flex justify-content-center flex-grow-1'}>*/}
                     {/*    <EmailCollection/>*/}
@@ -187,30 +189,48 @@ export default function Home() {
                                             }
                                         ].map((size, idx) =>
                                             <div key={idx} className={size.className}>
-                                                <Link to={Common.BookingLink}
-                                                      className={"no-decoration"}>
-                                                    <Button
-                                                        variant={"contained"}
-                                                        color={"deepBlue"}
-                                                        size={size.size}
-                                                        className={"text-nowrap my-4"}
-                                                        disableElevation
-                                                    >
-                                                        Book a Court
-                                                    </Button>
-                                                </Link>
+                                                {Common.BookingLink &&
+                                                    <Link to={Common.BookingLink}
+                                                          className={"no-decoration"}>
+                                                        <Button
+                                                            variant={"contained"}
+                                                            color={"deepBlue"}
+                                                            size={size.size}
+                                                            className={"text-nowrap my-4"}
+                                                            disableElevation
+                                                        >
+                                                            Book a Court
+                                                        </Button>
+                                                    </Link>
+                                                }
                                                 <Link to={"/HowItWorks"}
                                                       className={"no-decoration"}>
-                                                    <Button
-                                                        variant={"text"}
-                                                        size={size.size}
-                                                        className={"text-deep-blue text- mx-2"}
-                                                    >
-                                                        Learn more&nbsp;
-                                                        <span className={"material-symbols-outlined"}>
-                                                      arrow_forward
-                                                    </span>
-                                                    </Button>
+                                                    {Common.BookingLink ?
+                                                        <Button
+                                                            variant={"text"}
+                                                            size={size.size}
+                                                            className={"text-deep-blue mx-2"}
+                                                            disableElevation
+                                                        >
+                                                            Learn more&nbsp;
+                                                            <span className={"material-symbols-outlined"}>
+                                                              arrow_forward
+                                                            </span>
+                                                        </Button>
+                                                        :
+                                                        <Button
+                                                            variant={"contained"}
+                                                            color={"deepBlue"}
+                                                            size={size.size}
+                                                            className={""}
+                                                            disableElevation
+                                                        >
+                                                            Learn more&nbsp;
+                                                            <span className={"material-symbols-outlined"}>
+                                                              arrow_forward
+                                                            </span>
+                                                        </Button>
+                                                    }
                                                 </Link>
                                             </div>)
                                     }

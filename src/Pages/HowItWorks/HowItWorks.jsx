@@ -57,14 +57,16 @@ export default function HowItWorks() {
                                     valuable
                                     insights and learning opportunities.
                                 </p>
-                                <Link to={Common.bookLink} className={'no-decoration'}>
-                                    <Button variant={"contained"}
-                                            color={"deepBlue"}
-                                            className={"text-nowrap"}
-                                            disableElevation>
-                                        Book a Court
-                                    </Button>
-                                </Link>
+                                {Common.BookingLink &&
+                                    <Link to={Common.BookingLink} className={'no-decoration'}>
+                                        <Button variant={"contained"}
+                                                color={"deepBlue"}
+                                                className={"text-nowrap"}
+                                                disableElevation>
+                                            Book a Court
+                                        </Button>
+                                    </Link>
+                                }
                             </div>
                         </Grid>
                         <Grid sm={12} md={8} className={"px-0 px-md-4 image-wrapper"}>

@@ -85,10 +85,12 @@ export default function Footer() {
                                           className={"small link-normal text-start"}>
                                         Press
                                     </Link>
-                                    <Link to={Common.BookingLink}
-                                          className={"small link-normal text-start"}>
-                                        Book Now
-                                    </Link>
+                                    {Common.BookingLink &&
+                                        <Link to={Common.BookingLink}
+                                              className={"small link-normal text-start"}>
+                                            Book Now
+                                        </Link>
+                                    }
                                 </div>
                             </Grid>
                             {/* col3 */}

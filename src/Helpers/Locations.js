@@ -13,7 +13,7 @@ const locations = [
     notOpenMessage: "Opening July 2023",
     numCourts: 16,
     locationImg: Stock8,
-    bookLink: 'http://Picklemall.podify.club/book/tempe-multi'
+    // bookLink: 'http://Picklemall.podify.club/book/tempe-multi'
   },
   {
     location: "Texas",
