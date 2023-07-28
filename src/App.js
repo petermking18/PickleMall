@@ -26,6 +26,8 @@ import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 
 import CouponPage from './Pages/Coupon/CouponPage'
 
+import Membership from './Pages/Membership/Membership'
+
 const App = () => {
     const bodyOnly = () => window.location.pathname.toLowerCase().startsWith('/coupon')
 
@@ -41,6 +43,7 @@ const App = () => {
                         <Route path={"/"} element={<Home/>} title={"Picklemall"}/>
                         <Route path={"*"} element={<Home/>} title={"Picklemall"}/>
                         <Route path={"/HowItWorks"} element={<HowItWorks/>} title={"How It Works"}/>
+                        <Route path={"/Membership"} element={<Membership/>} title={"Membership"}/>
                         {/*<Route path={"/whattoexpect"} element={<WhatToExpect/>}/>*/}
                         {/*<Route path={"/locations"} element={<Locations/>}/>*/}
                         <Route path={"/about"} element={<About/>} title={"About"}/>

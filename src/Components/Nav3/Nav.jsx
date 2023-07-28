@@ -15,6 +15,10 @@ export default function Nav() {
             text: "How It works"
         },
         {
+            route: "/Membership",
+            text: "Membership"
+        },
+        {
             route: "/About",
             text: "About",
         },

@@ -77,6 +77,10 @@ export default function Footer() {
                                           className={"small link-normal text-start"}>
                                         How it Works
                                     </Link>
+                                    <Link to={"/Membership"}
+                                          className={"small link-normal text-start"}>
+                                        Membership
+                                    </Link>
                                     <Link to={"/About"}
                                           className={"small link-normal text-start"}>
                                         About
