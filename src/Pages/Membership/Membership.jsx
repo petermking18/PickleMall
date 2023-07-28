@@ -39,7 +39,7 @@ export default function Membership() {
                             <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>
                             <div className={"p-5"}>
                                 <span className={"text-volley-blue font-barlow-condensed fs-20px fw-600"}>
-                                    $129.99 / MONTH
+                                    $99.99 / MONTH
                                 </span>
                                 <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>
                                     The Mall Rat
