@@ -48,7 +48,7 @@ export default function Membership() {
                                     <li>Waived initiation fee</li>
                                     <li>50 free replay credits</li>
                                     <li>14 day advance sign-up window</li>
-                                    <li>Discounts on Joola apparel</li>
+                                    {/*<li>Discounts on Joola apparel</li>*/}
                                     <li>Discounts on Picklemall apparel</li>
                                 </ul>
                                 <Link to={"mailto:memberships@thepicklemall.com"}
