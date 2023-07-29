@@ -88,6 +88,11 @@ export default function Membership() {
                                         Sign Up
                                     </Button>
                                 </Link>
+                                <div className={"mt-3"}>
+                                    <i className={"text-kitchen-green fs-14px fw-400 lh-28px"}>
+                                        *Price reflects reservations of 4 players per court
+                                    </i>
+                                </div>
                             </div>
                         </div>
                     </Grid>
