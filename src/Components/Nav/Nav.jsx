@@ -8,7 +8,7 @@ export default function Nav() {
         <nav className='navbar bg-volley-blue'>
             <div className='container d-flex justify-content-center justify-content-md-start align-items-center'>
                 <a href='/' className='logo d-inline-block py-2'>
-                    <img className='mx-3' src={logo} alt={'Pickle Mall'} />
+                    <img className='mx-3' src={logo} alt={'Picklemall'} />
                 </a>
             </div>
         </nav>

@@ -301,7 +301,7 @@ export default function Home() {
                                                 <img
                                                     className={"pickle-circle"}
                                                     src={pickleCircle}
-                                                    alt={"Pickle mall"}
+                                                    alt={"Picklemall"}
                                                 />
                                             )}
                                         </div>

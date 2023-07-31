@@ -59,7 +59,7 @@ export default function Footer() {
                             <Grid xs={12} md={4}>
                                 <div>
                                     <Link to={"/"} className={"logo d-inline-block py-2"}>
-                                        <img className={"footer-logo"} src={logo} alt={"Pickle Mall"}/>
+                                        <img className={"footer-logo"} src={logo} alt={"Picklemall"}/>
                                     </Link>
                                 </div>
                                 <p className="footer-text fs-12px">

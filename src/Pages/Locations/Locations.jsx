@@ -120,7 +120,7 @@ export default function Locations() {
                       {/* <img
                         className={"pickle-circle"}
                         src="https://placehold.jp/400x150.png"
-                        alt={"Pickle mall"}
+                        alt={"Picklemall"}
                       /> */}
                     </div>
                     <div className={"content px-4 pb-3"}>

@@ -54,7 +54,7 @@ export default function Nav2() {
       <nav className="navbar bg-volley-blue">
         <div className="container d-flex justify-content-between align-items-center">
           <Link to="/" className="logo d-inline-block py-2">
-            <img className="mx-3" src={logo} alt={"Pickle Mall"} />
+            <img className="mx-3" src={logo} alt={"Picklemall"} />
           </Link>
           <div className="d-md-none">
             <IconButton
