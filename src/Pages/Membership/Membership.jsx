@@ -9,6 +9,8 @@ import card_top_1 from './card_top_1.svg'
 import card_top_2 from './card_top_2.svg'
 import masonry from './masonry.png'
 
+import Common from '../../Common'
+
 export default function Membership() {
 
     return (
@@ -34,24 +36,76 @@ export default function Membership() {
 
             <div className={"section-1 container pb-5"}>
                 <Grid container spacing={7} className={"pb-4 pb-md-5"}>
+                    {/*    <Grid item xs={12} md={6}>*/}
+                    {/*        <div className={"card h-100"}>*/}
+                    {/*            <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>*/}
+                    {/*            <div className={"p-5"}>*/}
+                    {/*                <span className={"text-volley-blue font-barlow-condensed fs-20px fw-600"}>*/}
+                    {/*                    $99.99 / MONTH*/}
+                    {/*                </span>*/}
+                    {/*                <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>*/}
+                    {/*                    The Mall Rat*/}
+                    {/*                </h1>*/}
+                    {/*                <ul className={"fs-16px fw-400 lh-28px mb-4"}>*/}
+                    {/*                    <li>Waived court fees</li>*/}
+                    {/*                    <li>Waived initiation fee</li>*/}
+                    {/*                    <li>50 free replay credits</li>*/}
+                    {/*                    <li>14 day advance sign-up window</li>*/}
+                    {/*                    /!*<li>Discounts on Joola apparel</li>*!/*/}
+                    {/*                    <li>Discounts on Picklemall apparel</li>*/}
+                    {/*                </ul>*/}
+                    {/*                <Link to={"mailto:memberships@thepicklemall.com"}*/}
+                    {/*                      className={"no-decoration"}>*/}
+                    {/*                    <Button variant={"contained"}*/}
+                    {/*                            color={"deepBlue"}*/}
+                    {/*                            className={"rounded-5 text-nowrap"}*/}
+                    {/*                            disableElevation>*/}
+                    {/*                        Sign Up*/}
+                    {/*                    </Button>*/}
+                    {/*                </Link>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </Grid>*/}
                     <Grid item xs={12} md={6}>
-                        <div className={"card h-100"}>
-                            <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>
+                        <div className={"discounted card h-100"}>
+                            <div className={"header w-100 h-auto"}>
+                                <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>
+                                <div
+                                    className={"text-wrapper w-100 h-100 d-flex justify-content-center align-items-center"}>
+                                    <div>
+                                        <h1 className={"text-bright-white font-barlow-condensed fs-38px fs-md-50px lh-54px lh-md-70px text-center my-0"}>
+                                            LIMITED TIME OFFER
+                                        </h1>
+                                        <h4 className={"font-barlow-condensed fs-20px lh-20px fs-md-24px lh-md-24px fw-400 text-bright-white text-center my-0 mb-2"}>
+                                            OFFER ONLY VALID FOR FIRST 80 SIGN-UPS
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
                             <div className={"p-5"}>
-                                <span className={"text-volley-blue font-barlow-condensed fs-20px fw-600"}>
-                                    $99.99 / MONTH
+                                <div className={"mb-1"}>
+                                    <span
+                                        className={"text-bright-white bg-deep-blue rounded-3 px-2 py-1 start-n2 font-barlow-condensed fs-24px fw-600"}>
+                                        $80 / MONTH
+                                    </span>
+                                </div>
+                                <span
+                                    className={"text-volley-blue font-barlow-condensed fs-20px fw-600 strikethrough ps-1"}>
+                                    <s>$99.99 / MONTH</s>
                                 </span>
                                 <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>
                                     The Mall Rat
                                 </h1>
                                 <ul className={"fs-16px fw-400 lh-28px mb-4"}>
+                                    <li>Waived court fees</li>
                                     <li>Waived initiation fee</li>
                                     <li>50 free replay credits</li>
                                     <li>14 day advance sign-up window</li>
                                     {/*<li>Discounts on Joola apparel</li>*/}
                                     <li>Discounts on Picklemall apparel</li>
                                 </ul>
-                                <Link to={"mailto:memberships@thepicklemall.com"}
+                                <Link to={Common.MallRatSignupLink}
+                                      target={"_blank"}
                                       className={"no-decoration"}>
                                     <Button variant={"contained"}
                                             color={"deepBlue"}
@@ -79,13 +133,13 @@ export default function Membership() {
                                     <li>$15 full game footage</li>
                                     <li>3-day advance sign-up</li>
                                 </ul>
-                                <Link to={"mailto:memberships@thepicklemall.com"}
+                                <Link to={Common.BookingLink}
                                       className={"no-decoration"}>
                                     <Button variant={"contained"}
                                             color={"deepBlue"}
                                             className={"rounded-5 text-nowrap"}
                                             disableElevation>
-                                        Sign Up
+                                        Book a Court
                                     </Button>
                                 </Link>
                                 <div className={"mt-3"}>

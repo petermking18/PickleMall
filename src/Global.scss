@@ -18,7 +18,7 @@ $nav-height: 4rem;
 }
 
 
-$fs-list: 12 14 15 16 18 20 22 24 26 30 32 35 40 80 88 96;
+$fs-list: 12 14 15 16 18 20 22 24 26 30 32 35 38 40 50 54 56 70 80 88 96;
 
 @each $value in $fs-list {
     .fs-#{$value}px {
@@ -28,6 +28,18 @@ $fs-list: 12 14 15 16 18 20 22 24 26 30 32 35 40 80 88 96;
     @include media-breakpoint-up(md) {
         .fs-md-#{$value}px {
             font-size: $value + px !important;
+        }
+    }
+}
+
+@each $value in $fs-list {
+    .lh-#{$value}px {
+        line-height: $value + px !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        .lh-md-#{$value}px {
+            line-height: $value + px !important;
         }
     }
 }

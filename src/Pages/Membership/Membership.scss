@@ -2,6 +2,8 @@
 
 .membership-page {
 
+    overflow-x: hidden;
+
     .section-1 {
         .card {
             border-radius: 8px;
@@ -9,6 +11,19 @@
 
 
         }
+
+        .discounted {
+            .header {
+                position: relative;
+
+                .text-wrapper {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
     }
 
 }
+
