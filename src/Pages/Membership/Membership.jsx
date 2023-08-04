@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {Link} from 'react-router-dom'
 import {Button, Card, CardMedia} from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
@@ -10,8 +10,14 @@ import card_top_2 from './card_top_2.svg'
 import masonry from './masonry.png'
 
 import Common from '../../Common'
+import app_button_icon from "./app_button_icon.png";
 
 export default function Membership() {
+
+    const cancellationPolicyRef = useRef(null)
+    const scrollToCancellationPolicy = () => {
+        cancellationPolicyRef.current.scrollIntoView({block: 'end', behavior: 'smooth'})
+    }
 
     return (
         <div className={'membership-page'}>
@@ -34,38 +40,48 @@ export default function Membership() {
                 </div>
             </div>
 
-            <div className={"section-1 container pb-5"}>
+            <div className={"section-1 container "}>
                 <Grid container spacing={7} className={"pb-4 pb-md-5"}>
-                    {/*    <Grid item xs={12} md={6}>*/}
-                    {/*        <div className={"card h-100"}>*/}
-                    {/*            <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>*/}
-                    {/*            <div className={"p-5"}>*/}
+                    {/*<Grid item xs={12} md={6}>*/}
+                    {/*    <div className={"card h-100"}>*/}
+                    {/*        <img className={"w-100 h-auto"} src={card_top_1} alt={"header"}/>*/}
+                    {/*        <div className={"p-5"}>*/}
                     {/*                <span className={"text-volley-blue font-barlow-condensed fs-20px fw-600"}>*/}
                     {/*                    $99.99 / MONTH*/}
                     {/*                </span>*/}
-                    {/*                <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>*/}
-                    {/*                    The Mall Rat*/}
-                    {/*                </h1>*/}
-                    {/*                <ul className={"fs-16px fw-400 lh-28px mb-4"}>*/}
-                    {/*                    <li>Waived court fees</li>*/}
-                    {/*                    <li>Waived initiation fee</li>*/}
-                    {/*                    <li>50 free replay credits</li>*/}
-                    {/*                    <li>14 day advance sign-up window</li>*/}
-                    {/*                    /!*<li>Discounts on Joola apparel</li>*!/*/}
-                    {/*                    <li>Discounts on Picklemall apparel</li>*/}
-                    {/*                </ul>*/}
-                    {/*                <Link to={"mailto:memberships@thepicklemall.com"}*/}
-                    {/*                      className={"no-decoration"}>*/}
-                    {/*                    <Button variant={"contained"}*/}
-                    {/*                            color={"deepBlue"}*/}
-                    {/*                            className={"rounded-5 text-nowrap"}*/}
-                    {/*                            disableElevation>*/}
-                    {/*                        Sign Up*/}
-                    {/*                    </Button>*/}
-                    {/*                </Link>*/}
+                    {/*            <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>*/}
+                    {/*                The Mall Rat*/}
+                    {/*            </h1>*/}
+                    {/*            <ul className={"fs-16px fw-400 lh-28px mb-4"}>*/}
+                    {/*                <li>Waived court fees</li>*/}
+                    {/*                <li>Waived initiation fee</li>*/}
+                    {/*                <li>50 free replay credits</li>*/}
+                    {/*                <li>14 day advance sign-up window</li>*/}
+                    {/*                /!*<li>Discounts on Joola apparel</li>*!/*/}
+                    {/*                <li>Discounts on Picklemall apparel</li>*/}
+                    {/*            </ul>*/}
+                    {/*            <Link to={"mailto:memberships@thepicklemall.com"}*/}
+                    {/*                  className={"no-decoration"}>*/}
+                    {/*                <Button variant={"contained"}*/}
+                    {/*                        color={"deepBlue"}*/}
+                    {/*                        className={"rounded-5 text-nowrap"}*/}
+                    {/*                        disableElevation>*/}
+                    {/*                    Sign Up*/}
+                    {/*                </Button>*/}
+                    {/*            </Link>*/}
+                    {/*            <div className={"mt-3"}>*/}
+                    {/*                <i className={"text-kitchen-green fs-14px fw-400 lh-28px"}>*/}
+                    {/*                    *Membership covers member court fees only. Members may invite friends to*/}
+                    {/*                    contribute towards final court fees. Contributions are optional and not*/}
+                    {/*                    mandatory for membership.*/}
+                    {/*                    <br/>*/}
+                    {/*                    *When booking a court with non-members, the member will receive a hold until*/}
+                    {/*                    guests accept the invite.*/}
+                    {/*                </i>*/}
                     {/*            </div>*/}
                     {/*        </div>*/}
-                    {/*    </Grid>*/}
+                    {/*    </div>*/}
+                    {/*</Grid>*/}
                     <Grid item xs={12} md={6}>
                         <div className={"discounted card h-100"}>
                             <div className={"header w-100 h-auto"}>
@@ -114,6 +130,16 @@ export default function Membership() {
                                         Sign Up
                                     </Button>
                                 </Link>
+                                <div className={"mt-3"}>
+                                    <i className={"text-kitchen-green fs-14px fw-400 lh-28px"}>
+                                        *Membership covers member court fees only. Members may invite friends to
+                                        contribute towards final court fees. Contributions are optional and not
+                                        mandatory for membership.
+                                        <br/>
+                                        *When booking a court with non-members, the member will receive a hold until
+                                        guests accept the invite.
+                                    </i>
+                                </div>
                             </div>
                         </div>
                     </Grid>
@@ -151,6 +177,30 @@ export default function Membership() {
                         </div>
                     </Grid>
                 </Grid>
+
+                <div className={"section-app-button container mb-5 pb-md-3"}>
+                    <Link to={"#"}
+                          onClick={scrollToCancellationPolicy}
+                          className={"outer-link no-decoration w-md-75 mx-auto d-flex justify-content-center align-items-center"}>
+                        <div
+                            className={"app-button w-100 bg-light-gray d-flex justify-content-between align-items-center px-4 py-0"}>
+                            <div className={"d-flex justify-content-start align-items-center me-md-5"}>
+                                <img src={app_button_icon} alt={"Download"} style={{height: '34px', width: '34px'}}
+                                     className={"me-3"}/>
+                                <p className={""}>
+                                    Please refer to our cancellation policy at the bottom of the page
+                                </p>
+                            </div>
+                            <svg className={"d-none d-md-block ms-5 r-90"} xmlns="http://www.w3.org/2000/svg" width="19"
+                                 height="9"
+                                 viewBox="0 0 19 9" fill="none">
+                                <path
+                                    d="M16.125 5.24375H0.75C0.533333 5.24375 0.354167 5.17292 0.2125 5.03125C0.0708334 4.88958 0 4.71042 0 4.49375C0 4.27708 0.0708334 4.09792 0.2125 3.95625C0.354167 3.81458 0.533333 3.74375 0.75 3.74375H16.15L14 1.59375C13.8667 1.46042 13.8 1.29375 13.8 1.09375C13.8 0.89375 13.875 0.71875 14.025 0.56875C14.175 0.41875 14.35 0.34375 14.55 0.34375C14.75 0.34375 14.925 0.41875 15.075 0.56875L18.475 3.96875C18.5583 4.05208 18.6167 4.13542 18.65 4.21875C18.6833 4.30208 18.7 4.39375 18.7 4.49375C18.7 4.59375 18.6833 4.68542 18.65 4.76875C18.6167 4.85208 18.5583 4.93542 18.475 5.01875L15.075 8.41875C14.9083 8.58542 14.7292 8.66458 14.5375 8.65625C14.3458 8.64792 14.175 8.56875 14.025 8.41875C13.875 8.26875 13.8 8.08958 13.8 7.88125C13.8 7.67292 13.8667 7.50208 14 7.36875L16.125 5.24375Z"
+                                    fill="#367236"/>
+                            </svg>
+                        </div>
+                    </Link>
+                </div>
             </div>
 
             <div className={"section-2 bg-light-blue"}>
@@ -164,6 +214,31 @@ export default function Membership() {
                         to be a part of our vibrant community and take your pickleball game to new heights.
                     </p>
                     <img className={"py-5 d-none d-md-block w-100 h-auto"} src={masonry} alt={"Picklemall courts"}/>
+                </div>
+            </div>
+
+            <div className={"section-3 bg-bright-white"} ref={cancellationPolicyRef}>
+                <div className={"container py-5"}>
+                    <h5 className={"text-deep-blue font-barlow-condensed fs-32px fw-700 my-0 my-md-4"}>
+                        Cancellation Policy
+                    </h5>
+                    <div>
+                        <p>
+                            Cancellation charge is free for cancellations made more than 48 hours before the scheduled
+                            event.
+                        </p>
+                        <p>
+                            A $10 cancellation fee applies for cancellations made within 48 hours of the scheduled
+                            event.
+                        </p>
+                        <p>
+                            A $20 cancellation fee applies for cancellations made within 24 hours of the scheduled
+                            event.
+                        </p>
+                        <p>
+                            A $30 cancellation fee applies for cancellations made within 2 hours of the scheduled event.
+                        </p>
+                    </div>
                 </div>
             </div>
 

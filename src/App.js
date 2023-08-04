@@ -28,6 +28,8 @@ import CouponPage from './Pages/Coupon/CouponPage'
 
 import Membership from './Pages/Membership/Membership'
 
+import FAQ from './Pages/FAQ/FAQ'
+
 const App = () => {
     const bodyOnly = () => window.location.pathname.toLowerCase().startsWith('/coupon')
 
@@ -51,6 +53,7 @@ const App = () => {
                         <Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>
                         <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
                         <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
+                        <Route path={"/faq"} element={<FAQ/>} title={"Frequently Asked Questions"}/>
 
                         <Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>
                     </Routes>

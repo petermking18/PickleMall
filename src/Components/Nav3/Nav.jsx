@@ -23,6 +23,10 @@ export default function Nav() {
             text: "About",
         },
         {
+            route: "/FAQ",
+            text: "FAQ"
+        },
+        {
             route: "/Press",
             text: "Press"
         }
