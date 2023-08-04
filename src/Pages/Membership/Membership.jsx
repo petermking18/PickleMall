@@ -112,14 +112,41 @@ export default function Membership() {
                                 <h1 className={"text-deep-blue font-barlow-condensed fs-40px fw-600 my-2"}>
                                     The Mall Rat
                                 </h1>
+                                <h3 className={"font-barlow-condensed mb-0"}>Membership Benefits</h3>
+                                <ol className={"fs-16px fw-400 lh-28px mb-4"}>
+                                    <li>
+                                        Waived Court Fees: Play without worrying about the cost! Your membership covers all member court reservation fees, this includes open play.
+                                    </li>
+                                    <li>
+                                        Waived Initiation Fee: No upfront initiation cost to start enjoying Picklemall.
+                                    </li>
+                                    <li>
+                                        50 Free Replay Credits: Get 50 replays per month at no extra cost. Additional replays are charged at 50 cents each.
+                                    </li>
+                                    <li>
+                                        14-Day Advance Sign-Up Window: Exclusive access to book courts two weeks in advance.
+                                    </li>
+                                    <li>
+                                        Discounts on Picklemall Apparel: Look great while playing with exclusive discounts on our stylish Picklemall clothing line.
+                                    </li>
+                                </ol>
+                                <h3 className={"font-barlow-condensed mb-0"}>Booking with Friends</h3>
                                 <ul className={"fs-16px fw-400 lh-28px mb-4"}>
-                                    <li>Waived court fees</li>
-                                    <li>Waived initiation fee</li>
-                                    <li>50 free replay credits</li>
-                                    <li>14 day advance sign-up window</li>
-                                    {/*<li>Discounts on Joola apparel</li>*/}
-                                    <li>Discounts on Picklemall apparel</li>
+                                    <li>
+                                        Members: Invite fellow members to join your reservation without any additional charges.
+                                    </li>
+                                    <li>
+                                        Non-Members: Invite non-members at a typical charge of $8-$10 per person per hour. You may choose to cover these costs or invite non-members to pay their share.
+                                    </li>
                                 </ul>
+                                {/*<ul className={"fs-16px fw-400 lh-28px mb-4"}>*/}
+                                {/*    <li>Waived court fees</li>*/}
+                                {/*    <li>Waived initiation fee</li>*/}
+                                {/*    <li>50 free replay credits</li>*/}
+                                {/*    <li>14 day advance sign-up window</li>*/}
+                                {/*    /!*<li>Discounts on Joola apparel</li>*!/*/}
+                                {/*    <li>Discounts on Picklemall apparel</li>*/}
+                                {/*</ul>*/}
                                 <Link to={Common.MallRatSignupLink}
                                       target={"_blank"}
                                       className={"no-decoration"}>
@@ -132,19 +159,14 @@ export default function Membership() {
                                 </Link>
                                 <div className={"mt-3"}>
                                     <i className={"text-kitchen-green fs-14px fw-400 lh-28px"}>
-                                        *Membership covers member court fees only. Members may invite friends to
-                                        contribute towards final court fees. Contributions are optional and not
-                                        mandatory for membership.
-                                        <br/>
-                                        *When booking a court with non-members, the member will receive a hold until
-                                        guests accept the invite.
+                                        Note: When booking a court with non-members, the member will receive a hold until guests accept the invite. Contributions towards final court fees are optional but not mandatory for membership.
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <div className={"card h-100"}>
+                        <div className={"card"}>
                             <img className={"w-100 h-auto"} src={card_top_2} alt={"header"}/>
                             <div className={"p-5"}>
                                 <span className={"text-volley-blue font-barlow-condensed fs-20px fw-600"}>
@@ -222,21 +244,18 @@ export default function Membership() {
                     <h5 className={"text-deep-blue font-barlow-condensed fs-32px fw-700 my-0 my-md-4"}>
                         Cancellation Policy
                     </h5>
-                    <div>
+                    <div className={""}>
                         <p>
-                            Cancellation charge is free for cancellations made more than 48 hours before the scheduled
-                            event.
+                            More than 48 hours before the scheduled reservation: Cancellation is free.
                         </p>
                         <p>
-                            A $10 cancellation fee applies for cancellations made within 48 hours of the scheduled
-                            event.
+                            Within 48 hours of the scheduled reservation: A 25% cancellation fee applies.
                         </p>
                         <p>
-                            A $20 cancellation fee applies for cancellations made within 24 hours of the scheduled
-                            event.
+                            Within 24 hours of the scheduled reservation: A 50% cancellation fee applies.
                         </p>
                         <p>
-                            A $30 cancellation fee applies for cancellations made within 2 hours of the scheduled event.
+                            Within 2 hours of the scheduled reservation: A 75% cancellation fee applies.
                         </p>
                     </div>
                 </div>
