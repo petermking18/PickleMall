@@ -4,6 +4,10 @@
 
 $nav-height: 4rem;
 
+.cursor-pointer:hover {
+    cursor: pointer !important;
+}
+
 .font-barlow-condensed {
     font-family: 'Barlow Condensed', sans-serif;
 }

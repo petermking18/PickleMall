@@ -121,7 +121,8 @@ export default function Footer() {
                             <Grid xs={12} className={"mb-4"}>
                                 {Common.AppStoreLink &&
                                     <Link to={Common.AppStoreLink}
-                                          className={"no-decoration"}>
+                                          className={"no-decoration"}
+                                          target={"_blank"}>
                                         <div className={"d-none d-md-block"}>
                                             <p className={"font-barlow-condensed fs-20px mt-0 mb-3"}>
                                                 GET THE PICKLEMALL APP

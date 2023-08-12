@@ -155,6 +155,7 @@ export default function HowItWorks() {
             {Common.AppStoreLink &&
                 <div className={"section-app-button container mb-5 pb-md-3"}>
                     <Link to={Common.AppStoreLink}
+                          target={"_blank"}
                           className={"outer-link no-decoration w-md-75 mx-auto d-flex justify-content-center align-items-center"}>
                         <div
                             className={"app-button w-100 bg-light-blue d-flex justify-content-between align-items-center px-4 py-0"}>
