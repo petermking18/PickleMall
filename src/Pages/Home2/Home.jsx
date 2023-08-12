@@ -349,7 +349,7 @@ export default function Home() {
                                                     </div>
                                                 ) : (
                                                     <div className={"text-kitchen-green not-open-message"}>
-                                                        {l.notOpenMessage}
+                                                        {l.notOpenMessage}!
                                                     </div>
                                                 )}
                                             </div>
@@ -357,10 +357,10 @@ export default function Home() {
                                             <div className={"buttons-row mt-auto pt-3"}>
                                                 {l.isOpen ? (
                                                     <Stack direction={"row"} spacing={2}>
-                                                        <Link to={l.bookLink} className={'no-decoration'}>
+                                                        <Link to={Common.BookingLink} className={'no-decoration'}>
                                                             <Button
                                                                 variant={"contained"}
-                                                                color={"volleyBlue"}
+                                                                color={"deepBlue"}
                                                                 className={"text-nowrap"}
                                                                 disableElevation>
                                                                 Book a Court
