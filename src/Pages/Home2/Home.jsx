@@ -297,13 +297,13 @@ export default function Home() {
                                                 src={l.locationImg ? l.locationImg : Placeholder}
                                                 alt={"Courts"}
                                             />
-                                            {l.locationImg && (
-                                                <img
-                                                    className={"pickle-circle"}
-                                                    src={pickleCircle}
-                                                    alt={"Picklemall"}
-                                                />
-                                            )}
+                                            {/*{l.locationImg && (*/}
+                                            {/*    <img*/}
+                                            {/*        className={"pickle-circle"}*/}
+                                            {/*        src={pickleCircle}*/}
+                                            {/*        alt={"Picklemall"}*/}
+                                            {/*    />*/}
+                                            {/*)}*/}
                                         </div>
                                         <div className={"content px-4 pb-3"}>
                                             <h1
