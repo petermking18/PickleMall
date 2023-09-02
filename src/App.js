@@ -39,7 +39,7 @@ const App = () => {
             <CssBaseline/>
             <BrowserRouter>
                 <ScrollTop/>
-                <div className={'root-page'}>
+                <div className={'root-page v3'}>
                     {!bodyOnly() && <Nav/>}
                     <Routes>
                         <Route path={"/"} element={<Home/>} title={"Picklemall"}/>
