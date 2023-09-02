@@ -1,0 +1,15 @@
+@import "../../../Global.scss";
+
+.v3 .membership-options {
+    .border-left-line {
+        border-left: 1px solid #000;
+    }
+
+    .plus-tax {
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: -10%;
+            top: 85%;
+        }
+    }
+}
