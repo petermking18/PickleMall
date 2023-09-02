@@ -76,9 +76,7 @@ export default function Nav() {
                         {Common.BookingLink &&
                             <Link to={Common.BookingLink}
                                   className={'no-decoration my-auto'}>
-                                <Button variant={"filled"}
-                                        color={"rallyBlue"}
-                                        disableElevation>
+                                <Button color={"rallyBlue"}>
                                     Book a Court
                                 </Button>
                             </Link>
