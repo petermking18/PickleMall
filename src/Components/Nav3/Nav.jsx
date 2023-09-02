@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
-import {Stack, Collapse, IconButton, Button} from "@mui/material";
+import {Stack, Collapse, IconButton} from "@mui/material";
+import Button from "../../V3/Components/Button/Button";
 import logo from "../../Assets/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -52,7 +53,7 @@ export default function Nav() {
 
     return (
         <div className="nav2">
-            <nav className="navbar bg-deep-blue">
+            <nav className="navbar bg-black">
                 <div className="container d-flex justify-content-between align-items-center">
                     <Link to="/" className="logo d-inline-block pt-3 pb-3">
                         <img className="mx-3" src={logo} alt={"Picklemall"}/>
@@ -75,7 +76,7 @@ export default function Nav() {
                         {Common.BookingLink &&
                             <Link to={Common.BookingLink}
                                   className={'no-decoration my-auto'}>
-                                <Button variant={"contained"}
+                                <Button variant={"filled"}
                                         color={"rallyBlue"}
                                         disableElevation>
                                     Book a Court

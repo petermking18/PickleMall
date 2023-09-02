@@ -36,6 +36,9 @@ const theme = createTheme({
                     },
                 },
             ],
+            styleOverrides: {
+
+            }
         },
     },
 });
