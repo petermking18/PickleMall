@@ -1,5 +1,4 @@
-import TempeLocation from "../Assets/TempeLocation.jpg";
-import Stock8 from '../Assets/Stock8.png';
+import tempe_courts_small from "../Assets/tempe_courts_small.png";
 
 
 const locations = [
@@ -11,28 +10,28 @@ const locations = [
         hours: ["6am-9pm M-F",
             "7am-9pm S-S"],
         isOpen: true,
-        notOpenMessage: "Opening July 2023",
+        subtitle: "Opening Autust 4th",
         numCourts: 16,
-        locationImg: Stock8,
+        locationImg: tempe_courts_small,
         // bookLink: 'http://Picklemall.podify.club/book/tempe-multi'
     },
     {
         location: "Texas",
         state: "Texas",
-        region: "Central",
+        region: "Texas",
         address: "Address",
         hours: [],
         isOpen: false,
-        notOpenMessage: "Opening late summer 2023",
+        subtitle: "Opening winter 2024",
     },
     {
-        location: "Minnesota",
-        state: "Minnesota",
-        region: "Midwest",
+        location: "Chicago",
+        state: "Illinois",
+        region: "Chicagoland",
         address: "Address",
         hours: [],
         isOpen: false,
-        notOpenMessage: "Opening late summer 2023",
+        subtitle: "Opening winter 2024",
     },
 ];
 
