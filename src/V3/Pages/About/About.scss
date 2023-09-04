@@ -1,0 +1,13 @@
+@import "../../../Global";
+
+.v3 .about {
+    flex-grow: 1;
+
+    img.tempe-image,
+    img.tempe-play {
+        width: 100%;
+        height: auto;
+        min-height: 454px;
+        object-fit: cover;
+    }
+}

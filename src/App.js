@@ -10,7 +10,7 @@ import Nav from "./Components/Nav3/Nav";
 import Footer from "./V3/Components/Footer/Footer";
 
 import Home from "./V3/Pages/Home/Home";
-import About from "./Pages/About2/About";
+import About from "./V3/Pages/About/About";
 // import ContactForm from "./Pages/ContactForm2/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 import TOU from './Pages/TOU/TOU'
