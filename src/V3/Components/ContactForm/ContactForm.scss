@@ -1,4 +1,17 @@
 @import "../../../Global";
 
 .v3 .contact-form {
+    div.MuiFormControl-root {
+        border: 1px solid #000;
+        border-radius: 0 !important;
+
+        :focus {
+            border-bottom-width: 0;
+        }
+    }
+
+    .MuiInputBase-root,
+    .MuiSelect-select,{
+        border-radius: 0 !important;
+    }
 }

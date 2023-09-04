@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 // import Nav from "./V3/Components/Nav/Nav";
 import Nav from "./Components/Nav3/Nav";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./V3/Components/Footer/Footer";
 
 import Home from "./V3/Pages/Home/Home";
 import About from "./Pages/About2/About";
@@ -55,7 +55,7 @@ const App = () => {
 
                         {/*<Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>*/}
                     </Routes>
-                    {/*{!bodyOnly() && <Footer/>}*/}
+                    {!bodyOnly() && <Footer/>}
                 </div>
             </BrowserRouter>
         </ThemeProvider>

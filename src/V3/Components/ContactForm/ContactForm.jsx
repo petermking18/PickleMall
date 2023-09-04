@@ -59,8 +59,7 @@ export default function ContactForm({onAdded, className, cardClassName, title, s
 
         try {
             let docRef
-            if (firstName === "do_not_add" || true) {
-                throw new Error("my error")
+            if (firstName === "do_not_add") {
                 docRef = {
                     id: "abc"
                 }
@@ -94,7 +93,7 @@ export default function ContactForm({onAdded, className, cardClassName, title, s
                 {(vs === ViewStates.Form || vs === ViewStates.Submitting) && (
                     <div className="p-3 p-md-5">
                         <h1
-                            className="font-barlow-condensed text-center fs-20px fs-md-40px mb-2"
+                            className="font-barlow-condensed text-center fs-20px fs-md-40px mb-2 mb-md-0"
                             style={{fontSize: "36px"}}
                         >
                             {title ? title : 'CONTACT INFORMATION'}
