@@ -29,14 +29,14 @@ export default function Home() {
             {
                 breakpoint: 3000,
                 settings: {
-                    slidesToShow: 4.55,
+                    slidesToShow: 3.75,
                     slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 1500,
                 settings: {
-                    slidesToShow: 4.55,
+                    slidesToShow: 4.055,
                     slidesToScroll: 4
                 }
             },
@@ -187,6 +187,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                    <div className={"vw-25"}></div>
                 </Slider>
             </div>
 

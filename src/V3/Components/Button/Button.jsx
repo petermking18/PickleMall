@@ -3,10 +3,13 @@ import {Button as MuiButton} from '@mui/material';
 
 import "./Button.scss"
 
-export default function Button({children, color, className}) {
+export default function Button({children, color, className, disabled, onClick}) {
 
     return (
-        <MuiButton variant={"contained"} color={color} className={`v3-button rounded-0 ${className}`} disableElevation>
+        <MuiButton variant={"contained"} color={color}
+                   className={`v3-button rounded-0 ${className}`}
+                   onClick={onClick}
+                   disabled={disabled} disableElevation>
             {children}
         </MuiButton>
     )
