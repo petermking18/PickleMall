@@ -1,0 +1,10 @@
+@import "../../../Global";
+
+.v3 .how-it-works {
+    flex-grow: 1;
+
+    img.grid-item {
+        aspect-ratio: 452/419;
+        max-width: 100%;
+    }
+}

@@ -20,7 +20,7 @@ import "./custom-bootstrap.scss";
 import "./App.scss";
 
 import ScrollTop from "./ScrollTop"
-import HowItWorks from "./Pages/HowItWorks/HowItWorks";
+import HowItWorks from "./V3/Pages/HowItWorks/HowItWorks";
 
 import ContactForm from "./V3/Components/ContactForm/ContactForm";
 
