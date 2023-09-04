@@ -136,4 +136,15 @@
             }
         }
     }
+
+    .section-contact {
+        background: url("./sections_contact_bg.png") no-repeat center center;
+        background-size: cover;
+
+        @include media-breakpoint-up(lg) {
+            .contact-form {
+                max-width: 830px;
+            }
+        }
+    }
 }

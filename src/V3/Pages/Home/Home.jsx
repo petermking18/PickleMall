@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import locations from "../../../Helpers/Locations";
 import BlueRackets from "./deepblue_rackets.png";
 
+import ContactForm from "../../Components/ContactForm/ContactForm";
+
 import './Home.scss'
 import {ButtonGroup} from "@mui/material";
 
@@ -215,6 +217,13 @@ export default function Home() {
                 </span>
                     </Button>
                 </ButtonGroup>
+            </div>
+        </div>
+        <div className={"section-contact py-md-5"}>
+            <div className={""}>
+                <div className={"my-md-5 px-md-5 py-md-5 d-flex justify-content-center align-items-center"}>
+                    <ContactForm />
+                </div>
             </div>
         </div>
     </div>
