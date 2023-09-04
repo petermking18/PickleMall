@@ -22,6 +22,8 @@ import "./App.scss";
 import ScrollTop from "./ScrollTop"
 import HowItWorks from "./Pages/HowItWorks/HowItWorks";
 
+import ContactForm from "./V3/Components/ContactForm/ContactForm";
+
 // import CouponPage from './Pages/Coupon/CouponPage'
 
 import Membership from './Pages/Membership/Membership'
@@ -48,7 +50,7 @@ const App = () => {
                         {/*<Route path={"/locations"} element={<Locations/>}/>*/}
                         <Route path={"/about"} element={<About/>} title={"About"}/>
                         <Route path={"/Press"} element={<Press/>} title={"Picklemall Press"}/>
-                        {/*<Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>*/}
+                        <Route path={"/contact"} element={<ContactForm/>} title={"Contact Information"}/>
                         <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
                         <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
                         <Route path={"/faq"} element={<FAQ/>} title={"Frequently Asked Questions"}/>

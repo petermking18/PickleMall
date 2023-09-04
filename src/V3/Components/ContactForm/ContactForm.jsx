@@ -88,7 +88,7 @@ export default function ContactForm({onAdded, className, cardClassName, title, s
     };
 
     return (
-        <div className={"contact-form main-card-wrapper my-auto" + (className ? (" " + className) : "")}>
+        <div className={"contact-form bg-volley-blue-o75 main-card-wrapper my-auto" + (className ? (" " + className) : "")}>
             <div className={"card bg-volley-blue-o75" + (cardClassName ? (" " + cardClassName) : "")}>
                 {(vs === ViewStates.Form || vs === ViewStates.Submitting) && (
                     <div className="p-3 p-md-5">

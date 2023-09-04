@@ -1,6 +1,8 @@
 @import "../../../Global.scss";
 
 .v3 .home {
+    overflow-x: hidden;
+
     .section-1 {
         background: url("./section_1_bg.png") no-repeat center center;
         background-size: cover;

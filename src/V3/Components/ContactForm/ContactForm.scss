@@ -1,6 +1,11 @@
 @import "../../../Global";
 
 .v3 .contact-form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     div.MuiFormControl-root {
         border: 1px solid #000;
         border-radius: 0 !important;

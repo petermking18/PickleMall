@@ -18,3 +18,9 @@ a.link-normal {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 48;
 }
+
+.root-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
