@@ -14,7 +14,7 @@ import About from "./V3/Pages/About/About";
 // import ContactForm from "./Pages/ContactForm2/ContactForm";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
 import TOU from './Pages/TOU/TOU'
-import Press from './Pages/Press/Press'
+import Press from './V3/Pages/Press/Press'
 
 import "./custom-bootstrap.scss";
 import "./App.scss";
