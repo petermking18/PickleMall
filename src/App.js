@@ -26,7 +26,7 @@ import ContactForm from "./V3/Components/ContactForm/ContactForm";
 
 // import CouponPage from './Pages/Coupon/CouponPage'
 
-import Membership from './Pages/Membership/Membership'
+import Membership from './V3/Pages/Membership/Membership'
 
 import FAQ from './Pages/FAQ/FAQ'
 
