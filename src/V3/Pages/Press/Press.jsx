@@ -167,7 +167,8 @@ export default function Press() {
                     July, the startup will open its first US location in Tempe, Ariz. with 24 courts.
                 </p>
                 <div className={"text-center mt-4 pb-3"}>
-                    <Link to={"https://www.youtube.com/watch?v=Et_CnWgvlLo"} target={"_blank"} className={"no-decoration"}>
+                    <Link to={"https://www.youtube.com/watch?v=Et_CnWgvlLo"} target={"_blank"}
+                          className={"no-decoration"}>
                         <Button color={"rallyBlue"}>
                             Read the Story
                         </Button>
@@ -230,7 +231,7 @@ export default function Press() {
                             know! Contact us at info@thepicklemall.com.
                         </p>
                     </div>
-                    <Link to={"/Contact"} className={"no-decoration mt-4 mt-md-0"}>
+                    <Link to={"mailto:info@thepicklemall.com"} className={"no-decoration mt-4 mt-md-0"}>
                         <Button color={"rallyBlue"}>
                             Contact Us
                         </Button>

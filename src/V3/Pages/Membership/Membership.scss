@@ -2,4 +2,11 @@
 
 .v3 .membership {
     flex-grow: 1;
+
+    @include media-breakpoint-up(md) {
+        .w-md-50 {
+            width: 50% !important;
+        }
+    }
+
 }
