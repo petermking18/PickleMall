@@ -69,9 +69,11 @@ export default function MembershipOptions({isHome}) {
                         </Button>
                     </Link>
                     {!isHome &&
-                        <MuiButton variant={"text"} color={"rallyBlue"} className={""}>
-                            MEMBERSHIP TERMS OF AGREEMENT
-                        </MuiButton>
+                        <Link to={"/membershipterms"} className={"no-decoration"}>
+                            <MuiButton variant={"text"} color={"rallyBlue"} className={""}>
+                                MEMBERSHIP TERMS OF AGREEMENT
+                            </MuiButton>
+                        </Link>
                     }
                 </div>
                 <hr className={"border-volley-blue mt-5 mb-5"}/>

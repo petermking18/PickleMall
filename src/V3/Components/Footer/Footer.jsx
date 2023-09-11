@@ -151,13 +151,13 @@ export default function Footer() {
                                   className={"small link-normal text-center text-sm-start mb-2 mb-md-0 d-flex justify-content-center align-items-center"}>
                                 <span>Terms of Service</span>
                             </Link>
-                            {/*<span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>*/}
-                            {/*<Link*/}
-                            {/*    to={"/"}*/}
-                            {/*    className={"small link-normal text-center text-sm-start"}*/}
-                            {/*>*/}
-                            {/*    <span>Do Not Sell My Information</span>*/}
-                            {/*</Link>*/}
+                            <span className={"d-none d-sm-inline"}>&emsp;|&emsp;</span>
+                            <Link
+                                to={"/membershipterms"}
+                                className={"small link-normal text-center text-sm-start"}
+                            >
+                                <span>Membership Terms and Agreement</span>
+                            </Link>
                         </Grid>
                         <Grid xs={12} sm={3} className={"text-center text-sm-start d-block d-md-none mb-3"}>
                             <span className={'fs-12px'}>© Copyright Picklemall Inc. 2023.</span>

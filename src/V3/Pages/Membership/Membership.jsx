@@ -43,7 +43,7 @@ export default function Membership() {
 
     return (
         <div className={"membership"}>
-            <PageHeader title={"Membership"}/>
+            <PageHeader title={"MEMBERSHIP"}/>
             <div ref={containerRef} className={"container py-5 mb-md-5"}>
                 <h1 className={"text-center font-barlow-condensed fs-24px fs-md-50px mb-4 mb-md-5"}>
                     JOIN OUR COMMUNITY

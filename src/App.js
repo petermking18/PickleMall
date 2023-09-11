@@ -12,9 +12,10 @@ import Footer from "./V3/Components/Footer/Footer";
 import Home from "./V3/Pages/Home/Home";
 import About from "./V3/Pages/About/About";
 // import ContactForm from "./Pages/ContactForm2/ContactForm";
-import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy"
-import TOU from './Pages/TOU/TOU'
+import PrivacyPolicy from "./V3/Pages/PrivacyPolicy/PrivacyPolicy"
+import TOU from './V3/Pages/TOU/TOU'
 import Press from './V3/Pages/Press/Press'
+import MembershipTerms from "./V3/Pages/MembershipTerms/MembershipTerms"
 
 import "./custom-bootstrap.scss";
 import "./App.scss";
@@ -28,7 +29,7 @@ import ContactForm from "./V3/Components/ContactForm/ContactForm";
 
 import Membership from './V3/Pages/Membership/Membership'
 
-import FAQ from './Pages/FAQ/FAQ'
+import FAQ from './V3/Pages/FAQ/FAQ'
 
 const App = () => {
     const bodyOnly = () => window.location.pathname.toLowerCase().startsWith('/coupon')
@@ -54,6 +55,7 @@ const App = () => {
                         <Route path={"/privacypolicy"} element={<PrivacyPolicy/>} title={"Privacy Policy"}/>
                         <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
                         <Route path={"/faq"} element={<FAQ/>} title={"Frequently Asked Questions"}/>
+                        <Route path={"/membershipterms"} element={<MembershipTerms/>} title={"Membership Terms and Agreement"} />
 
                         {/*<Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>*/}
                     </Routes>
