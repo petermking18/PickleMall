@@ -8,10 +8,10 @@ import Button from "../../Components/Button/Button";
 
 import Common from "../../../Common";
 
-import step_1 from "./step_1.png";
-import step_2 from "./step_2.png";
-import step_3 from "./step_3.png";
-import step_4 from "./step_4.png";
+import step_1 from "./step_1.svg";
+import step_2 from "./step_2.svg";
+import step_3 from "./step_3.svg";
+import step_4 from "./step_4.svg";
 
 import './HowItWorks.scss';
 
@@ -29,9 +29,9 @@ export default function HowItWorks() {
                     on the cutting edge of technology when it comes to providing the best player experience possible.
                     <br/>
                     <br/>
-                    Use the Picklemall app to book a court, scan into a facility, and our court cameras will allow you
-                    to capture your gameplay footage in real-time, track your performance, helping to improve your
-                    skills, and offering valuable insights and learning opportunities.
+                    Use the Picklemall app to book a court and our court cameras will allow you to capture your gameplay
+                    footage in real-time, track your performance, helping to improve your skills, and offering valuable
+                    insights and learning opportunities.
                 </p>
                 <div className={"text-center pt-4 d-md-none"}>
                     <Link to={Common.BookingLink} className={"no-decoration"}>

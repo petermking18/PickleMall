@@ -2,12 +2,12 @@ import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import {Link} from "react-router-dom";
 
-import twitterIcon from "./Icons/Twitter.png";
-import facebookIcon from "./Icons/Facebook.png";
-import instagramIcon from "./Icons/Instagram.png";
+import twitterIcon from "./Icons/Twitter.svg";
+import facebookIcon from "./Icons/Facebook.svg";
+import instagramIcon from "./Icons/Instagram.svg";
 import youtubeIcon from "./Icons/Youtube.png";
-import linkedinIcon from "./Icons/Linkedin.png";
-import tiktokIcon from "./Icons/Tiktok.png";
+import linkedinIcon from "./Icons/Linkedin.svg";
+import tiktokIcon from "./Icons/Tiktok.svg";
 
 import logo from "../../../Assets/logo.svg";
 import appStore from './appStore.png';

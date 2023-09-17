@@ -18,5 +18,9 @@
     .MuiInputBase-root,
     .MuiSelect-select,{
         border-radius: 0 !important;
+        &:before,
+        &:after {
+            border-bottom: none !important;
+        }
     }
 }
