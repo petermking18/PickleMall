@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react"
+import React, {useState, useEffect, useRef} from "react"
 import Button from "../../Components/Button/Button";
 import Common from "../../../Common";
 import {Link} from "react-router-dom";
@@ -13,16 +13,23 @@ import ContactForm from "../../Components/ContactForm/ContactForm";
 import './Home.scss'
 import {ButtonGroup} from "@mui/material";
 
+import section_1_bg from "./section_1_bg.png";
+import section_1_vid from "../../../Assets/teaser-trimmed.mp4";
+
 const vw = percent => {
     let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     return (percent * w) / 100;
 }
+
 
 export default function Home() {
 
     const [locationsIndex, setLocationsIndex] = useState(0);
 
     let locationsSlider = useRef(null);
+
+    const vidRef = useRef();
+    useEffect(() => {vidRef.current.play()}, [])
 
     const locationsSliderSettings = {
         dots: false,
@@ -86,6 +93,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <video id={"background-video"} ref={vidRef} autoPlay={true} loop muted={true} poster={section_1_bg}>
+                <source src={section_1_vid} type={"video/mp4"}/>
+            </video>
+            <div id={"background-video-overlay"}></div>
         </div>
         <div className={"section-2 container py-4 px-md-5"}>
             <p className={"fs-14px fs-md-35px"}>Discover the future of pickleball at Picklemall. Where innovation,

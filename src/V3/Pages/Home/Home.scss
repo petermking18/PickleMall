@@ -4,10 +4,32 @@
     overflow-x: hidden;
 
     .section-1 {
-        background: url("./section_1_bg.png") no-repeat center center;
-        background-size: cover;
+        //background: url("./section_1_bg.png") no-repeat center center;
+        //background-size: cover;
         height: 42rem;
         position: relative;
+
+        #background-video {
+            width: 100vw;
+            height: 42rem;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -2;
+            //background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+
+        #background-video-overlay {
+            width: 100vw;
+            height: 42rem;
+            min-height: 42rem;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%);
+        }
     }
 
     .section-locations {

@@ -110,7 +110,6 @@ export default function ContactForm({onAdded, className, cardClassName, title, s
                                         variant="filled"
                                         color="deepBlue"
                                         className="w-100 bg-bright-white rounded-1"
-                                        InputPrope={{disableUnderline: true}}
                                         onChange={(e) => setFirstName(e.target.value)}
                                         disabled={vs === ViewStates.Submitting}
                                     />
