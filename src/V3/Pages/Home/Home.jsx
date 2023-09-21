@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <video id={"background-video"} ref={vidRef} autoPlay={true} loop muted={true} poster={section_1_bg}>
+            <video id={"background-video"} ref={vidRef} autoPlay={true} loop muted={true} playsInline={true}>
                 <source src={section_1_vid} type={"video/mp4"}/>
             </video>
             <div id={"background-video-overlay"}></div>

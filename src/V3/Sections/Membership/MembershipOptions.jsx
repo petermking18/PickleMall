@@ -24,7 +24,7 @@ export default function MembershipOptions({isHome}) {
                         <span
                             className={"fs-20px fs-md-40px text-volley-blue font-barlow-condensed align-middle position-relative"}>
                             $99.99
-                            <span className={"fs-12px fs-md-16px text-nowrap plus-tax fw-600"}>&nbsp;+ Tax</span>
+                            {/*<span className={"fs-12px fs-md-16px text-nowrap plus-tax fw-600"}>&nbsp;+ Tax</span>*/}
                         </span>
                         &emsp;<span className={"fs-14px fs-md-25px text-deep-blue align-middle"}>/ per person</span>
                     </div>
