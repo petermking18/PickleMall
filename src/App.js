@@ -23,6 +23,8 @@ import "./App.scss";
 import ScrollTop from "./ScrollTop"
 import HowItWorks from "./V3/Pages/HowItWorks/HowItWorks";
 
+import CorporateEvents from "./V3/Pages/CorporateEvents/CorporateEvents";
+
 import ContactForm from "./V3/Components/ContactForm/ContactForm";
 
 // import CouponPage from './Pages/Coupon/CouponPage'
@@ -56,6 +58,7 @@ const App = () => {
                         <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
                         <Route path={"/faq"} element={<FAQ/>} title={"Frequently Asked Questions"}/>
                         <Route path={"/membershipterms"} element={<MembershipTerms/>} title={"Membership Terms and Agreement"} />
+                        <Route path={"/corporateEvents"} element={<CorporateEvents/>} title={"Corporate Events"} />
 
                         {/*<Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>*/}
                     </Routes>
