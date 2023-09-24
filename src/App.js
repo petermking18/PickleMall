@@ -58,7 +58,7 @@ const App = () => {
                         <Route path={"/termsofservice"} element={<TOU/>} title={"Terms of Service"}/>
                         <Route path={"/faq"} element={<FAQ/>} title={"Frequently Asked Questions"}/>
                         <Route path={"/membershipterms"} element={<MembershipTerms/>} title={"Membership Terms and Agreement"} />
-                        <Route path={"/corporateEvents"} element={<CorporateEvents/>} title={"Corporate Events"} />
+                        <Route path={"/privateEvents"} element={<CorporateEvents/>} title={"Corporate Events"} />
 
                         {/*<Route path={"/coupon/:couponId"} element={<CouponPage/>} title={"Coupon"}/>*/}
                     </Routes>
