@@ -24,6 +24,10 @@ export default function Nav() {
             text: "About",
         },
         {
+            route: "/PrivateEvents",
+            text: "Events"
+        },
+        {
             route: "/FAQ",
             text: "FAQ"
         },

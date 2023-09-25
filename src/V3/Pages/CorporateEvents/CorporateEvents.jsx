@@ -13,8 +13,7 @@ export default function CorporateEvents() {
     return (
         <div className={"corporate-events"}>
             <PageHeader title={"PRIVATE EVENTS"}/>
-            <br/><br/>
-            <div className={"mt-md-5 bg-volley-blue py-5"}>
+            <div className={"bg-volley-blue pt-5"}>
                 <div className={"container px-md-5 vstack gap-5 pb-5"}>
                     <div
                         className={"d-flex justify-content-between align-items-center bg-bright-white container px-3 px-md-5 mb-5"}>
