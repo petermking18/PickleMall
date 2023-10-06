@@ -43,10 +43,10 @@ export default function MembershipOptions({isHome}) {
                             Get 50 free video replays per month at no extra cost. Additional video replays are charged
                             at 50 cents each.
                         </Grid>
-                        <Grid xs={12} md={6} gap={5}>
-                            <strong>No Initiation Fee:</strong><br/>
-                            No upfront initiation cost to start enjoying Picklemall.
-                        </Grid>
+                        {/*<Grid xs={12} md={6} gap={5}>*/}
+                        {/*    <strong>No Initiation Fee:</strong><br/>*/}
+                        {/*    No upfront initiation cost to start enjoying Picklemall.*/}
+                        {/*</Grid>*/}
                         <Grid xs={12} md={6} gap={5}>
                             <strong>Discounts on Picklemall Apparel:</strong><br/>
                             Look great while playing with exclusive discounts on your stylish Picklemall clothing line.

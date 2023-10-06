@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import locations from "../../../Helpers/Locations";
 import BlueRackets from "./deepblue_rackets.png";
 import Grid from "@mui/material/Unstable_Grid2"
+import Modal from '@mui/material/Modal';
 
 import ContactForm from "../../Components/ContactForm/ContactForm";
 
@@ -29,7 +30,22 @@ export default function Home() {
     let locationsSlider = useRef(null);
 
     const vidRef = useRef();
-    useEffect(() => {vidRef.current.play()}, [])
+    useEffect(() => {
+        vidRef.current.play()
+    }, [])
+
+    const [modalOpen, setModalOpen] = useState(false)
+    useEffect(() => {
+
+        let stored_item = localStorage.getItem('_pmca')
+        if (stored_item && stored_item === "e179544a-0430-4d0b-8227-8ee06381b55a") {
+
+        } else {
+            setModalOpen(true)
+        }
+    }, [])
+
+    const homePageElement = document.getElementById('home-page')
 
     const locationsSliderSettings = {
         dots: false,
@@ -71,7 +87,7 @@ export default function Home() {
         }],
     };
 
-    return <div className={'home'}>
+    return <div className={'home'} id={'home-page'}>
         <div className={"section-1 my-0"}>
             <div className={"d-flex justify-content-center align-items-start h-100 text-center"}>
                 <div>
@@ -268,5 +284,33 @@ export default function Home() {
                 </div>
             </div>
         </div>
+
+        <Modal open={modalOpen}
+               onClose={() => setModalOpen(false)}
+               container={homePageElement}
+               className={"d-flex align-items-center justify-content-center px-md-5"}>
+            <div className={"contact-modal position-relative mx-md-5"}>
+                <ContactForm cardClassName={"card bg-bright-white"}
+                             titleClassName={"font-barlow-condensed text-center fs-20px fs-md-40px mb-2 mb-md-0 mt-md-2"}
+                             subtitle={"Enter your email for more info on booking a court, plus get other Picklemall news and offers."}
+                />
+                <div className={"position-absolute top-0 start-0 p-3 p-md-4 m-md-2"}>
+                    <Link onClick={() => setModalOpen(false)}
+                          className={"no-decoration"}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <mask id="mask0_746_1739" style={{maskType: 'alpha'}} maskUnits="userSpaceOnUse" x="0" y="0"
+                                  width="40" height="40">
+                                <rect width="40" height="40" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_746_1739)">
+                                <path
+                                    d="M20 21.7578L11.5448 30.2129C11.3141 30.4437 11.024 30.5618 10.6746 30.5671C10.3253 30.5725 10.0299 30.4544 9.78848 30.2129C9.54701 29.9715 9.42627 29.6788 9.42627 29.3348C9.42627 28.9908 9.54701 28.6981 9.78848 28.4566L18.2436 20.0014L9.78848 11.5463C9.5577 11.3155 9.43964 11.0255 9.43431 10.6761C9.42895 10.3268 9.54701 10.0314 9.78848 9.78994C10.0299 9.54847 10.3226 9.42773 10.6666 9.42773C11.0106 9.42773 11.3034 9.54847 11.5448 9.78994L20 18.2451L28.4551 9.78994C28.6859 9.55916 28.976 9.44111 29.3253 9.43578C29.6746 9.43041 29.97 9.54847 30.2115 9.78994C30.453 10.0314 30.5737 10.3241 30.5737 10.6681C30.5737 11.0121 30.453 11.3048 30.2115 11.5463L21.7564 20.0014L30.2115 28.4566C30.4423 28.6874 30.5603 28.9774 30.5656 29.3268C30.571 29.6761 30.453 29.9715 30.2115 30.2129C29.97 30.4544 29.6773 30.5751 29.3333 30.5751C28.9893 30.5751 28.6966 30.4544 28.4551 30.2129L20 21.7578Z"
+                                    fill="#1C1B1F"/>
+                            </g>
+                        </svg>
+                    </Link>
+                </div>
+            </div>
+        </Modal>
     </div>
 }

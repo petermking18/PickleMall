@@ -47,7 +47,7 @@ export default function Nav() {
         <Link
             key={i.text}
             to={i.route}
-            className="nav-item"
+            className="nav-item text-nowrap"
             onClick={() => setShowMobileNav(false)}
         >
             {i.text}

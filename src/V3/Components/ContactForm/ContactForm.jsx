@@ -29,7 +29,7 @@ const ViewStates = {
     SubmitError: 4,
 };
 
-export default function ContactForm({onAdded, className, cardClassName, title, subtitle, hideState, hideCity, hideAfterSubmit}) {
+export default function ContactForm({onAdded, className, cardClassName, title, titleClassName, subtitle, hideState, hideCity, hideAfterSubmit}) {
     const [vs, setViewState] = useState(ViewStates.Form);
 
     const [firstName, setFirstName] = useState("");
@@ -93,7 +93,7 @@ export default function ContactForm({onAdded, className, cardClassName, title, s
                 {(vs === ViewStates.Form || vs === ViewStates.Submitting) && (
                     <div className="p-3 p-md-5">
                         <h1
-                            className="font-barlow-condensed text-center fs-20px fs-md-40px mb-2 mb-md-0"
+                            className={titleClassName ? titleClassName : "font-barlow-condensed text-center fs-20px fs-md-40px mb-2 mb-md-0"}
                             style={{fontSize: "36px"}}
                         >
                             {title ? title : 'CONTACT INFORMATION'}
