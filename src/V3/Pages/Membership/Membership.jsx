@@ -69,7 +69,7 @@ export default function Membership() {
                         <Grid xs={12} md={6}>
                             <strong>Equipment:</strong><br/>
                             Please wear non marking shoes. We offer paddle and ball demos for those who do not own
-                            equipmement.
+                            equipment.
                         </Grid>
                         <Grid xs={12} md={6}>
                             <strong>Back-to-Back Bookings:</strong><br/>
