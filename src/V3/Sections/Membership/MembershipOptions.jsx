@@ -78,6 +78,71 @@ export default function MembershipOptions({isHome}) {
                 </div>
                 <hr className={"border-volley-blue mt-5 mb-5"}/>
                 <div
+                    className={"d-flex justify-content-between align-items-center bg-bright-white container px-3 px-md-5 mb-5"}>
+                    <p className={"fs-14px fs-md-30px text-deep-blue align-middle"}>
+                        The Morning Maller
+                    </p>
+                    <div className={"border-left-line ps-3 ps-md-4"}>
+                        <span
+                            className={"fs-20px fs-md-40px text-volley-blue font-barlow-condensed align-middle position-relative"}>
+                            $59.99
+                            {/*<span className={"fs-12px fs-md-16px text-nowrap plus-tax fw-600"}>&nbsp;+ Tax</span>*/}
+                        </span>
+                        &emsp;<span className={"fs-14px fs-md-25px text-deep-blue align-middle"}>/ per person</span>
+                    </div>
+                </div>
+                <h1 className={"font-barlow-condensed text-bright-white fs-20px fs-md-40px fw-600 text-center mb-5"}>
+                    MEMBERSHIP BENEFITS
+                </h1>
+                <div className={"fs-14px fs-md-20px text-bright-white mb-5"}>
+                    <Grid container rowSpacing={{xs: 3, md: 5}} columnSpacing={15}>
+                        <Grid xs={12} md={6}>
+                            <strong>Waived Court Fees:</strong><br/>
+                            Play without worrying about the cost! Your membership covers all member court fees.
+                        </Grid>
+                        <Grid xs={12} md={6} gap={5}>
+                            <strong>Discounts on Events:</strong><br/>
+                            Morning Maller members receive exclusive discounts on leagues, tournaments, and events at Picklemall from <span className={"text-nowrap"}>6:00 AM - 3:00 PM,</span> Monday through Friday
+                        </Grid>
+                        <Grid xs={12} md={6} gap={5}>
+                            <strong>Waived Open Play Fee:</strong><br/>
+                            Join in on the fun at no additional cost. Find your group by skill level and develop your game.
+                        </Grid>
+                        <Grid xs={12} md={6} gap={5}>
+                            <strong>Discounts on Picklemall Apparel:</strong><br/>
+                            Look great while playing with exclusive discounts on your stylish Picklemall clothing line.
+                        </Grid>
+                        <Grid xs={12} md={6} gap={5}>
+                            <strong>25 Free Video Replay Credits:</strong><br/>
+                            Get 25 free video replays per month at no extra cost. Additional video replays are charged at 50 cents each.
+                        </Grid>
+                        {/*<Grid xs={12} md={6} gap={5}>*/}
+                        {/*    <strong>No Initiation Fee:</strong><br/>*/}
+                        {/*    No upfront initiation cost to start enjoying Picklemall.*/}
+                        {/*</Grid>*/}
+                        <Grid xs={12} md={6} gap={5}>
+                            <strong>5-Day Advance Sign-Up Window:</strong><br/>
+                            Get exclusive access to booking courts 5 days in advance.
+                        </Grid>
+                    </Grid>
+                </div>
+                <div className={"d-flex flex-column align-items-center gap-3"}>
+                    <Link to={Common.MallRatSignupLink}
+                          className={"no-decoration"}>
+                        <Button color={"rallyBlue"}>
+                            Sign Up {isHome && 'Now'}
+                        </Button>
+                    </Link>
+                    {!isHome &&
+                        <Link to={"/membershipterms"} className={"no-decoration"}>
+                            <MuiButton variant={"text"} color={"rallyBlue"} className={""}>
+                                MEMBERSHIP TERMS OF AGREEMENT
+                            </MuiButton>
+                        </Link>
+                    }
+                </div>
+                <hr className={"border-volley-blue mt-5 mb-5"}/>
+                <div
                     className={"d-flex justify-content-between align-items-center bg-bright-white container px-3 px-md-5 my-5"}>
                     <p className={"fs-14px fs-md-30px text-deep-blue align-middle"}>
                         Drop-In Fees
